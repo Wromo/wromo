@@ -97,7 +97,7 @@ export async function main() {
 
 	const hash = args.commit ? `#${args.commit}` : '';
 
-	const templateTarget = `withwromo/wromo/examples/${options.template}#latest`;
+	const templateTarget = `Wromo/wromo/examples/${options.template}#latest`;
 
 	const emitter = degit(`${templateTarget}${hash}`, {
 		cache: false,
@@ -127,12 +127,12 @@ export async function main() {
 			if (err.message === 'zlib: unexpected end of file') {
 				console.log(
 					yellow(
-						"This seems to be a cache related problem. Remove the folder '~/.degit/github/withwromo' to fix this error."
+						"This seems to be a cache related problem. Remove the folder '~/.degit/github/Wromo' to fix this error."
 					)
 				);
 				console.log(
 					yellow(
-						'For more information check out this issue: https://github.com/withwromo/wromo/issues/655'
+						'For more information check out this issue: https://github.com/Wromo/wromo/issues/655'
 					)
 				);
 			}
@@ -146,7 +146,7 @@ export async function main() {
 				);
 				console.log(
 					yellow(
-						"If you do have 'git' installed, please run this command with the --verbose flag and file a new issue with the command output here: https://github.com/withwromo/wromo/issues"
+						"If you do have 'git' installed, please run this command with the --verbose flag and file a new issue with the command output here: https://github.com/Wromo/wromo/issues"
 					)
 				);
 			}

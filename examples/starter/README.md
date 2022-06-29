@@ -1,6 +1,6 @@
 # Welcome to [Wromo](https://wromo.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withwromo/wromo/tree/latest/examples/starter)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/starter)
 
 > 🧑‍🚀 **Seasoned wromonaut?** Delete this file. Have fun!
 

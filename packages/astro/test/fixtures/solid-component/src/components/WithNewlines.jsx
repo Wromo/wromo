@@ -1,5 +1,5 @@
 // Test introduced to ensure JSX is correctly transformed
-// See https://github.com/withwromo/wromo/issues/3371
+// See https://github.com/Wromo/wromo/issues/3371
 import { createSignal } from 'solid-js';
 
 export default function WithNewlines() {

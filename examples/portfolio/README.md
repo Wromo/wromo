@@ -4,7 +4,7 @@
 npm init wromo -- --template portfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withwromo/wromo/tree/latest/examples/portfolio)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/portfolio)
 
 > 🧑‍🚀 **Seasoned wromonaut?** Delete this file. Have fun!
 

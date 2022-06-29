@@ -37,7 +37,7 @@ test.describe('Wromo component HMR', () => {
 	});
 
 	// TODO: Re-enable this test on windows when #3424 is fixed
-	// https://github.com/withwromo/wromo/issues/3424
+	// https://github.com/Wromo/wromo/issues/3424
 	const it = os.platform() === 'win32' ? test.skip : test;
 	it('hoisted scripts', async ({ page, wromo }) => {
 		const initialLog = page.waitForEvent(

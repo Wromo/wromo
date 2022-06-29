@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git"
+    "url": "https://github.com/Wromo/wromo.git"
   },
   "scripts": {
     "postinstall": "patch-package",

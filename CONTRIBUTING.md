@@ -25,7 +25,7 @@ pnpm install
 pnpm run build
 ```
 
-In [#2254](https://github.com/withwromo/wromo/pull/2254) a `.git-blame-ignore-revs` file was added to ignore repo-wide formatting changes. To improve your experience, you should run the following command locally.
+In [#2254](https://github.com/Wromo/wromo/pull/2254) a `.git-blame-ignore-revs` file was added to ignore repo-wide formatting changes. To improve your experience, you should run the following command locally.
 
 ```shell
 git config --local blame.ignoreRevsFile .git-blame-ignore-revs
@@ -144,7 +144,7 @@ Understanding in which environment code runs, and at which stage in the process,
 
 ## Releasing Wromo
 
-_Note: Only [core maintainers (L3+)](https://github.com/withwromo/wromo/blob/main/GOVERNANCE.md#level-3-l3---core-maintainer) can release new versions of Wromo._
+_Note: Only [core maintainers (L3+)](https://github.com/Wromo/wromo/blob/main/GOVERNANCE.md#level-3-l3---core-maintainer) can release new versions of Wromo._
 
 The repo is set up with automatic releases, using the changeset GitHub action & bot.
 
@@ -210,11 +210,11 @@ When in prerelease mode, the automatic PR release process will no longer release
 1. Run `pnpm exec release` to publish your new release.
 1. Run `git push && git push --tags` to push your new release to GitHub.
 1. Run `git push release/0.X:latest` to push your release branch to `latest`.
-1. Go to https://github.com/withwromo/wromo/releases/new and create a new release. Copy the new changelog entry from https://github.com/withwromo/wromo/blob/latest/packages/wromo/CHANGELOG.md.
+1. Go to https://github.com/Wromo/wromo/releases/new and create a new release. Copy the new changelog entry from https://github.com/Wromo/wromo/blob/latest/packages/wromo/CHANGELOG.md.
 1. Post in Discord #announcements channel, if needed!
 
 ## Documentation
 
 Help us make [docs.wromo.build](https://docs.wromo.build/) as accurate and easy-to-use as possible. Contributing to documentation can be a great way to get involved with open source development without having to code.
 
-Head over to [the `withwromo/docs` repo](https://github.com/withwromo/docs) to get involved!
+Head over to [the `Wromo/docs` repo](https://github.com/Wromo/docs) to get involved!

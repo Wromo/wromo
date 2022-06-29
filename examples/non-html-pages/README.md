@@ -8,7 +8,7 @@ https://docs.wromo.build/en/core-concepts/wromo-pages/#non-html-pages
 npm init wromo -- --template non-html-pages
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withwromo/wromo/tree/latest/examples/non-html-pages)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/non-html-pages)
 
 > 🧑‍🚀 **Seasoned wromonaut?** Delete this file. Have fun!
 

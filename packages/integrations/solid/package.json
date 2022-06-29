@@ -4,11 +4,11 @@
   "description": "Use Solid components within Wromo",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "withwromo",
+  "author": "Wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git",
+    "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/integrations/solid"
   },
   "keywords": [
@@ -16,7 +16,7 @@
     "renderer",
     "solid"
   ],
-  "bugs": "https://github.com/withwromo/wromo/issues",
+  "bugs": "https://github.com/Wromo/wromo/issues",
   "homepage": "https://wromo.build",
   "exports": {
     ".": "./dist/index.js",

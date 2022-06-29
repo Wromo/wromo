@@ -4,89 +4,89 @@
 
 ### Patch Changes
 
-- [#3638](https://github.com/withwromo/wromo/pull/3638) [`80c71c7c`](https://github.com/withwromo/wromo/commit/80c71c7c56d15dc05ec0c5a848130aad222d7d51) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: HTML comments in markdown code blocks should not be wrapped in JS comments
+- [#3638](https://github.com/Wromo/wromo/pull/3638) [`80c71c7c`](https://github.com/Wromo/wromo/commit/80c71c7c56d15dc05ec0c5a848130aad222d7d51) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: HTML comments in markdown code blocks should not be wrapped in JS comments
 
-* [#3612](https://github.com/withwromo/wromo/pull/3612) [`fca58cfd`](https://github.com/withwromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: "vpath" import error when building for netlify edge
+* [#3612](https://github.com/Wromo/wromo/pull/3612) [`fca58cfd`](https://github.com/Wromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: "vpath" import error when building for netlify edge
 
-- [#3630](https://github.com/withwromo/wromo/pull/3630) [`48e67fe0`](https://github.com/withwromo/wromo/commit/48e67fe05398dc4b1fca12db36c1b37bb341277a) Thanks [@tony-sull](https://github.com/tony-sull)! - Encodes ampersand characters in code blocks
+- [#3630](https://github.com/Wromo/wromo/pull/3630) [`48e67fe0`](https://github.com/Wromo/wromo/commit/48e67fe05398dc4b1fca12db36c1b37bb341277a) Thanks [@tony-sull](https://github.com/tony-sull)! - Encodes ampersand characters in code blocks
 
-* [#3620](https://github.com/withwromo/wromo/pull/3620) [`05aa7244`](https://github.com/withwromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0) Thanks [@hippotastic](https://github.com/hippotastic)! - Remove extra newlines around Markdown components
+* [#3620](https://github.com/Wromo/wromo/pull/3620) [`05aa7244`](https://github.com/Wromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0) Thanks [@hippotastic](https://github.com/hippotastic)! - Remove extra newlines around Markdown components
 
 ## 0.11.2
 
 ### Patch Changes
 
-- [#3572](https://github.com/withwromo/wromo/pull/3572) [`5c73f614`](https://github.com/withwromo/wromo/commit/5c73f614e8f579e04fe61c948b69be7bc6d81d5d) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix remarkMdxish performance issue on huge sites
+- [#3572](https://github.com/Wromo/wromo/pull/3572) [`5c73f614`](https://github.com/Wromo/wromo/commit/5c73f614e8f579e04fe61c948b69be7bc6d81d5d) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix remarkMdxish performance issue on huge sites
 
 ## 0.11.1
 
 ### Patch Changes
 
-- [#3564](https://github.com/withwromo/wromo/pull/3564) [`76fb01cf`](https://github.com/withwromo/wromo/commit/76fb01cff1002f2a37e93869378802156c4eca7c) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix autolinking of URLs inside links
+- [#3564](https://github.com/Wromo/wromo/pull/3564) [`76fb01cf`](https://github.com/Wromo/wromo/commit/76fb01cff1002f2a37e93869378802156c4eca7c) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix autolinking of URLs inside links
 
-* [#3554](https://github.com/withwromo/wromo/pull/3554) [`c549f161`](https://github.com/withwromo/wromo/commit/c549f161cadd76a666672556f2c2d63b5f97f00d) Thanks [@hippotastic](https://github.com/hippotastic)! - Allow AlpineJS syntax extensions in Markdown
+* [#3554](https://github.com/Wromo/wromo/pull/3554) [`c549f161`](https://github.com/Wromo/wromo/commit/c549f161cadd76a666672556f2c2d63b5f97f00d) Thanks [@hippotastic](https://github.com/hippotastic)! - Allow AlpineJS syntax extensions in Markdown
 
 ## 0.11.0
 
 ### Minor Changes
 
-- [#3502](https://github.com/withwromo/wromo/pull/3502) [`939fe159`](https://github.com/withwromo/wromo/commit/939fe159255cecf1cab5c1b3da2670d30ac8e4a7) Thanks [@nokazn](https://github.com/nokazn)! - Fix cases for JSX-like expressions in code blocks of headings
+- [#3502](https://github.com/Wromo/wromo/pull/3502) [`939fe159`](https://github.com/Wromo/wromo/commit/939fe159255cecf1cab5c1b3da2670d30ac8e4a7) Thanks [@nokazn](https://github.com/nokazn)! - Fix cases for JSX-like expressions in code blocks of headings
 
 ### Patch Changes
 
-- [#3514](https://github.com/withwromo/wromo/pull/3514) [`6c955ca6`](https://github.com/withwromo/wromo/commit/6c955ca643a7a071609ce8a5258cc7faf5a636b2) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix Markdown errors missing source filename
+- [#3514](https://github.com/Wromo/wromo/pull/3514) [`6c955ca6`](https://github.com/Wromo/wromo/commit/6c955ca643a7a071609ce8a5258cc7faf5a636b2) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix Markdown errors missing source filename
 
-* [#3516](https://github.com/withwromo/wromo/pull/3516) [`30578015`](https://github.com/withwromo/wromo/commit/30578015919e019cd8dd354288a45c1fc63bd01f) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix: Allow self-closing tags in Markdown
+* [#3516](https://github.com/Wromo/wromo/pull/3516) [`30578015`](https://github.com/Wromo/wromo/commit/30578015919e019cd8dd354288a45c1fc63bd01f) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix: Allow self-closing tags in Markdown
 
 ## 0.10.2
 
 ### Patch Changes
 
-- [#3486](https://github.com/withwromo/wromo/pull/3486) [`119ecf8d`](https://github.com/withwromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix components in markdown regressions
+- [#3486](https://github.com/Wromo/wromo/pull/3486) [`119ecf8d`](https://github.com/Wromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix components in markdown regressions
 
 ## 0.10.1
 
 ### Patch Changes
 
-- [#3444](https://github.com/withwromo/wromo/pull/3444) [`51db2b9b`](https://github.com/withwromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: markdown imports failing due to internal dependency issue
+- [#3444](https://github.com/Wromo/wromo/pull/3444) [`51db2b9b`](https://github.com/Wromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: markdown imports failing due to internal dependency issue
 
 ## 0.10.0
 
 ### Minor Changes
 
-- [#3410](https://github.com/withwromo/wromo/pull/3410) [`cfae9760`](https://github.com/withwromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Significantally more stable behavior for "Markdown + Components" usage, which now handles component serialization much more similarly to MDX. Also supports switching between Components and Markdown without extra newlines, removes wrapping `<p>` tags from standalone components, and improves JSX expression handling.
+- [#3410](https://github.com/Wromo/wromo/pull/3410) [`cfae9760`](https://github.com/Wromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Significantally more stable behavior for "Markdown + Components" usage, which now handles component serialization much more similarly to MDX. Also supports switching between Components and Markdown without extra newlines, removes wrapping `<p>` tags from standalone components, and improves JSX expression handling.
 
 ## 0.9.4
 
 ### Patch Changes
 
-- [#3275](https://github.com/withwromo/wromo/pull/3275) [`8f8f05c1`](https://github.com/withwromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in passing JS args to islands
+- [#3275](https://github.com/Wromo/wromo/pull/3275) [`8f8f05c1`](https://github.com/Wromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in passing JS args to islands
 
 ## 0.9.3
 
 ### Patch Changes
 
-- [#3234](https://github.com/withwromo/wromo/pull/3234) [`de123b28`](https://github.com/withwromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Removed `rehype-slug` in favor of our own implementation. The behavior of the slugging should remain the same
+- [#3234](https://github.com/Wromo/wromo/pull/3234) [`de123b28`](https://github.com/Wromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Removed `rehype-slug` in favor of our own implementation. The behavior of the slugging should remain the same
 
-* [#3234](https://github.com/withwromo/wromo/pull/3234) [`de123b28`](https://github.com/withwromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Moved some type from `wromo` to `@wromojs/markdown-remark`
+* [#3234](https://github.com/Wromo/wromo/pull/3234) [`de123b28`](https://github.com/Wromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Moved some type from `wromo` to `@wromojs/markdown-remark`
 
 ## 0.9.2
 
 ### Patch Changes
 
-- [#3152](https://github.com/withwromo/wromo/pull/3152) [`9ba1f4f8`](https://github.com/withwromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix JSX expression inconsistencies within markdown files
+- [#3152](https://github.com/Wromo/wromo/pull/3152) [`9ba1f4f8`](https://github.com/Wromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix JSX expression inconsistencies within markdown files
 
 ## 0.9.1
 
 ### Patch Changes
 
-- [#3108](https://github.com/withwromo/wromo/pull/3108) [`ef198ff8`](https://github.com/withwromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265) Thanks [@FredKSchott](https://github.com/FredKSchott)! - shiki: Add `diff` symbol handling to disable `user-select` on `+`/`-` symbols.
+- [#3108](https://github.com/Wromo/wromo/pull/3108) [`ef198ff8`](https://github.com/Wromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265) Thanks [@FredKSchott](https://github.com/FredKSchott)! - shiki: Add `diff` symbol handling to disable `user-select` on `+`/`-` symbols.
 
 ## 0.9.0
 
 ### Minor Changes
 
-- [`53162534`](https://github.com/withwromo/wromo/commit/53162534450e160f65b95e7ef1523a106347ca28) Thanks [@FredKSchott](https://github.com/FredKSchott)! - - Removed `renderMarkdownWithFrontmatter` because it wasn't being used
+- [`53162534`](https://github.com/Wromo/wromo/commit/53162534450e160f65b95e7ef1523a106347ca28) Thanks [@FredKSchott](https://github.com/FredKSchott)! - - Removed `renderMarkdownWithFrontmatter` because it wasn't being used
   - All options of `renderMarkdown` are now required — see the exported interface `WromoMarkdownOptions`
   - New types: RemarkPlugin, RehypePlugin and ShikiConfig
 
@@ -94,111 +94,111 @@
 
 ### Patch Changes
 
-- [#2970](https://github.com/withwromo/wromo/pull/2970) [`b835e285`](https://github.com/withwromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b) Thanks [@JuanM04](https://github.com/JuanM04)! - Improved type checking
+- [#2970](https://github.com/Wromo/wromo/pull/2970) [`b835e285`](https://github.com/Wromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b) Thanks [@JuanM04](https://github.com/JuanM04)! - Improved type checking
 
 ## 0.8.1
 
 ### Patch Changes
 
-- [#2971](https://github.com/withwromo/wromo/pull/2971) [`ad3c3916`](https://github.com/withwromo/wromo/commit/ad3c391696c5b9cc350a22831717682e73e25776) Thanks [@JuanM04](https://github.com/JuanM04)! - Escape expressions when mode == 'md'
+- [#2971](https://github.com/Wromo/wromo/pull/2971) [`ad3c3916`](https://github.com/Wromo/wromo/commit/ad3c391696c5b9cc350a22831717682e73e25776) Thanks [@JuanM04](https://github.com/JuanM04)! - Escape expressions when mode == 'md'
 
 ## 0.8.0
 
 ### Minor Changes
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/withwromo/rfcs/blob/main/proposals/0019-config-finalization.md)
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/Wromo/rfcs/blob/main/proposals/0019-config-finalization.md)
 
 ## 0.7.0
 
 ### Minor Changes
 
-- [#2824](https://github.com/withwromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
+- [#2824](https://github.com/Wromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
 
 ### Patch Changes
 
-- [#2870](https://github.com/withwromo/wromo/pull/2870) [`d763ec18`](https://github.com/withwromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a shiki performance issue affecting large sites
+- [#2870](https://github.com/Wromo/wromo/pull/2870) [`d763ec18`](https://github.com/Wromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a shiki performance issue affecting large sites
 
-- Updated dependencies [[`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b)]:
+- Updated dependencies [[`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b)]:
   - @wromojs/prism@0.4.1
 
 ## 0.7.0-next.1
 
 ### Patch Changes
 
-- [#2870](https://github.com/withwromo/wromo/pull/2870) [`d763ec18`](https://github.com/withwromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a shiki performance issue affecting large sites
+- [#2870](https://github.com/Wromo/wromo/pull/2870) [`d763ec18`](https://github.com/Wromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a shiki performance issue affecting large sites
 
-- Updated dependencies [[`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b)]:
+- Updated dependencies [[`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b)]:
   - @wromojs/prism@0.4.1-next.0
 
 ## 0.7.0-next.0
 
 ### Minor Changes
 
-- [#2824](https://github.com/withwromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
+- [#2824](https://github.com/Wromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
 
 ## 0.6.4
 
 ### Patch Changes
 
-- [#2706](https://github.com/withwromo/wromo/pull/2706) [`b2c37385`](https://github.com/withwromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8) Thanks [@JuanM04](https://github.com/JuanM04)! - Changed `data-wromo-raw` to `is:raw` internally
+- [#2706](https://github.com/Wromo/wromo/pull/2706) [`b2c37385`](https://github.com/Wromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8) Thanks [@JuanM04](https://github.com/JuanM04)! - Changed `data-wromo-raw` to `is:raw` internally
 
 ## 0.6.3
 
 ### Patch Changes
 
-- [#2697](https://github.com/withwromo/wromo/pull/2697) [`91765d79`](https://github.com/withwromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve performance by optimizing calls to `getHighlighter`
+- [#2697](https://github.com/Wromo/wromo/pull/2697) [`91765d79`](https://github.com/Wromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve performance by optimizing calls to `getHighlighter`
 
 ## 0.6.2
 
 ### Patch Changes
 
-- [#2628](https://github.com/withwromo/wromo/pull/2628) [`9b7e2ab2`](https://github.com/withwromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed shiki to work with `{ "type": "module" }`
+- [#2628](https://github.com/Wromo/wromo/pull/2628) [`9b7e2ab2`](https://github.com/Wromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed shiki to work with `{ "type": "module" }`
 
 ## 0.6.1
 
 ### Patch Changes
 
-- [#2534](https://github.com/withwromo/wromo/pull/2534) [`cfeaa941`](https://github.com/withwromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee) Thanks [@JuanM04](https://github.com/JuanM04)! - Now you can use local plugins by passing a function instead of an `import`
+- [#2534](https://github.com/Wromo/wromo/pull/2534) [`cfeaa941`](https://github.com/Wromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee) Thanks [@JuanM04](https://github.com/JuanM04)! - Now you can use local plugins by passing a function instead of an `import`
 
-* [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
+* [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
 
-- [#2497](https://github.com/withwromo/wromo/pull/2497) [`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Add Shiki as an alternative to Prism
+- [#2497](https://github.com/Wromo/wromo/pull/2497) [`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Add Shiki as an alternative to Prism
 
-* [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added `wrap` to Shiki config
+* [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added `wrap` to Shiki config
 
-- [#2564](https://github.com/withwromo/wromo/pull/2564) [`d71c4620`](https://github.com/withwromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed curly braces inside Shiki codeblocks
+- [#2564](https://github.com/Wromo/wromo/pull/2564) [`d71c4620`](https://github.com/Wromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed curly braces inside Shiki codeblocks
 
 ## 0.6.1-next.2
 
 ### Patch Changes
 
-- [#2564](https://github.com/withwromo/wromo/pull/2564) [`d71c4620`](https://github.com/withwromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed curly braces inside Shiki codeblocks
+- [#2564](https://github.com/Wromo/wromo/pull/2564) [`d71c4620`](https://github.com/Wromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed curly braces inside Shiki codeblocks
 
 ## 0.6.1-next.1
 
 ### Patch Changes
 
-- [#2534](https://github.com/withwromo/wromo/pull/2534) [`cfeaa941`](https://github.com/withwromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee) Thanks [@JuanM04](https://github.com/JuanM04)! - Now you can use local plugins by passing a function instead of an `import`
+- [#2534](https://github.com/Wromo/wromo/pull/2534) [`cfeaa941`](https://github.com/Wromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee) Thanks [@JuanM04](https://github.com/JuanM04)! - Now you can use local plugins by passing a function instead of an `import`
 
-* [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
+* [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
 
-- [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added `wrap` to Shiki config
+- [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added `wrap` to Shiki config
 
 ## 0.6.1-next.0
 
 ### Patch Changes
 
-- [#2497](https://github.com/withwromo/wromo/pull/2497) [`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Add Shiki as an alternative to Prism
+- [#2497](https://github.com/Wromo/wromo/pull/2497) [`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Add Shiki as an alternative to Prism
 
 ## 0.6.0
 
 ### Minor Changes
 
-- [#2202](https://github.com/withwromo/wromo/pull/2202) [`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
+- [#2202](https://github.com/Wromo/wromo/pull/2202) [`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
 
 ### Patch Changes
 
-- Updated dependencies [[`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539)]:
+- Updated dependencies [[`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539)]:
   - @wromojs/prism@0.4.0
 
 ## 0.5.0

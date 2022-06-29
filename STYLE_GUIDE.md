@@ -6,7 +6,7 @@ Welcome to the Wromo style guide. This document is meant to guide you on the cod
 - Blog post writing style
 - Discord/Twitter writing style
 
-For the RFC writing guide, check out the [RFC issue template](https://github.com/withwromo/wromo/issues/new/choose).
+For the RFC writing guide, check out the [RFC issue template](https://github.com/Wromo/wromo/issues/new/choose).
 
 ### Linting (Style Rules)
 
@@ -16,8 +16,8 @@ Anything enforced by linting and formatting is considered a **style rule.** It i
 
 These style rules are maintained in configuration files, and therefore not documented in this document. Read any of the following configuration files to learn more about the style rules that we strictly enforced across the codebase:
 
-- [ESLint](https://github.com/withwromo/wromo/blob/main/.eslintrc.cjs) (Linting)
-- [Prettier](https://github.com/withwromo/wromo/blob/main/.prettierrc.json) (Formatting)
+- [ESLint](https://github.com/Wromo/wromo/blob/main/.eslintrc.cjs) (Linting)
+- [Prettier](https://github.com/Wromo/wromo/blob/main/.prettierrc.json) (Formatting)
 
 Alternatively, don't worry too much about style rules and trust that our tools will catch these issues for you and offer inline suggestions as you work.
 

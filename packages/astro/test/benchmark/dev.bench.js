@@ -1,4 +1,4 @@
-/** @todo migrate these to use the independent docs repository at https://github.com/withwromo/docs */
+/** @todo migrate these to use the independent docs repository at https://github.com/Wromo/docs */
 
 import { performance } from 'perf_hooks';
 import { Benchmark } from './benchmark.js';

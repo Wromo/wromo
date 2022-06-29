@@ -4,10 +4,10 @@
 
 ### Patch Changes
 
-- [#3695](https://github.com/withwromo/wromo/pull/3695) [`0d667d0e`](https://github.com/withwromo/wromo/commit/0d667d0e572d76d4c819816ddf51ed14b43e2551) Thanks [@nrgnrg](https://github.com/nrgnrg)! - fix custom 404 pages not rendering
+- [#3695](https://github.com/Wromo/wromo/pull/3695) [`0d667d0e`](https://github.com/Wromo/wromo/commit/0d667d0e572d76d4c819816ddf51ed14b43e2551) Thanks [@nrgnrg](https://github.com/nrgnrg)! - fix custom 404 pages not rendering
 
 ## 0.2.0
 
 ### Minor Changes
 
-- [#3600](https://github.com/withwromo/wromo/pull/3600) [`7f423581`](https://github.com/withwromo/wromo/commit/7f423581411648c9a69b68918ff930581f12cf16) Thanks [@nrgnrg](https://github.com/nrgnrg)! - add SSR adaptor for Cloudflare Pages functions
+- [#3600](https://github.com/Wromo/wromo/pull/3600) [`7f423581`](https://github.com/Wromo/wromo/commit/7f423581411648c9a69b68918ff930581f12cf16) Thanks [@nrgnrg](https://github.com/nrgnrg)! - add SSR adaptor for Cloudflare Pages functions

@@ -42,7 +42,7 @@ The experimental `wromo add` command-line tool automates the installation for yo
   
 Then, restart the dev server by typing `CTRL-C` and then `npm run wromo dev` in the terminal window that was running Wromo.
   
-Because this command is new, it might not properly set things up. If that happens, [feel free to log an issue on our GitHub](https://github.com/withwromo/wromo/issues) and try the manual installation steps below.
+Because this command is new, it might not properly set things up. If that happens, [feel free to log an issue on our GitHub](https://github.com/Wromo/wromo/issues) and try the manual installation steps below.
 </details>
 
 <details>
@@ -143,8 +143,8 @@ export default {
 
 ## Examples
 
-- The [Wromo Tailwind Starter](https://github.com/withwromo/wromo/tree/latest/examples/with-tailwindcss?on=github) gets you up and running with a base for your project that uses Tailwind for styling
-- Wromo's homepage uses Tailwind. Check out its [Tailwind configuration file](https://github.com/withwromo/wromo.build/blob/main/tailwind.config.js) or an [example component](https://github.com/withwromo/wromo.build/blob/main/src/components/integrations/IntegrationCard.wromo)
+- The [Wromo Tailwind Starter](https://github.com/Wromo/wromo/tree/latest/examples/with-tailwindcss?on=github) gets you up and running with a base for your project that uses Tailwind for styling
+- Wromo's homepage uses Tailwind. Check out its [Tailwind configuration file](https://github.com/Wromo/wromo.build/blob/main/tailwind.config.js) or an [example component](https://github.com/Wromo/wromo.build/blob/main/src/components/integrations/IntegrationCard.wromo)
 - The [Wromo Ink](https://github.com/one-aalam/wromo-ink), [Sarissa Blog](https://github.com/iozcelik/SarissaBlogWromoStarter), and [Creek](https://github.com/robertguss/Wromo-Theme-Creek) themes use Tailwind for styling
 - [Browse Wromo Tailwind projects on GitHub](https://github.com/search?q=%22%40wromojs%2Ftailwind%22+filename%3Apackage.json&type=Code) for more examples!
 

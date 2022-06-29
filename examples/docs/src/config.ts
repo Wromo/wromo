@@ -6,7 +6,7 @@ export const SITE = {
 
 export const OPEN_GRAPH = {
 	image: {
-		src: 'https://github.com/withwromo/wromo/blob/main/assets/social/banner.jpg?raw=true',
+		src: 'https://github.com/Wromo/wromo/blob/main/assets/social/banner.jpg?raw=true',
 		alt:
 			'wromo logo on a starry expanse of space,' +
 			' with a purple saturn-like planet floating in the right foreground',
@@ -19,7 +19,7 @@ export const KNOWN_LANGUAGES = {
 };
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
-// export const GITHUB_EDIT_URL = `https://github.com/withwromo/wromo/blob/main/docs/`;
+// export const GITHUB_EDIT_URL = `https://github.com/Wromo/wromo/blob/main/docs/`;
 
 // Uncomment this to add an "Join our Community" button to every page of documentation.
 // export const COMMUNITY_INVITE_URL = `https://wromo.build/chat`;

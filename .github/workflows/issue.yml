@@ -16,19 +16,19 @@ jobs:
       uses: srggrs/assign-one-project-github-action@1.3.1
       if: github.event.action == 'opened' && startsWith(github.event.issue.title, '🐛 BUG:')
       with:
-        project: 'https://github.com/withwromo/wromo/projects/2'
+        project: 'https://github.com/Wromo/wromo/projects/2'
         column_name: 'Needs Triage'
 
     - name: Assign RFCs to the RFC Tracker
       uses: srggrs/assign-one-project-github-action@1.3.1
       if: github.event.action == 'opened' && startsWith(github.event.issue.title, '💡 RFC:')
       with:
-        project: 'https://github.com/withwromo/wromo/projects/3'
+        project: 'https://github.com/Wromo/wromo/projects/3'
         column_name: 'Discussing'
 
     - name: Assign RFCs to the Docs Tracker
       uses: srggrs/assign-one-project-github-action@1.3.1
       if: github.event.action == 'opened' && startsWith(github.event.issue.title, '📘 DOC:')
       with:
-        project: 'https://github.com/withwromo/wromo/projects/5'
+        project: 'https://github.com/Wromo/wromo/projects/5'
         column_name: 'TODO'

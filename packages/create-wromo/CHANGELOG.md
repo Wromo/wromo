@@ -4,79 +4,79 @@
 
 ### Patch Changes
 
-- [#3391](https://github.com/withwromo/wromo/pull/3391) [`cf8015ea`](https://github.com/withwromo/wromo/commit/cf8015eaa2b756f4ec399e8fd7071dee7dfa9ab6) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix [#3309](https://github.com/withwromo/wromo/issues/3309) default logger locale behavior.
+- [#3391](https://github.com/Wromo/wromo/pull/3391) [`cf8015ea`](https://github.com/Wromo/wromo/commit/cf8015eaa2b756f4ec399e8fd7071dee7dfa9ab6) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix [#3309](https://github.com/Wromo/wromo/issues/3309) default logger locale behavior.
 
 ## 0.12.1
 
 ### Patch Changes
 
-- [#3313](https://github.com/withwromo/wromo/pull/3313) [`1a5335ed`](https://github.com/withwromo/wromo/commit/1a5335ed9abaef397ee9543a3b4ad7a3fddcf024) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update "next steps" with more informative text on each CLI command. Oh, and gradients. A lot more gradients.
+- [#3313](https://github.com/Wromo/wromo/pull/3313) [`1a5335ed`](https://github.com/Wromo/wromo/commit/1a5335ed9abaef397ee9543a3b4ad7a3fddcf024) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update "next steps" with more informative text on each CLI command. Oh, and gradients. A lot more gradients.
 
 ## 0.12.0
 
 ### Minor Changes
 
-- [#3227](https://github.com/withwromo/wromo/pull/3227) [`c8f5fa35`](https://github.com/withwromo/wromo/commit/c8f5fa35c4c3cf08df45e6bd6cb78960782ae08b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add "initialize git repository" step to simplify our next steps suggestion. We now give you a one-liner to easily paste in your terminal and start the dev server!
+- [#3227](https://github.com/Wromo/wromo/pull/3227) [`c8f5fa35`](https://github.com/Wromo/wromo/commit/c8f5fa35c4c3cf08df45e6bd6cb78960782ae08b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add "initialize git repository" step to simplify our next steps suggestion. We now give you a one-liner to easily paste in your terminal and start the dev server!
 
 ## 0.11.0
 
 ### Minor Changes
 
-- [#3223](https://github.com/withwromo/wromo/pull/3223) [`b7cd6958`](https://github.com/withwromo/wromo/commit/b7cd69588453cf874346bf2f14c41accd183129e) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Replace the component framework selector with a new "run wromo add" option. This unlocks integrations beyond components during your create-wromo setup, including TailwindCSS and Partytown. This also replaces our previous "starter" template with a simplified "Just the basics" option.
+- [#3223](https://github.com/Wromo/wromo/pull/3223) [`b7cd6958`](https://github.com/Wromo/wromo/commit/b7cd69588453cf874346bf2f14c41accd183129e) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Replace the component framework selector with a new "run wromo add" option. This unlocks integrations beyond components during your create-wromo setup, including TailwindCSS and Partytown. This also replaces our previous "starter" template with a simplified "Just the basics" option.
 
 ## 0.10.1
 
 ### Patch Changes
 
-- [#3212](https://github.com/withwromo/wromo/pull/3212) [`00fc1326`](https://github.com/withwromo/wromo/commit/00fc1326ed526974cc4aca9faec410df91b4bcbd) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Simplify logging during welcome message and directory selection
+- [#3212](https://github.com/Wromo/wromo/pull/3212) [`00fc1326`](https://github.com/Wromo/wromo/commit/00fc1326ed526974cc4aca9faec410df91b4bcbd) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Simplify logging during welcome message and directory selection
 
 ## 0.10.0
 
 ### Minor Changes
 
-- [#3190](https://github.com/withwromo/wromo/pull/3190) [`38e5e9e9`](https://github.com/withwromo/wromo/commit/38e5e9e9825876cd0ae14a648b51bdf397e81169) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Feat: add option to install dependencies during setup. This respects the package manager used to run create-wromo (ex. "yarn create wromo" vs "pnpm create wromo@latest").
+- [#3190](https://github.com/Wromo/wromo/pull/3190) [`38e5e9e9`](https://github.com/Wromo/wromo/commit/38e5e9e9825876cd0ae14a648b51bdf397e81169) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Feat: add option to install dependencies during setup. This respects the package manager used to run create-wromo (ex. "yarn create wromo" vs "pnpm create wromo@latest").
 
 ## 0.9.0
 
 ### Minor Changes
 
-- [#3168](https://github.com/withwromo/wromo/pull/3168) [`7c49194c`](https://github.com/withwromo/wromo/commit/7c49194ca2161a09cc304ba8327533f8176ae0da) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add prompt to choose a directory, now defaulting to a separate "./my-wromo-site" instead of "." (current directory)
+- [#3168](https://github.com/Wromo/wromo/pull/3168) [`7c49194c`](https://github.com/Wromo/wromo/commit/7c49194ca2161a09cc304ba8327533f8176ae0da) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add prompt to choose a directory, now defaulting to a separate "./my-wromo-site" instead of "." (current directory)
 
 ## 0.8.0
 
 ### Minor Changes
 
-- [#2843](https://github.com/withwromo/wromo/pull/2843) [`1fdb63b5`](https://github.com/withwromo/wromo/commit/1fdb63b5d000d17edca77e870ce721e616a9c64a) Thanks [@JuanM04](https://github.com/JuanM04)! - Automatically add integration `peerDependencies` to scaffolded `package.json` files
+- [#2843](https://github.com/Wromo/wromo/pull/2843) [`1fdb63b5`](https://github.com/Wromo/wromo/commit/1fdb63b5d000d17edca77e870ce721e616a9c64a) Thanks [@JuanM04](https://github.com/JuanM04)! - Automatically add integration `peerDependencies` to scaffolded `package.json` files
 
 ## 0.8.0-next.0
 
 ### Minor Changes
 
-- [#2843](https://github.com/withwromo/wromo/pull/2843) [`1fdb63b5`](https://github.com/withwromo/wromo/commit/1fdb63b5d000d17edca77e870ce721e616a9c64a) Thanks [@JuanM04](https://github.com/JuanM04)! - Automatically add integration `peerDependencies` to scaffolded `package.json` files
+- [#2843](https://github.com/Wromo/wromo/pull/2843) [`1fdb63b5`](https://github.com/Wromo/wromo/commit/1fdb63b5d000d17edca77e870ce721e616a9c64a) Thanks [@JuanM04](https://github.com/JuanM04)! - Automatically add integration `peerDependencies` to scaffolded `package.json` files
 
 ## 0.7.1
 
 ### Patch Changes
 
-- [#2429](https://github.com/withwromo/wromo/pull/2429) [`fda857eb`](https://github.com/withwromo/wromo/commit/fda857eb22508f55233e297a887b356ea7b87398) Thanks [@Mikkel-T](https://github.com/Mikkel-T)! - Added an option to create-wromo to use verbose logging which should help debug degit issues
+- [#2429](https://github.com/Wromo/wromo/pull/2429) [`fda857eb`](https://github.com/Wromo/wromo/commit/fda857eb22508f55233e297a887b356ea7b87398) Thanks [@Mikkel-T](https://github.com/Mikkel-T)! - Added an option to create-wromo to use verbose logging which should help debug degit issues
 
 ## 0.7.0
 
 ### Minor Changes
 
-- [#2202](https://github.com/withwromo/wromo/pull/2202) [`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
+- [#2202](https://github.com/Wromo/wromo/pull/2202) [`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
 
 ## 0.6.10
 
 ### Patch Changes
 
-- [#2150](https://github.com/withwromo/wromo/pull/2150) [`d5ebd9d1`](https://github.com/withwromo/wromo/commit/d5ebd9d178ed4e5d15ef43f32217c16d44f19151) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix create-wromo export map entry
+- [#2150](https://github.com/Wromo/wromo/pull/2150) [`d5ebd9d1`](https://github.com/Wromo/wromo/commit/d5ebd9d178ed4e5d15ef43f32217c16d44f19151) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix create-wromo export map entry
 
 ## 0.6.9
 
 ### Patch Changes
 
-- [#2124](https://github.com/withwromo/wromo/pull/2124) [`c0f29bcf`](https://github.com/withwromo/wromo/commit/c0f29bcf8c2b943e4a8101cae4f893b13a4b832c) Thanks [@leosvelperez](https://github.com/leosvelperez)! - Parse --renderers flag correctly when passed to the create-wromo cli
+- [#2124](https://github.com/Wromo/wromo/pull/2124) [`c0f29bcf`](https://github.com/Wromo/wromo/commit/c0f29bcf8c2b943e4a8101cae4f893b13a4b832c) Thanks [@leosvelperez](https://github.com/leosvelperez)! - Parse --renderers flag correctly when passed to the create-wromo cli
 
 ## 0.6.8
 

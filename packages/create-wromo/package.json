@@ -2,14 +2,14 @@
   "name": "create-wromo",
   "version": "0.12.2",
   "type": "module",
-  "author": "withwromo",
+  "author": "Wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git",
+    "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/create-wromo"
   },
-  "bugs": "https://github.com/withwromo/wromo/issues",
+  "bugs": "https://github.com/Wromo/wromo/issues",
   "homepage": "https://wromo.build",
   "exports": {
     ".": "./create-wromo.mjs"

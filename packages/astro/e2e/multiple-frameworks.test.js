@@ -155,7 +155,7 @@ test.describe('Multiple frameworks', () => {
 		});
 
 		// TODO: re-enable this test when #3559 is fixed
-		// https://github.com/withwromo/wromo/issues/3559
+		// https://github.com/Wromo/wromo/issues/3559
 		test.skip('Vue component', async ({ wromo, page }) => {
 			await page.goto('/');
 

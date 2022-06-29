@@ -4,19 +4,19 @@
 
 ### Patch Changes
 
-- [#2878](https://github.com/withwromo/wromo/pull/2878) [`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
+- [#2878](https://github.com/Wromo/wromo/pull/2878) [`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
 
 ## 0.4.1-next.0
 
 ### Patch Changes
 
-- [#2878](https://github.com/withwromo/wromo/pull/2878) [`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
+- [#2878](https://github.com/Wromo/wromo/pull/2878) [`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
 
 ## 0.4.0
 
 ### Minor Changes
 
-- [#2202](https://github.com/withwromo/wromo/pull/2202) [`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
+- [#2202](https://github.com/Wromo/wromo/pull/2202) [`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
 
 ## 0.3.0
 

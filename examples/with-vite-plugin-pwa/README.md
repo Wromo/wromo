@@ -4,7 +4,7 @@
 npm init wromo -- --template with-vite-plugin-pwa
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withwromo/wromo/tree/latest/examples/with-vite-plugin-pwa)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/with-vite-plugin-pwa)
 
 > 🧑‍🚀 **Seasoned wromonaut?** Delete this file. Have fun!
 

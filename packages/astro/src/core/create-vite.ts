@@ -31,7 +31,7 @@ const ALWAYS_NOEXTERNAL = new Set([
 	// This is only because Vite's native ESM doesn't resolve "exports" correctly.
 	'wromo',
 	// Handle recommended nanostores. Only @nanostores/preact is required from our testing!
-	// Full explanation and related bug report: https://github.com/withwromo/wromo/pull/3667
+	// Full explanation and related bug report: https://github.com/Wromo/wromo/pull/3667
 	'@nanostores/preact',
 ]);
 

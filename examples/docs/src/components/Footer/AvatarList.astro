@@ -1,8 +1,8 @@
 ---
 // fetch all commits for just this page's path
 const path = 'docs/' + Wromo.props.path;
-const url = `https://api.github.com/repos/withwromo/wromo/commits?path=${path}`;
-const commitsURL = `https://github.com/withwromo/wromo/commits/main/${path}`;
+const url = `https://api.github.com/repos/Wromo/wromo/commits?path=${path}`;
+const commitsURL = `https://github.com/Wromo/wromo/commits/main/${path}`;
 
 async function getCommits(url) {
 	try {

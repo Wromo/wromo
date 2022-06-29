@@ -8,7 +8,7 @@ on:
 
 jobs:
   stat:
-    if: github.repository_owner == 'withwromo'
+    if: github.repository_owner == 'Wromo'
     runs-on: ubuntu-latest
     steps:
       - name: Check out code using Git
@@ -37,7 +37,7 @@ jobs:
           branch: ${{ github.head_ref }}
 
   lockfile:
-    if: github.repository_owner == 'withwromo'
+    if: github.repository_owner == 'Wromo'
     runs-on: ubuntu-latest
     steps:
 

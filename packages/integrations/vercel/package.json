@@ -3,14 +3,14 @@
   "description": "Deploy your site to Vercel",
   "version": "0.2.3",
   "type": "module",
-  "author": "withwromo",
+  "author": "Wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git",
+    "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/integrations/vercel"
   },
-  "bugs": "https://github.com/withwromo/wromo/issues",
+  "bugs": "https://github.com/Wromo/wromo/issues",
   "homepage": "https://wromo.build",
   "exports": {
     "./edge": "./dist/edge/adapter.js",

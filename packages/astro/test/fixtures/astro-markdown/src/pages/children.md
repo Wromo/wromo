@@ -1,7 +1,7 @@
 ---
 setup: import TextBlock from '../components/TextBlock'
 ---
-{/* https://github.com/withwromo/wromo/issues/3319 */}
+{/* https://github.com/Wromo/wromo/issues/3319 */}
 
 <TextBlock title="Hello world!" noPadding>
   <ul class="not-prose">

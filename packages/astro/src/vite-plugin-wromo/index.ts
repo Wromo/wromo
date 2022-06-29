@@ -293,7 +293,7 @@ export default function wromo({ config, logging }: WromoPluginOptions): vite.Plu
 ${source}
 \`\`\``,
 					});
-					err.url = `https://github.com/withwromo/wromo/issues/new?${search.toString()}`;
+					err.url = `https://github.com/Wromo/wromo/issues/new?${search.toString()}`;
 					err.message = `Error: Uh oh, the Wromo compiler encountered an unrecoverable error!
 
     Please open

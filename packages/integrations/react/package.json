@@ -4,11 +4,11 @@
   "version": "0.2.0",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "withwromo",
+  "author": "Wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git",
+    "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/integrations/react"
   },
   "keywords": [
@@ -16,7 +16,7 @@
     "renderer",
     "react"
   ],
-  "bugs": "https://github.com/withwromo/wromo/issues",
+  "bugs": "https://github.com/Wromo/wromo/issues",
   "homepage": "https://wromo.build",
   "exports": {
     ".": "./dist/index.js",

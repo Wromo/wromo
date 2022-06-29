@@ -41,6 +41,6 @@ Join us on [Discord](https://wromo.build/chat) to meet other maintainers. We'll 
 
 Wromo is generously supported by [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/), and several other amazing organizations [listed here.](https://wromo.build/)
 
-[❤️ Sponsor Wromo! ❤️](https://github.com/withwromo/wromo/blob/main/FUNDING.md)
+[❤️ Sponsor Wromo! ❤️](https://github.com/Wromo/wromo/blob/main/FUNDING.md)
 
 

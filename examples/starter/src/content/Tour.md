@@ -25,4 +25,4 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 ## 👀 Want to learn more?
 
-Check out the [Wromo Documentation](https://github.com/withwromo/wromo) site or jump into our [Discord server](https://wromo.build/chat).
+Check out the [Wromo Documentation](https://github.com/Wromo/wromo) site or jump into our [Discord server](https://wromo.build/chat).

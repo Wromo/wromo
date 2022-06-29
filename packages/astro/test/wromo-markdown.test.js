@@ -93,7 +93,7 @@ describe('Wromo Markdown', () => {
 		expect($('pre > code').text()).to.equal('<!-- HTML comments in code fence -->');
 	});
 
-	// https://github.com/withwromo/wromo/issues/3254
+	// https://github.com/Wromo/wromo/issues/3254
 	it('Can handle scripts in markdown pages', async () => {
 		const html = await fixture.readFile('/script/index.html');
 		expect(html).not.to.match(new RegExp('/src/scripts/test.js'));

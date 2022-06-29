@@ -58,4 +58,4 @@ npm init wromo my-wromo-project -- --verbose
 yarn create wromo my-wromo-project --verbose
 ```
 
-[examples]: https://github.com/withwromo/wromo/tree/main/examples
+[examples]: https://github.com/Wromo/wromo/tree/main/examples

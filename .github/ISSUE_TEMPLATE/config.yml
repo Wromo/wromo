@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📘. Documentation
-    url: https://github.com/withwromo/docs
+    url: https://github.com/Wromo/docs
     about: File an issue or make an improvement to the docs website.
   - name: 💡. Ideas for New Features, Improvements and RFCs
-    url: https://github.com/withwromo/rfcs/discussions
+    url: https://github.com/Wromo/rfcs/discussions
     about: Propose and discuss future improvements to Wromo
   - name: 👾. Chat
     url: https://wromo.build/chat

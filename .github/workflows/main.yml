@@ -16,7 +16,7 @@ concurrency:
 jobs:
   congrats:
     name: congratsbot
-    if: ${{ github.repository_owner == 'withwromo' }}
+    if: ${{ github.repository_owner == 'Wromo' }}
     runs-on: ubuntu-latest
     steps:
       - id: setup
@@ -31,7 +31,7 @@ jobs:
           # DISCORD_AVATAR: ${{ github.event.pull_request.user.avatar_url }}
         uses: Ilshidur/action-discord@0.3.2
         with:
-          args: "**Merged!** ${{ github.event.commits[0].author.name }}: [`${{ steps.setup.outputs.COMMIT_MSG }}`](<https://github.com/withwromo/wromo/commit/${{ github.event.commits[0].id }}>)"
+          args: "**Merged!** ${{ github.event.commits[0].author.name }}: [`${{ steps.setup.outputs.COMMIT_MSG }}`](<https://github.com/Wromo/wromo/commit/${{ github.event.commits[0].id }}>)"
 
   check_for_update:
     name: Check for Updates

@@ -93,12 +93,12 @@ There is no strict minimum number of contributions needed to reach this level, a
 - All privileges of the [Contributor role](#level-1---contributor), plus...
 - Invitation to the `@maintainer` role on [Discord](https://wromo.build/chat)
 - Invitation to the private `#maintainers` channel on Discord.
-- Invitation to the `withwromo` organization on GitHub.
+- Invitation to the `Wromo` organization on GitHub.
 - Invitation to the `@maintainers` team on GitHub.
 - New name color on Discord: **blue**.
 - Ability to moderate Discord to remove spam, harmful speech, etc.
 - Ability to join the `@mods` role on Discord (optional, opt-in).
-- Ability to push branches directly to the `withwromo` GitHub organization (personal forks no longer needed).
+- Ability to push branches directly to the `Wromo` GitHub organization (personal forks no longer needed).
 - Ability to review GitHub PRs.
 - Ability to merge _some_ GitHub PRs.
 - Ability to vote on _some_ initiatives (see [Voting](#voting) below).
@@ -344,7 +344,7 @@ Let me know if you’re interested in accepting this invitation. If so, we’ll 
 Best,
 ${MY_NAME}
 
-*PS: As a reminder, our Governance document describes the following privileges and responsibilities for the  **L2 - Maintainer** role: https://github.com/withwromo/wromo/blob/main/GOVERNANCE.md*
+*PS: As a reminder, our Governance document describes the following privileges and responsibilities for the  **L2 - Maintainer** role: https://github.com/Wromo/wromo/blob/main/GOVERNANCE.md*
 ```
 
 ## Voting: Core Member (L3) Nomination

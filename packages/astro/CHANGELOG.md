@@ -4,21 +4,21 @@
 
 ### Patch Changes
 
-- [#3724](https://github.com/withwromo/wromo/pull/3724) [`86635e03`](https://github.com/withwromo/wromo/commit/86635e035b209845b4e1cdf370a4c78451271b70) Thanks [@matthewp](https://github.com/matthewp)! - Fixes define:vars w/ styles used inside of components
+- [#3724](https://github.com/Wromo/wromo/pull/3724) [`86635e03`](https://github.com/Wromo/wromo/commit/86635e035b209845b4e1cdf370a4c78451271b70) Thanks [@matthewp](https://github.com/matthewp)! - Fixes define:vars w/ styles used inside of components
 
 ## 1.0.0-beta.56
 
 ### Patch Changes
 
-- [#3705](https://github.com/withwromo/wromo/pull/3705) [`b5e3403f`](https://github.com/withwromo/wromo/commit/b5e3403fa151710be4837f6ad265d836adb08025) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build some times breaking in large sites
+- [#3705](https://github.com/Wromo/wromo/pull/3705) [`b5e3403f`](https://github.com/Wromo/wromo/commit/b5e3403fa151710be4837f6ad265d836adb08025) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build some times breaking in large sites
 
-* [#3702](https://github.com/withwromo/wromo/pull/3702) [`b11e3b38`](https://github.com/withwromo/wromo/commit/b11e3b38ebb59ceec3479cbf580276d3b3bd657c) Thanks [@matthewp](https://github.com/matthewp)! - Ensure import.meta.env.SSR is true in SSR mode
+* [#3702](https://github.com/Wromo/wromo/pull/3702) [`b11e3b38`](https://github.com/Wromo/wromo/commit/b11e3b38ebb59ceec3479cbf580276d3b3bd657c) Thanks [@matthewp](https://github.com/matthewp)! - Ensure import.meta.env.SSR is true in SSR mode
 
 ## 1.0.0-beta.55
 
 ### Patch Changes
 
-- [#3696](https://github.com/withwromo/wromo/pull/3696) [`3daaf510`](https://github.com/withwromo/wromo/commit/3daaf510ea767fba47ef52d2253b6221967f3b53) Thanks [@matthewp](https://github.com/matthewp)! - Support for streaming responses
+- [#3696](https://github.com/Wromo/wromo/pull/3696) [`3daaf510`](https://github.com/Wromo/wromo/commit/3daaf510ea767fba47ef52d2253b6221967f3b53) Thanks [@matthewp](https://github.com/matthewp)! - Support for streaming responses
 
   Wromo supports streaming in its templates. Any time Wromo encounters an async boundary it will stream out HTML that occurs before it. For example:
 
@@ -55,19 +55,19 @@
 
   Which will stream out `<li>`s one at a time, waiting a second between each.
 
-* [#3700](https://github.com/withwromo/wromo/pull/3700) [`47c81eff`](https://github.com/withwromo/wromo/commit/47c81effa69fb5d7f1e576f88c27d5071f1888e3) Thanks [@matthewp](https://github.com/matthewp)! - Make Wromo.redirect use a 302 status code
+* [#3700](https://github.com/Wromo/wromo/pull/3700) [`47c81eff`](https://github.com/Wromo/wromo/commit/47c81effa69fb5d7f1e576f88c27d5071f1888e3) Thanks [@matthewp](https://github.com/matthewp)! - Make Wromo.redirect use a 302 status code
 
 ## 1.0.0-beta.54
 
 ### Patch Changes
 
-- [#3652](https://github.com/withwromo/wromo/pull/3652) [`7373d61c`](https://github.com/withwromo/wromo/commit/7373d61cdcaedd64bf5fd60521b157cfa4343558) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add renderer support for passing named slots to framework components.
+- [#3652](https://github.com/Wromo/wromo/pull/3652) [`7373d61c`](https://github.com/Wromo/wromo/commit/7373d61cdcaedd64bf5fd60521b157cfa4343558) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add renderer support for passing named slots to framework components.
 
   **BREAKING**: integrations using the `addRenderer()` API are now passed all named slots via `Record<string, string>` rather than `string`. Previously only the default slot was passed.
 
-* [#3649](https://github.com/withwromo/wromo/pull/3649) [`446f8c4f`](https://github.com/withwromo/wromo/commit/446f8c4f13de04324697e958af027ac8943a039b) Thanks [@dc7290](https://github.com/dc7290)! - Added test for dir parameter in wromo:build:done
+* [#3649](https://github.com/Wromo/wromo/pull/3649) [`446f8c4f`](https://github.com/Wromo/wromo/commit/446f8c4f13de04324697e958af027ac8943a039b) Thanks [@dc7290](https://github.com/dc7290)! - Added test for dir parameter in wromo:build:done
 
-- [#3679](https://github.com/withwromo/wromo/pull/3679) [`fa7ed3f3`](https://github.com/withwromo/wromo/commit/fa7ed3f3a9ce89c1c46e637b584271a6e199d211) Thanks [@matthewp](https://github.com/matthewp)! - Moves head injection to happen during rendering
+- [#3679](https://github.com/Wromo/wromo/pull/3679) [`fa7ed3f3`](https://github.com/Wromo/wromo/commit/fa7ed3f3a9ce89c1c46e637b584271a6e199d211) Thanks [@matthewp](https://github.com/matthewp)! - Moves head injection to happen during rendering
 
   This change makes it so that head injection; to insert component stylesheets, hoisted scripts, for example, to happen during rendering than as a post-rendering step.
 
@@ -79,9 +79,9 @@
 
 ### Patch Changes
 
-- [#3685](https://github.com/withwromo/wromo/pull/3685) [`3d554fdb`](https://github.com/withwromo/wromo/commit/3d554fdbfb49d85d2945b7775825f7d9ace959ce) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix PostCSS config not applied to Svelte component by default
+- [#3685](https://github.com/Wromo/wromo/pull/3685) [`3d554fdb`](https://github.com/Wromo/wromo/commit/3d554fdbfb49d85d2945b7775825f7d9ace959ce) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix PostCSS config not applied to Svelte component by default
 
-* [#3665](https://github.com/withwromo/wromo/pull/3665) [`9a813268`](https://github.com/withwromo/wromo/commit/9a813268db2e3a7ed5644739b7a12e83e5d239b2) Thanks [@matthewp](https://github.com/matthewp)! - Allow TypeScript inside script tags
+* [#3665](https://github.com/Wromo/wromo/pull/3665) [`9a813268`](https://github.com/Wromo/wromo/commit/9a813268db2e3a7ed5644739b7a12e83e5d239b2) Thanks [@matthewp](https://github.com/matthewp)! - Allow TypeScript inside script tags
 
   This makes it so that you can use TypeScript inside of script tags like so:
 
@@ -101,19 +101,19 @@
 
   Note that the the VSCode extension does not currently support this, however.
 
-- [#3633](https://github.com/withwromo/wromo/pull/3633) [`921d9a27`](https://github.com/withwromo/wromo/commit/921d9a27e243c27e40e429a0a5c7d562d7b9633f) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug with `wromo add react` adding a too-complex semver to your package.json
+- [#3633](https://github.com/Wromo/wromo/pull/3633) [`921d9a27`](https://github.com/Wromo/wromo/commit/921d9a27e243c27e40e429a0a5c7d562d7b9633f) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug with `wromo add react` adding a too-complex semver to your package.json
 
-* [#3676](https://github.com/withwromo/wromo/pull/3676) [`85c33751`](https://github.com/withwromo/wromo/commit/85c33751c20002e29bd646325a6e39f83cbb1f4d) Thanks [@matthewp](https://github.com/matthewp)! - Allow specifying entryFileNames for client JS
+* [#3676](https://github.com/Wromo/wromo/pull/3676) [`85c33751`](https://github.com/Wromo/wromo/commit/85c33751c20002e29bd646325a6e39f83cbb1f4d) Thanks [@matthewp](https://github.com/matthewp)! - Allow specifying entryFileNames for client JS
 
 ## 1.0.0-beta.52
 
 ### Patch Changes
 
-- [#3667](https://github.com/withwromo/wromo/pull/3667) [`df02fad1`](https://github.com/withwromo/wromo/commit/df02fad13ef7c8a8a563ee3720513d437090ee2e) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: add @nanostores/preact to ALWAYS_NOEXTERNAL list for easier onboarding
+- [#3667](https://github.com/Wromo/wromo/pull/3667) [`df02fad1`](https://github.com/Wromo/wromo/commit/df02fad13ef7c8a8a563ee3720513d437090ee2e) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: add @nanostores/preact to ALWAYS_NOEXTERNAL list for easier onboarding
 
-* [#3678](https://github.com/withwromo/wromo/pull/3678) [`89884540`](https://github.com/withwromo/wromo/commit/898845402cd82995bd4878c93d3ccfcce89ebf27) Thanks [@matthewp](https://github.com/matthewp)! - Fix regression with SSRManifest and client assets
+* [#3678](https://github.com/Wromo/wromo/pull/3678) [`89884540`](https://github.com/Wromo/wromo/commit/898845402cd82995bd4878c93d3ccfcce89ebf27) Thanks [@matthewp](https://github.com/matthewp)! - Fix regression with SSRManifest and client assets
 
-- [#3658](https://github.com/withwromo/wromo/pull/3658) [`aeab8909`](https://github.com/withwromo/wromo/commit/aeab890971e5f425f877545c674d1cb532cee754) Thanks [@matthewp](https://github.com/matthewp)! - Inlines small hoisted scripts
+- [#3658](https://github.com/Wromo/wromo/pull/3658) [`aeab8909`](https://github.com/Wromo/wromo/commit/aeab890971e5f425f877545c674d1cb532cee754) Thanks [@matthewp](https://github.com/matthewp)! - Inlines small hoisted scripts
 
   This enables a perf improvement, whereby small hoisted scripts without dependencies are inlined into the HTML, rather than loaded externally. This uses `vite.build.assetInlineLimit` to determine if the script should be inlined.
 
@@ -121,27 +121,27 @@
 
 ### Patch Changes
 
-- [#3675](https://github.com/withwromo/wromo/pull/3675) [`ef6282d5`](https://github.com/withwromo/wromo/commit/ef6282d5d99a428f7084f7174c9290cb5ad0fa31) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix `import.meta.env` also without trailing dot
+- [#3675](https://github.com/Wromo/wromo/pull/3675) [`ef6282d5`](https://github.com/Wromo/wromo/commit/ef6282d5d99a428f7084f7174c9290cb5ad0fa31) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix `import.meta.env` also without trailing dot
 
-* [#3673](https://github.com/withwromo/wromo/pull/3673) [`ba5ad785`](https://github.com/withwromo/wromo/commit/ba5ad7855c4252e10e76b41b88fd4c74b4b7295b) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix react dependencies to improve test reliability
+* [#3673](https://github.com/Wromo/wromo/pull/3673) [`ba5ad785`](https://github.com/Wromo/wromo/commit/ba5ad7855c4252e10e76b41b88fd4c74b4b7295b) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix react dependencies to improve test reliability
 
 ## 1.0.0-beta.50
 
 ### Patch Changes
 
-- [#3663](https://github.com/withwromo/wromo/pull/3663) [`c20b93c4`](https://github.com/withwromo/wromo/commit/c20b93c48448861f2b5c324d81dc30b601a0be0d) Thanks [@matthewp](https://github.com/matthewp)! - Resolve .jsx -> .tsx in hydrated components
+- [#3663](https://github.com/Wromo/wromo/pull/3663) [`c20b93c4`](https://github.com/Wromo/wromo/commit/c20b93c48448861f2b5c324d81dc30b601a0be0d) Thanks [@matthewp](https://github.com/matthewp)! - Resolve .jsx -> .tsx in hydrated components
 
 ## 1.0.0-beta.49
 
 ### Patch Changes
 
-- [#3657](https://github.com/withwromo/wromo/pull/3657) [`7d4699b8`](https://github.com/withwromo/wromo/commit/7d4699b8f99ca4835e597a28d4f85b58133ff9ce) Thanks [@leader22](https://github.com/leader22)! - Check null for props serialization
+- [#3657](https://github.com/Wromo/wromo/pull/3657) [`7d4699b8`](https://github.com/Wromo/wromo/commit/7d4699b8f99ca4835e597a28d4f85b58133ff9ce) Thanks [@leader22](https://github.com/leader22)! - Check null for props serialization
 
 ## 1.0.0-beta.48
 
 ### Patch Changes
 
-- [#3625](https://github.com/withwromo/wromo/pull/3625) [`f5afaf24`](https://github.com/withwromo/wromo/commit/f5afaf24984ee7d4d6e908a7eeed17f5ca18c61e) Thanks [@matthewp](https://github.com/matthewp)! - Significantly improved build performance
+- [#3625](https://github.com/Wromo/wromo/pull/3625) [`f5afaf24`](https://github.com/Wromo/wromo/commit/f5afaf24984ee7d4d6e908a7eeed17f5ca18c61e) Thanks [@matthewp](https://github.com/matthewp)! - Significantly improved build performance
 
   This change reflects in a significantly improved build performance, especially on larger sites.
 
@@ -149,15 +149,15 @@
 
   With one particular large site we found it to build **32%** faster.
 
-* [#3612](https://github.com/withwromo/wromo/pull/3612) [`fca58cfd`](https://github.com/withwromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: "vpath" import error when building for netlify edge
+* [#3612](https://github.com/Wromo/wromo/pull/3612) [`fca58cfd`](https://github.com/Wromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: "vpath" import error when building for netlify edge
 
-- [#3650](https://github.com/withwromo/wromo/pull/3650) [`d9f6dcf6`](https://github.com/withwromo/wromo/commit/d9f6dcf6ea05f78a33606509de0714f8b0625f96) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Properly catch falsy components
+- [#3650](https://github.com/Wromo/wromo/pull/3650) [`d9f6dcf6`](https://github.com/Wromo/wromo/commit/d9f6dcf6ea05f78a33606509de0714f8b0625f96) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Properly catch falsy components
 
-* [#3610](https://github.com/withwromo/wromo/pull/3610) [`6ab749be`](https://github.com/withwromo/wromo/commit/6ab749be5c60c4b57aae8a0ba6083d010fe3b791) Thanks [@hippotastic](https://github.com/hippotastic)! - Add component hydration in Markdown E2E tests
+* [#3610](https://github.com/Wromo/wromo/pull/3610) [`6ab749be`](https://github.com/Wromo/wromo/commit/6ab749be5c60c4b57aae8a0ba6083d010fe3b791) Thanks [@hippotastic](https://github.com/hippotastic)! - Add component hydration in Markdown E2E tests
 
-- [#3620](https://github.com/withwromo/wromo/pull/3620) [`05aa7244`](https://github.com/withwromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0) Thanks [@hippotastic](https://github.com/hippotastic)! - Remove extra newlines around Markdown components
+- [#3620](https://github.com/Wromo/wromo/pull/3620) [`05aa7244`](https://github.com/Wromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0) Thanks [@hippotastic](https://github.com/hippotastic)! - Remove extra newlines around Markdown components
 
-- Updated dependencies [[`80c71c7c`](https://github.com/withwromo/wromo/commit/80c71c7c56d15dc05ec0c5a848130aad222d7d51), [`fca58cfd`](https://github.com/withwromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7), [`9c8a7c0b`](https://github.com/withwromo/wromo/commit/9c8a7c0b09db2fb6925929d4efe01d5ececbf08e), [`9c8a7c0b`](https://github.com/withwromo/wromo/commit/9c8a7c0b09db2fb6925929d4efe01d5ececbf08e), [`48e67fe0`](https://github.com/withwromo/wromo/commit/48e67fe05398dc4b1fca12db36c1b37bb341277a), [`05aa7244`](https://github.com/withwromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0)]:
+- Updated dependencies [[`80c71c7c`](https://github.com/Wromo/wromo/commit/80c71c7c56d15dc05ec0c5a848130aad222d7d51), [`fca58cfd`](https://github.com/Wromo/wromo/commit/fca58cfd91b68501ec82350ab023170b208d8ce7), [`9c8a7c0b`](https://github.com/Wromo/wromo/commit/9c8a7c0b09db2fb6925929d4efe01d5ececbf08e), [`9c8a7c0b`](https://github.com/Wromo/wromo/commit/9c8a7c0b09db2fb6925929d4efe01d5ececbf08e), [`48e67fe0`](https://github.com/Wromo/wromo/commit/48e67fe05398dc4b1fca12db36c1b37bb341277a), [`05aa7244`](https://github.com/Wromo/wromo/commit/05aa72442cd4512b94abdb39623e8caa2c1839b0)]:
   - @wromojs/markdown-remark@0.11.3
   - @wromojs/telemetry@0.1.3
 
@@ -165,27 +165,27 @@
 
 ### Patch Changes
 
-- [#3599](https://github.com/withwromo/wromo/pull/3599) [`0ffc350c`](https://github.com/withwromo/wromo/commit/0ffc350c8d6bcf7fe4f6bde7ce1c10c014d7b4a1) Thanks [@arimgibson](https://github.com/arimgibson)! - Fix: find a hosting network differently based on Node version
+- [#3599](https://github.com/Wromo/wromo/pull/3599) [`0ffc350c`](https://github.com/Wromo/wromo/commit/0ffc350c8d6bcf7fe4f6bde7ce1c10c014d7b4a1) Thanks [@arimgibson](https://github.com/arimgibson)! - Fix: find a hosting network differently based on Node version
 
-* [#3605](https://github.com/withwromo/wromo/pull/3605) [`4916b733`](https://github.com/withwromo/wromo/commit/4916b733c2b8265ab46762bbbc85aa4171296515) Thanks [@matthewp](https://github.com/matthewp)! - Inlines hydration scripts
+* [#3605](https://github.com/Wromo/wromo/pull/3605) [`4916b733`](https://github.com/Wromo/wromo/commit/4916b733c2b8265ab46762bbbc85aa4171296515) Thanks [@matthewp](https://github.com/matthewp)! - Inlines hydration scripts
 
 ## 1.0.0-beta.46
 
 ### Patch Changes
 
-- [`d1f3406d`](https://github.com/withwromo/wromo/commit/d1f3406d85aea6e121f20d1d054140f05aea4424) - Add support for the `injectRoute` hook proposed in [RFC0023](https://github.com/withwromo/rfcs/blob/main/proposals/0023-inject-route.md). Feature documentation is available in [#704](https://github.com/withwromo/docs/pull/704)
+- [`d1f3406d`](https://github.com/Wromo/wromo/commit/d1f3406d85aea6e121f20d1d054140f05aea4424) - Add support for the `injectRoute` hook proposed in [RFC0023](https://github.com/Wromo/rfcs/blob/main/proposals/0023-inject-route.md). Feature documentation is available in [#704](https://github.com/Wromo/docs/pull/704)
 
-* [#3397](https://github.com/withwromo/wromo/pull/3397) [`48161b77`](https://github.com/withwromo/wromo/commit/48161b77caf35a9f3c285c0c7fbb9d8a937241c9) Thanks [@happycollision](https://github.com/happycollision)! - MarkdownInstance: Persist frontmatter type into the return of `.default()`
+* [#3397](https://github.com/Wromo/wromo/pull/3397) [`48161b77`](https://github.com/Wromo/wromo/commit/48161b77caf35a9f3c285c0c7fbb9d8a937241c9) Thanks [@happycollision](https://github.com/happycollision)! - MarkdownInstance: Persist frontmatter type into the return of `.default()`
 
-- [#3595](https://github.com/withwromo/wromo/pull/3595) [`330fef44`](https://github.com/withwromo/wromo/commit/330fef448e9be257bb3a740387222935e3656c8a) Thanks [@matthewp](https://github.com/matthewp)! - Handle importing multiple CSS packages in same bundle
+- [#3595](https://github.com/Wromo/wromo/pull/3595) [`330fef44`](https://github.com/Wromo/wromo/commit/330fef448e9be257bb3a740387222935e3656c8a) Thanks [@matthewp](https://github.com/matthewp)! - Handle importing multiple CSS packages in same bundle
 
 ## 1.0.0-beta.45
 
 ### Patch Changes
 
-- [#3593](https://github.com/withwromo/wromo/pull/3593) [`0e2314d8`](https://github.com/withwromo/wromo/commit/0e2314d8e5b01f7b2184a243c6d7e53e14b0cd0f) Thanks [@matthewp](https://github.com/matthewp)! - Fixes uses of inline hoisted scripts in SSR
+- [#3593](https://github.com/Wromo/wromo/pull/3593) [`0e2314d8`](https://github.com/Wromo/wromo/commit/0e2314d8e5b01f7b2184a243c6d7e53e14b0cd0f) Thanks [@matthewp](https://github.com/matthewp)! - Fixes uses of inline hoisted scripts in SSR
 
-* [#3590](https://github.com/withwromo/wromo/pull/3590) [`d46f8fb1`](https://github.com/withwromo/wromo/commit/d46f8fb14d3c702d62cc327de23562078fca0088) Thanks [@okikio](https://github.com/okikio)! - Add support for optional integrations
+* [#3590](https://github.com/Wromo/wromo/pull/3590) [`d46f8fb1`](https://github.com/Wromo/wromo/commit/d46f8fb14d3c702d62cc327de23562078fca0088) Thanks [@okikio](https://github.com/okikio)! - Add support for optional integrations
 
   By making integration optional, Wromo can now ignore null, undefined or other [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) "Integration" values instead of giving an internal error most devs can't and/or won't understand.
 
@@ -204,261 +204,261 @@
 
 ### Patch Changes
 
-- [#3568](https://github.com/withwromo/wromo/pull/3568) [`614769a3`](https://github.com/withwromo/wromo/commit/614769a39b4976dc292d1ed7fa1735811c0bdb8c) Thanks [@matthewp](https://github.com/matthewp)! - Fixes race condition causing the "self accepting" error message
+- [#3568](https://github.com/Wromo/wromo/pull/3568) [`614769a3`](https://github.com/Wromo/wromo/commit/614769a39b4976dc292d1ed7fa1735811c0bdb8c) Thanks [@matthewp](https://github.com/matthewp)! - Fixes race condition causing the "self accepting" error message
 
-* [#3557](https://github.com/withwromo/wromo/pull/3557) [`3ec41f28`](https://github.com/withwromo/wromo/commit/3ec41f284c7c6e7abfb75704ffbf19cdf3e3eaa0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve the way YAML errors are surfaced
+* [#3557](https://github.com/Wromo/wromo/pull/3557) [`3ec41f28`](https://github.com/Wromo/wromo/commit/3ec41f284c7c6e7abfb75704ffbf19cdf3e3eaa0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve the way YAML errors are surfaced
 
-* Updated dependencies [[`5c73f614`](https://github.com/withwromo/wromo/commit/5c73f614e8f579e04fe61c948b69be7bc6d81d5d)]:
+* Updated dependencies [[`5c73f614`](https://github.com/Wromo/wromo/commit/5c73f614e8f579e04fe61c948b69be7bc6d81d5d)]:
   - @wromojs/markdown-remark@0.11.2
 
 ## 1.0.0-beta.43
 
 ### Patch Changes
 
-- [#3552](https://github.com/withwromo/wromo/pull/3552) [`3eb96a7a`](https://github.com/withwromo/wromo/commit/3eb96a7ab768a807d2b665dfa692ca9d6ae18d20) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: Wromo.site should default to localhost when not provided in a project's config
+- [#3552](https://github.com/Wromo/wromo/pull/3552) [`3eb96a7a`](https://github.com/Wromo/wromo/commit/3eb96a7ab768a807d2b665dfa692ca9d6ae18d20) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: Wromo.site should default to localhost when not provided in a project's config
 
-* [#3540](https://github.com/withwromo/wromo/pull/3540) [`78164033`](https://github.com/withwromo/wromo/commit/78164033060d22d45ef89f9d8b87b649aa350e66) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: showing a more helpful error message when an import in an Wromo component could not be resolved
+* [#3540](https://github.com/Wromo/wromo/pull/3540) [`78164033`](https://github.com/Wromo/wromo/commit/78164033060d22d45ef89f9d8b87b649aa350e66) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix: showing a more helpful error message when an import in an Wromo component could not be resolved
 
-- [#3547](https://github.com/withwromo/wromo/pull/3547) [`a83d5817`](https://github.com/withwromo/wromo/commit/a83d5817141081ac28f84a436c177af63decd831) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: show "unable to find network to expose" with local network log when using --host without suitable networks
+- [#3547](https://github.com/Wromo/wromo/pull/3547) [`a83d5817`](https://github.com/Wromo/wromo/commit/a83d5817141081ac28f84a436c177af63decd831) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: show "unable to find network to expose" with local network log when using --host without suitable networks
 
-- Updated dependencies [[`76fb01cf`](https://github.com/withwromo/wromo/commit/76fb01cff1002f2a37e93869378802156c4eca7c), [`c549f161`](https://github.com/withwromo/wromo/commit/c549f161cadd76a666672556f2c2d63b5f97f00d)]:
+- Updated dependencies [[`76fb01cf`](https://github.com/Wromo/wromo/commit/76fb01cff1002f2a37e93869378802156c4eca7c), [`c549f161`](https://github.com/Wromo/wromo/commit/c549f161cadd76a666672556f2c2d63b5f97f00d)]:
   - @wromojs/markdown-remark@0.11.1
 
 ## 1.0.0-beta.42
 
 ### Patch Changes
 
-- [#3537](https://github.com/withwromo/wromo/pull/3537) [`51c60de7`](https://github.com/withwromo/wromo/commit/51c60de76cf8dd8b589cb7ae61d43159a83ef03d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes imported CSS packages in frontmatter
+- [#3537](https://github.com/Wromo/wromo/pull/3537) [`51c60de7`](https://github.com/Wromo/wromo/commit/51c60de76cf8dd8b589cb7ae61d43159a83ef03d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes imported CSS packages in frontmatter
 
-* [#3492](https://github.com/withwromo/wromo/pull/3492) [`a87ce441`](https://github.com/withwromo/wromo/commit/a87ce4412c583bce739e18b890e92a9bdaeff59d) Thanks [@natemoo-re](https://github.com/natemoo-re)! - - Improvements to how Wromo handles style updates in HMR
+* [#3492](https://github.com/Wromo/wromo/pull/3492) [`a87ce441`](https://github.com/Wromo/wromo/commit/a87ce4412c583bce739e18b890e92a9bdaeff59d) Thanks [@natemoo-re](https://github.com/natemoo-re)! - - Improvements to how Wromo handles style updates in HMR
   - Fixes a Svelte-specific HMR bug that caused Svelte component styles to be lost once a .wromo file was hot reloaded
 
-- [#3533](https://github.com/withwromo/wromo/pull/3533) [`d7688f05`](https://github.com/withwromo/wromo/commit/d7688f05c216a706105854474ba1caa737594871) Thanks [@matthewp](https://github.com/matthewp)! - Prevent minifying server JS
+- [#3533](https://github.com/Wromo/wromo/pull/3533) [`d7688f05`](https://github.com/Wromo/wromo/commit/d7688f05c216a706105854474ba1caa737594871) Thanks [@matthewp](https://github.com/matthewp)! - Prevent minifying server JS
 
 ## 1.0.0-beta.41
 
 ### Patch Changes
 
-- [#3518](https://github.com/withwromo/wromo/pull/3518) [`df7c43df`](https://github.com/withwromo/wromo/commit/df7c43df632f276dabb9bce0ca59eb93d2ebc021) Thanks [@matthewp](https://github.com/matthewp)! - Allow importing .ts files with .js extension
+- [#3518](https://github.com/Wromo/wromo/pull/3518) [`df7c43df`](https://github.com/Wromo/wromo/commit/df7c43df632f276dabb9bce0ca59eb93d2ebc021) Thanks [@matthewp](https://github.com/matthewp)! - Allow importing .ts files with .js extension
 
-* [#3521](https://github.com/withwromo/wromo/pull/3521) [`85b90549`](https://github.com/withwromo/wromo/commit/85b905495d4bc538686109e056a821e35139c111) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix isSelfAccepting errors when hydrating JSX components
+* [#3521](https://github.com/Wromo/wromo/pull/3521) [`85b90549`](https://github.com/Wromo/wromo/commit/85b905495d4bc538686109e056a821e35139c111) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix isSelfAccepting errors when hydrating JSX components
 
-* Updated dependencies [[`6c955ca6`](https://github.com/withwromo/wromo/commit/6c955ca643a7a071609ce8a5258cc7faf5a636b2), [`30578015`](https://github.com/withwromo/wromo/commit/30578015919e019cd8dd354288a45c1fc63bd01f), [`939fe159`](https://github.com/withwromo/wromo/commit/939fe159255cecf1cab5c1b3da2670d30ac8e4a7)]:
+* Updated dependencies [[`6c955ca6`](https://github.com/Wromo/wromo/commit/6c955ca643a7a071609ce8a5258cc7faf5a636b2), [`30578015`](https://github.com/Wromo/wromo/commit/30578015919e019cd8dd354288a45c1fc63bd01f), [`939fe159`](https://github.com/Wromo/wromo/commit/939fe159255cecf1cab5c1b3da2670d30ac8e4a7)]:
   - @wromojs/markdown-remark@0.11.0
 
 ## 1.0.0-beta.40
 
 ### Patch Changes
 
-- [#3507](https://github.com/withwromo/wromo/pull/3507) [`cf2fb300`](https://github.com/withwromo/wromo/commit/cf2fb3004ecea4e0343fdf9e3e84884c5870835b) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Silence noisy build warnings about `optimizeDeps.include`
+- [#3507](https://github.com/Wromo/wromo/pull/3507) [`cf2fb300`](https://github.com/Wromo/wromo/commit/cf2fb3004ecea4e0343fdf9e3e84884c5870835b) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Silence noisy build warnings about `optimizeDeps.include`
 
-* [#3506](https://github.com/withwromo/wromo/pull/3506) [`d41540cc`](https://github.com/withwromo/wromo/commit/d41540cc772c7003a73cc5971598e5dd1255cbc9) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix issue where generated `link` tags would have an invalid closing tag
+* [#3506](https://github.com/Wromo/wromo/pull/3506) [`d41540cc`](https://github.com/Wromo/wromo/commit/d41540cc772c7003a73cc5971598e5dd1255cbc9) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix issue where generated `link` tags would have an invalid closing tag
 
-- [#3498](https://github.com/withwromo/wromo/pull/3498) [`4a23b5aa`](https://github.com/withwromo/wromo/commit/4a23b5aaedd69043635711dfdd60dd0d69dd69a8) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of import.meta.env.SITE
+- [#3498](https://github.com/Wromo/wromo/pull/3498) [`4a23b5aa`](https://github.com/Wromo/wromo/commit/4a23b5aaedd69043635711dfdd60dd0d69dd69a8) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of import.meta.env.SITE
 
-* [#3503](https://github.com/withwromo/wromo/pull/3503) [`207f58d1`](https://github.com/withwromo/wromo/commit/207f58d1715ac024cc7c81b76e26aa49fca5173f) Thanks [@williamtetlow](https://github.com/williamtetlow)! - Alias `from 'wromo'` imports to `'@wromo/types'`
+* [#3503](https://github.com/Wromo/wromo/pull/3503) [`207f58d1`](https://github.com/Wromo/wromo/commit/207f58d1715ac024cc7c81b76e26aa49fca5173f) Thanks [@williamtetlow](https://github.com/williamtetlow)! - Alias `from 'wromo'` imports to `'@wromo/types'`
   Update Deno and Netlify integrations to handle vite.resolves.alias as an array
 
 ## 1.0.0-beta.39
 
 ### Patch Changes
 
-- [#3496](https://github.com/withwromo/wromo/pull/3496) [`d588bc4a`](https://github.com/withwromo/wromo/commit/d588bc4a9cc6baccf4d63ac74f2242735494391a) Thanks [@matthewp](https://github.com/matthewp)! - Update rollup to fix default param regression
+- [#3496](https://github.com/Wromo/wromo/pull/3496) [`d588bc4a`](https://github.com/Wromo/wromo/commit/d588bc4a9cc6baccf4d63ac74f2242735494391a) Thanks [@matthewp](https://github.com/matthewp)! - Update rollup to fix default param regression
 
-* [#3464](https://github.com/withwromo/wromo/pull/3464) [`9c2ba137`](https://github.com/withwromo/wromo/commit/9c2ba13748b975fb4b15b28b1b8ddc5ece3ccbb0) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add warning on startup when `vite.server.fs.strict` is disabled
+* [#3464](https://github.com/Wromo/wromo/pull/3464) [`9c2ba137`](https://github.com/Wromo/wromo/commit/9c2ba13748b975fb4b15b28b1b8ddc5ece3ccbb0) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add warning on startup when `vite.server.fs.strict` is disabled
 
-- [#3427](https://github.com/withwromo/wromo/pull/3427) [`10b25890`](https://github.com/withwromo/wromo/commit/10b2589093f23d5f92e0509f9d3eebfaae2d46a7) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes HMR support for inline scripts in Wromo components on Linux and OSX
+- [#3427](https://github.com/Wromo/wromo/pull/3427) [`10b25890`](https://github.com/Wromo/wromo/commit/10b2589093f23d5f92e0509f9d3eebfaae2d46a7) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes HMR support for inline scripts in Wromo components on Linux and OSX
 
-* [#3505](https://github.com/withwromo/wromo/pull/3505) [`2b35650b`](https://github.com/withwromo/wromo/commit/2b35650b5dca28b5cd5dd7c9bb689d0eee6a2ddf) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix newline characters in SolidJS JSX attributes (ex: multiline CSS classes)
+* [#3505](https://github.com/Wromo/wromo/pull/3505) [`2b35650b`](https://github.com/Wromo/wromo/commit/2b35650b5dca28b5cd5dd7c9bb689d0eee6a2ddf) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix newline characters in SolidJS JSX attributes (ex: multiline CSS classes)
 
 ## 1.0.0-beta.38
 
 ### Patch Changes
 
-- [#3459](https://github.com/withwromo/wromo/pull/3459) [`efccebb9`](https://github.com/withwromo/wromo/commit/efccebb9643f927d88e6b6f592e53c7c95e7c2b6) Thanks [@matthewp](https://github.com/matthewp)! - Forces the correct mime type for CSS in HMR
+- [#3459](https://github.com/Wromo/wromo/pull/3459) [`efccebb9`](https://github.com/Wromo/wromo/commit/efccebb9643f927d88e6b6f592e53c7c95e7c2b6) Thanks [@matthewp](https://github.com/matthewp)! - Forces the correct mime type for CSS in HMR
 
-* [#3486](https://github.com/withwromo/wromo/pull/3486) [`119ecf8d`](https://github.com/withwromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix components in markdown regressions
+* [#3486](https://github.com/Wromo/wromo/pull/3486) [`119ecf8d`](https://github.com/Wromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix components in markdown regressions
 
-- [#3462](https://github.com/withwromo/wromo/pull/3462) [`d145b868`](https://github.com/withwromo/wromo/commit/d145b8689c5658671a496ffee070b428438effc3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Remove the rss() helper from getStaticPaths. Using rss() now prints an error pointing to the new @wromojs/rss documentation.
+- [#3462](https://github.com/Wromo/wromo/pull/3462) [`d145b868`](https://github.com/Wromo/wromo/commit/d145b8689c5658671a496ffee070b428438effc3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Remove the rss() helper from getStaticPaths. Using rss() now prints an error pointing to the new @wromojs/rss documentation.
 
-* [#3455](https://github.com/withwromo/wromo/pull/3455) [`e9a77d86`](https://github.com/withwromo/wromo/commit/e9a77d861907adccfa75811f9aaa555f186d78f8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Implements improved hydration event system, meaning hydration for client:only and nested frameworks should be see significant stability improvements
+* [#3455](https://github.com/Wromo/wromo/pull/3455) [`e9a77d86`](https://github.com/Wromo/wromo/commit/e9a77d861907adccfa75811f9aaa555f186d78f8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Implements improved hydration event system, meaning hydration for client:only and nested frameworks should be see significant stability improvements
 
-* Updated dependencies [[`119ecf8d`](https://github.com/withwromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6)]:
+* Updated dependencies [[`119ecf8d`](https://github.com/Wromo/wromo/commit/119ecf8d469f034eaf1b1217523954d29f492cb6)]:
   - @wromojs/markdown-remark@0.10.2
 
 ## 1.0.0-beta.37
 
 ### Patch Changes
 
-- [#3471](https://github.com/withwromo/wromo/pull/3471) [`75fa58f1`](https://github.com/withwromo/wromo/commit/75fa58f13fff27a872b7b85948d65e82d9e7a8eb) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix using Vite env var names in Markdown
+- [#3471](https://github.com/Wromo/wromo/pull/3471) [`75fa58f1`](https://github.com/Wromo/wromo/commit/75fa58f13fff27a872b7b85948d65e82d9e7a8eb) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix using Vite env var names in Markdown
 
-* [#3477](https://github.com/withwromo/wromo/pull/3477) [`429b65d6`](https://github.com/withwromo/wromo/commit/429b65d60bb64973f1e5867cc58f1fe07bada952) Thanks [@hippotastic](https://github.com/hippotastic)! - Prevent `*/` from breaking HTML comments in Markdown
+* [#3477](https://github.com/Wromo/wromo/pull/3477) [`429b65d6`](https://github.com/Wromo/wromo/commit/429b65d60bb64973f1e5867cc58f1fe07bada952) Thanks [@hippotastic](https://github.com/hippotastic)! - Prevent `*/` from breaking HTML comments in Markdown
 
 ## 1.0.0-beta.36
 
 ### Minor Changes
 
-- [#3452](https://github.com/withwromo/wromo/pull/3452) [`47d1a8d5`](https://github.com/withwromo/wromo/commit/47d1a8d59cb3d88655de3d7658026e84843cb043) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add content parsing helpers to imported markdown files. This exposes both the raw markdown content when using rawContent() and the parsed Wromo syntax when using compiledContent()
+- [#3452](https://github.com/Wromo/wromo/pull/3452) [`47d1a8d5`](https://github.com/Wromo/wromo/commit/47d1a8d59cb3d88655de3d7658026e84843cb043) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add content parsing helpers to imported markdown files. This exposes both the raw markdown content when using rawContent() and the parsed Wromo syntax when using compiledContent()
 
 ## 1.0.0-beta.35
 
 ### Patch Changes
 
-- [#3439](https://github.com/withwromo/wromo/pull/3439) [`ac3c60d4`](https://github.com/withwromo/wromo/commit/ac3c60d48d5c8bbfb783434cafa75b9ffb7c7a7b) Thanks [@matthewp](https://github.com/matthewp)! - Fixes importing npm packages within CSS
+- [#3439](https://github.com/Wromo/wromo/pull/3439) [`ac3c60d4`](https://github.com/Wromo/wromo/commit/ac3c60d48d5c8bbfb783434cafa75b9ffb7c7a7b) Thanks [@matthewp](https://github.com/matthewp)! - Fixes importing npm packages within CSS
 
   This change fixes a longstanding bug where the string `VITE_ASSET` was left in CSS when trying to import CSS packages. The fix comes thanks to an upstream Vite feature that allows us to hand off most of the CSS bundling work to Vite.
 
-* [#3438](https://github.com/withwromo/wromo/pull/3438) [`79b9ebc8`](https://github.com/withwromo/wromo/commit/79b9ebc83ab7e190bd2894338e51e7f3f41e04d2) Thanks [@userquin](https://github.com/userquin)! - Expose route dist URL on SSG
+* [#3438](https://github.com/Wromo/wromo/pull/3438) [`79b9ebc8`](https://github.com/Wromo/wromo/commit/79b9ebc83ab7e190bd2894338e51e7f3f41e04d2) Thanks [@userquin](https://github.com/userquin)! - Expose route dist URL on SSG
 
 ## 1.0.0-beta.34
 
 ### Patch Changes
 
-- [#3444](https://github.com/withwromo/wromo/pull/3444) [`51db2b9b`](https://github.com/withwromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: markdown imports failing due to internal dependency issue
+- [#3444](https://github.com/Wromo/wromo/pull/3444) [`51db2b9b`](https://github.com/Wromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: markdown imports failing due to internal dependency issue
 
-- Updated dependencies [[`51db2b9b`](https://github.com/withwromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614)]:
+- Updated dependencies [[`51db2b9b`](https://github.com/Wromo/wromo/commit/51db2b9b4efd899bdd7efc481a5f226b3b040614)]:
   - @wromojs/markdown-remark@0.10.1
 
 ## 1.0.0-beta.33
 
 ### Patch Changes
 
-- [#3426](https://github.com/withwromo/wromo/pull/3426) [`946630a1`](https://github.com/withwromo/wromo/commit/946630a112dca39d6afc32ef02edceda94a604cb) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Logs: Add "ssr.noExternal" hint for CSS loaded from npm packages
+- [#3426](https://github.com/Wromo/wromo/pull/3426) [`946630a1`](https://github.com/Wromo/wromo/commit/946630a112dca39d6afc32ef02edceda94a604cb) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Logs: Add "ssr.noExternal" hint for CSS loaded from npm packages
 
-* [#3434](https://github.com/withwromo/wromo/pull/3434) [`4e3b405e`](https://github.com/withwromo/wromo/commit/4e3b405e9eb03f7c286234a30ca45c26e3e17fcf) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Respect user's configured vite logLevel during build
+* [#3434](https://github.com/Wromo/wromo/pull/3434) [`4e3b405e`](https://github.com/Wromo/wromo/commit/4e3b405e9eb03f7c286234a30ca45c26e3e17fcf) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Respect user's configured vite logLevel during build
 
-- [#3423](https://github.com/withwromo/wromo/pull/3423) [`463a1c21`](https://github.com/withwromo/wromo/commit/463a1c214779e0558bcd99c30294e1a14a97232e) Thanks [@matthewp](https://github.com/matthewp)! - Fix relative inline scripts on Windows
+- [#3423](https://github.com/Wromo/wromo/pull/3423) [`463a1c21`](https://github.com/Wromo/wromo/commit/463a1c214779e0558bcd99c30294e1a14a97232e) Thanks [@matthewp](https://github.com/matthewp)! - Fix relative inline scripts on Windows
 
-* [#3384](https://github.com/withwromo/wromo/pull/3384) [`296fff2c`](https://github.com/withwromo/wromo/commit/296fff2cffd4632f2d2e891069f52f6859a5c076) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix long-standing bug where a `class` attribute inside of a spread prop will cause duplicate `class` attributes
+* [#3384](https://github.com/Wromo/wromo/pull/3384) [`296fff2c`](https://github.com/Wromo/wromo/commit/296fff2cffd4632f2d2e891069f52f6859a5c076) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix long-standing bug where a `class` attribute inside of a spread prop will cause duplicate `class` attributes
 
-- [#3433](https://github.com/withwromo/wromo/pull/3433) [`4ca60e93`](https://github.com/withwromo/wromo/commit/4ca60e9344f882ee1a216ec66fb409c88c740641) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix build issue where hoisted scripts would be duplicated per page
+- [#3433](https://github.com/Wromo/wromo/pull/3433) [`4ca60e93`](https://github.com/Wromo/wromo/commit/4ca60e9344f882ee1a216ec66fb409c88c740641) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix build issue where hoisted scripts would be duplicated per page
 
-* [#3422](https://github.com/withwromo/wromo/pull/3422) [`0209d627`](https://github.com/withwromo/wromo/commit/0209d6276c6ed86914b6433e223628010b6a7dfd) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates component hydration scripts to use absolute paths for script imports
+* [#3422](https://github.com/Wromo/wromo/pull/3422) [`0209d627`](https://github.com/Wromo/wromo/commit/0209d6276c6ed86914b6433e223628010b6a7dfd) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates component hydration scripts to use absolute paths for script imports
 
-- [#3410](https://github.com/withwromo/wromo/pull/3410) [`cfae9760`](https://github.com/withwromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Significantally more stable behavior for "Markdown + Components" usage, which now handles component serialization much more similarly to MDX. Also supports switching between Components and Markdown without extra newlines, removes wrapping `<p>` tags from standalone components, and improves JSX expression handling.
+- [#3410](https://github.com/Wromo/wromo/pull/3410) [`cfae9760`](https://github.com/Wromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Significantally more stable behavior for "Markdown + Components" usage, which now handles component serialization much more similarly to MDX. Also supports switching between Components and Markdown without extra newlines, removes wrapping `<p>` tags from standalone components, and improves JSX expression handling.
 
-- Updated dependencies [[`cfae9760`](https://github.com/withwromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8)]:
+- Updated dependencies [[`cfae9760`](https://github.com/Wromo/wromo/commit/cfae9760b252052b6189e96398b819a4337634a8)]:
   - @wromojs/markdown-remark@0.10.0
 
 ## 1.0.0-beta.32
 
 ### Patch Changes
 
-- [#3407](https://github.com/withwromo/wromo/pull/3407) [`63735084`](https://github.com/withwromo/wromo/commit/63735084585735009186498db95e4bb7d3d62b90) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds a check during build to make sure routing priority is always enforced in the final dist output
+- [#3407](https://github.com/Wromo/wromo/pull/3407) [`63735084`](https://github.com/Wromo/wromo/commit/63735084585735009186498db95e4bb7d3d62b90) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds a check during build to make sure routing priority is always enforced in the final dist output
 
-* [#3398](https://github.com/withwromo/wromo/pull/3398) [`fb5572be`](https://github.com/withwromo/wromo/commit/fb5572bebd211786bc8a08eb073bc08af97287bc) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix component usage in imported markdown files
+* [#3398](https://github.com/Wromo/wromo/pull/3398) [`fb5572be`](https://github.com/Wromo/wromo/commit/fb5572bebd211786bc8a08eb073bc08af97287bc) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix component usage in imported markdown files
 
-- [#3408](https://github.com/withwromo/wromo/pull/3408) [`b26d48d2`](https://github.com/withwromo/wromo/commit/b26d48d275630a0da38edcf2b6832720dc96636f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix hydration when rendering `<head>` elements inside of a component
+- [#3408](https://github.com/Wromo/wromo/pull/3408) [`b26d48d2`](https://github.com/Wromo/wromo/commit/b26d48d275630a0da38edcf2b6832720dc96636f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix hydration when rendering `<head>` elements inside of a component
 
-* [#3421](https://github.com/withwromo/wromo/pull/3421) [`63c26c1b`](https://github.com/withwromo/wromo/commit/63c26c1b24a07a313e0bcf99b35089e23f0cf7fc) Thanks [@retronav](https://github.com/retronav)! - Fix GitHub Issues issue creation link.
+* [#3421](https://github.com/Wromo/wromo/pull/3421) [`63c26c1b`](https://github.com/Wromo/wromo/commit/63c26c1b24a07a313e0bcf99b35089e23f0cf7fc) Thanks [@retronav](https://github.com/retronav)! - Fix GitHub Issues issue creation link.
 
-- [#3393](https://github.com/withwromo/wromo/pull/3393) [`d372d29e`](https://github.com/withwromo/wromo/commit/d372d29ef8f540fca077f5e1318a2bbb5e7ec360) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes a bug in the canonical URL when using `1` as a route parameter in `getStaticPaths()`
+- [#3393](https://github.com/Wromo/wromo/pull/3393) [`d372d29e`](https://github.com/Wromo/wromo/commit/d372d29ef8f540fca077f5e1318a2bbb5e7ec360) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes a bug in the canonical URL when using `1` as a route parameter in `getStaticPaths()`
 
-* [#3417](https://github.com/withwromo/wromo/pull/3417) [`4de53ecc`](https://github.com/withwromo/wromo/commit/4de53eccef346bed843b491b7ab93987d7d85655) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: support FormData object on fetch body
+* [#3417](https://github.com/Wromo/wromo/pull/3417) [`4de53ecc`](https://github.com/Wromo/wromo/commit/4de53eccef346bed843b491b7ab93987d7d85655) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: support FormData object on fetch body
 
-* Updated dependencies [[`4de53ecc`](https://github.com/withwromo/wromo/commit/4de53eccef346bed843b491b7ab93987d7d85655)]:
+* Updated dependencies [[`4de53ecc`](https://github.com/Wromo/wromo/commit/4de53eccef346bed843b491b7ab93987d7d85655)]:
   - @wromojs/webapi@0.12.0
 
 ## 1.0.0-beta.31
 
 ### Patch Changes
 
-- [#3402](https://github.com/withwromo/wromo/pull/3402) [`0c9f770e`](https://github.com/withwromo/wromo/commit/0c9f770e8ab361f11549f1e24114e557fdcca65d) Thanks [@matthewp](https://github.com/matthewp)! - Include server CSS in the SSR manifest assets
+- [#3402](https://github.com/Wromo/wromo/pull/3402) [`0c9f770e`](https://github.com/Wromo/wromo/commit/0c9f770e8ab361f11549f1e24114e557fdcca65d) Thanks [@matthewp](https://github.com/matthewp)! - Include server CSS in the SSR manifest assets
 
-* [#3406](https://github.com/withwromo/wromo/pull/3406) [`4007aebc`](https://github.com/withwromo/wromo/commit/4007aebc6aba8d732abed7c001f59e61678ea3f2) Thanks [@matthewp](https://github.com/matthewp)! - Provides a better error message when using @adobe/react-spectrum
+* [#3406](https://github.com/Wromo/wromo/pull/3406) [`4007aebc`](https://github.com/Wromo/wromo/commit/4007aebc6aba8d732abed7c001f59e61678ea3f2) Thanks [@matthewp](https://github.com/matthewp)! - Provides a better error message when using @adobe/react-spectrum
 
-- [#3385](https://github.com/withwromo/wromo/pull/3385) [`d34859d7`](https://github.com/withwromo/wromo/commit/d34859d75008812fcd101e197ce835bcc1ee2017) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Expose `file` and `url` properties when fetching `.wromo` files with `Wromo.glob()`
+- [#3385](https://github.com/Wromo/wromo/pull/3385) [`d34859d7`](https://github.com/Wromo/wromo/commit/d34859d75008812fcd101e197ce835bcc1ee2017) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Expose `file` and `url` properties when fetching `.wromo` files with `Wromo.glob()`
 
 ## 1.0.0-beta.30
 
 ### Patch Changes
 
-- [#3392](https://github.com/withwromo/wromo/pull/3392) [`2939be5f`](https://github.com/withwromo/wromo/commit/2939be5f2d95711a2a891d77824763c7dbbf10d2) Thanks [@matthewp](https://github.com/matthewp)! - Allows vite config to override options used in the build
+- [#3392](https://github.com/Wromo/wromo/pull/3392) [`2939be5f`](https://github.com/Wromo/wromo/commit/2939be5f2d95711a2a891d77824763c7dbbf10d2) Thanks [@matthewp](https://github.com/matthewp)! - Allows vite config to override options used in the build
 
-* [#3401](https://github.com/withwromo/wromo/pull/3401) [`0d3c673d`](https://github.com/withwromo/wromo/commit/0d3c673dd9d9431bf6e6a88c448e324033f7f2f7) Thanks [@tony-sull](https://github.com/tony-sull)! - Adding support for config.build.format to the dev server
+* [#3401](https://github.com/Wromo/wromo/pull/3401) [`0d3c673d`](https://github.com/Wromo/wromo/commit/0d3c673dd9d9431bf6e6a88c448e324033f7f2f7) Thanks [@tony-sull](https://github.com/tony-sull)! - Adding support for config.build.format to the dev server
 
-- [#3399](https://github.com/withwromo/wromo/pull/3399) [`1bf12260`](https://github.com/withwromo/wromo/commit/1bf12260afad57f83768d040fe3917fb214aaf5f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update "building for SSR..." log for SSG users to say "building entrypoints for prerendering..."
+- [#3399](https://github.com/Wromo/wromo/pull/3399) [`1bf12260`](https://github.com/Wromo/wromo/commit/1bf12260afad57f83768d040fe3917fb214aaf5f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update "building for SSR..." log for SSG users to say "building entrypoints for prerendering..."
 
-* [#3391](https://github.com/withwromo/wromo/pull/3391) [`cf8015ea`](https://github.com/withwromo/wromo/commit/cf8015eaa2b756f4ec399e8fd7071dee7dfa9ab6) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix [#3309](https://github.com/withwromo/wromo/issues/3309) default logger locale behavior.
+* [#3391](https://github.com/Wromo/wromo/pull/3391) [`cf8015ea`](https://github.com/Wromo/wromo/commit/cf8015eaa2b756f4ec399e8fd7071dee7dfa9ab6) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix [#3309](https://github.com/Wromo/wromo/issues/3309) default logger locale behavior.
 
 ## 1.0.0-beta.29
 
 ### Patch Changes
 
-- [#3388](https://github.com/withwromo/wromo/pull/3388) [`4d00473d`](https://github.com/withwromo/wromo/commit/4d00473dbd20e673b5c9857d500dee072bb20f99) Thanks [@matthewp](https://github.com/matthewp)! - Fixes nested style bug causing initial styles to be off
+- [#3388](https://github.com/Wromo/wromo/pull/3388) [`4d00473d`](https://github.com/Wromo/wromo/commit/4d00473dbd20e673b5c9857d500dee072bb20f99) Thanks [@matthewp](https://github.com/matthewp)! - Fixes nested style bug causing initial styles to be off
 
-* [#3379](https://github.com/withwromo/wromo/pull/3379) [`0259d765`](https://github.com/withwromo/wromo/commit/0259d7658be82a4a5e09fb703498571d958a0569) Thanks [@matthewp](https://github.com/matthewp)! - Fixes issue with loading md pages in project with a space in folder name
+* [#3379](https://github.com/Wromo/wromo/pull/3379) [`0259d765`](https://github.com/Wromo/wromo/commit/0259d7658be82a4a5e09fb703498571d958a0569) Thanks [@matthewp](https://github.com/matthewp)! - Fixes issue with loading md pages in project with a space in folder name
 
-- [#3376](https://github.com/withwromo/wromo/pull/3376) [`b1230152`](https://github.com/withwromo/wromo/commit/b1230152ff67ca9c184b24023651f4f8739097b8) Thanks [@matthewp](https://github.com/matthewp)! - Allow using aliases for hydrated scripts
+- [#3376](https://github.com/Wromo/wromo/pull/3376) [`b1230152`](https://github.com/Wromo/wromo/commit/b1230152ff67ca9c184b24023651f4f8739097b8) Thanks [@matthewp](https://github.com/matthewp)! - Allow using aliases for hydrated scripts
 
 ## 1.0.0-beta.28
 
 ### Patch Changes
 
-- [#3344](https://github.com/withwromo/wromo/pull/3344) [`46cd8b9e`](https://github.com/withwromo/wromo/commit/46cd8b9eb4c5e9b526a6cba288070630b8dcbbf5) Thanks [@matthewp](https://github.com/matthewp)! - Fix for APIRoute type
+- [#3344](https://github.com/Wromo/wromo/pull/3344) [`46cd8b9e`](https://github.com/Wromo/wromo/commit/46cd8b9eb4c5e9b526a6cba288070630b8dcbbf5) Thanks [@matthewp](https://github.com/matthewp)! - Fix for APIRoute type
 
-* [#3350](https://github.com/withwromo/wromo/pull/3350) [`e48aa2fd`](https://github.com/withwromo/wromo/commit/e48aa2fd1ee4a3637647990182e1f3aa9384e259) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve error hints for packages that should be added to `vite.ssr.noExternal`
+* [#3350](https://github.com/Wromo/wromo/pull/3350) [`e48aa2fd`](https://github.com/Wromo/wromo/commit/e48aa2fd1ee4a3637647990182e1f3aa9384e259) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve error hints for packages that should be added to `vite.ssr.noExternal`
 
-- [#3348](https://github.com/withwromo/wromo/pull/3348) [`43e411ee`](https://github.com/withwromo/wromo/commit/43e411eed8308015d517de9a0d1e036dc06d34a0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update default `vite.optimizeDeps.exclude` to keep `node-fetch` from being optimized
+- [#3348](https://github.com/Wromo/wromo/pull/3348) [`43e411ee`](https://github.com/Wromo/wromo/commit/43e411eed8308015d517de9a0d1e036dc06d34a0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update default `vite.optimizeDeps.exclude` to keep `node-fetch` from being optimized
 
-* [#3336](https://github.com/withwromo/wromo/pull/3336) [`ccea6a0a`](https://github.com/withwromo/wromo/commit/ccea6a0a1ae55ab057d94f60014e2183013b5f60) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of hoisted script tags
+* [#3336](https://github.com/Wromo/wromo/pull/3336) [`ccea6a0a`](https://github.com/Wromo/wromo/commit/ccea6a0a1ae55ab057d94f60014e2183013b5f60) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of hoisted script tags
 
-- [#3331](https://github.com/withwromo/wromo/pull/3331) [`e22f7364`](https://github.com/withwromo/wromo/commit/e22f7364ceb3e4b057d89bbb32111bcffb7ae967) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes an issue preventing custom 404 pages in dev
+- [#3331](https://github.com/Wromo/wromo/pull/3331) [`e22f7364`](https://github.com/Wromo/wromo/commit/e22f7364ceb3e4b057d89bbb32111bcffb7ae967) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes an issue preventing custom 404 pages in dev
 
-* [#3339](https://github.com/withwromo/wromo/pull/3339) [`3dc68e14`](https://github.com/withwromo/wromo/commit/3dc68e148e05a36694cb5759f44cc5349bd66294) Thanks [@thepassle](https://github.com/thepassle)! - fixes injectscript in ssr mode
+* [#3339](https://github.com/Wromo/wromo/pull/3339) [`3dc68e14`](https://github.com/Wromo/wromo/commit/3dc68e148e05a36694cb5759f44cc5349bd66294) Thanks [@thepassle](https://github.com/thepassle)! - fixes injectscript in ssr mode
 
-- [#3332](https://github.com/withwromo/wromo/pull/3332) [`d04928e8`](https://github.com/withwromo/wromo/commit/d04928e8f20435cf69d1c171523aa152601cfe21) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an `import from '../core/build/types';` error
+- [#3332](https://github.com/Wromo/wromo/pull/3332) [`d04928e8`](https://github.com/Wromo/wromo/commit/d04928e8f20435cf69d1c171523aa152601cfe21) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an `import from '../core/build/types';` error
 
-* [`f40705d9`](https://github.com/withwromo/wromo/commit/f40705d906951a2ac16a89290bcadd597fe4cbeb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for swallowed SolidJS errors
+* [`f40705d9`](https://github.com/Wromo/wromo/commit/f40705d906951a2ac16a89290bcadd597fe4cbeb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for swallowed SolidJS errors
 
-- [#3300](https://github.com/withwromo/wromo/pull/3300) [`b463ddb3`](https://github.com/withwromo/wromo/commit/b463ddb3ce43641536dee4413ac5bb8ebcbdf608) Thanks [@tony-sull](https://github.com/tony-sull)! - Resolve .wromo components by module ID to support the use of Wromo + framework components in an NPM package
+- [#3300](https://github.com/Wromo/wromo/pull/3300) [`b463ddb3`](https://github.com/Wromo/wromo/commit/b463ddb3ce43641536dee4413ac5bb8ebcbdf608) Thanks [@tony-sull](https://github.com/tony-sull)! - Resolve .wromo components by module ID to support the use of Wromo + framework components in an NPM package
 
-* [#3352](https://github.com/withwromo/wromo/pull/3352) [`86855061`](https://github.com/withwromo/wromo/commit/8685506174962329fb7a76367ea3cf32ea0aa48c) Thanks [@JuanM04](https://github.com/JuanM04)! - Export `ViteUserConfig` type
+* [#3352](https://github.com/Wromo/wromo/pull/3352) [`86855061`](https://github.com/Wromo/wromo/commit/8685506174962329fb7a76367ea3cf32ea0aa48c) Thanks [@JuanM04](https://github.com/JuanM04)! - Export `ViteUserConfig` type
 
-- [#3337](https://github.com/withwromo/wromo/pull/3337) [`678c2b75`](https://github.com/withwromo/wromo/commit/678c2b7523c7f10cfdf2eb5a73aa2bbb7e5cbc07) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: remove hydration failures on React v18 by exposing the "client" directive from Wromo core.
+- [#3337](https://github.com/Wromo/wromo/pull/3337) [`678c2b75`](https://github.com/Wromo/wromo/commit/678c2b7523c7f10cfdf2eb5a73aa2bbb7e5cbc07) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: remove hydration failures on React v18 by exposing the "client" directive from Wromo core.
 
 ## 1.0.0-beta.27
 
 ### Patch Changes
 
-- [#3178](https://github.com/withwromo/wromo/pull/3178) [`19e1686b`](https://github.com/withwromo/wromo/commit/19e1686b8701ea7c4f8449958911035ae29cb53a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes an issue that was breaking asset and stylesheet URLs when building for a subpath
+- [#3178](https://github.com/Wromo/wromo/pull/3178) [`19e1686b`](https://github.com/Wromo/wromo/commit/19e1686b8701ea7c4f8449958911035ae29cb53a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fixes an issue that was breaking asset and stylesheet URLs when building for a subpath
 
-* [#3299](https://github.com/withwromo/wromo/pull/3299) [`8021998b`](https://github.com/withwromo/wromo/commit/8021998bb6011e31aa736abeafa4f1cf8f5a180c) Thanks [@matthewp](https://github.com/matthewp)! - Update to telemetry to include WromoConfig keys used
+* [#3299](https://github.com/Wromo/wromo/pull/3299) [`8021998b`](https://github.com/Wromo/wromo/commit/8021998bb6011e31aa736abeafa4f1cf8f5a180c) Thanks [@matthewp](https://github.com/matthewp)! - Update to telemetry to include WromoConfig keys used
 
-* Updated dependencies [[`8021998b`](https://github.com/withwromo/wromo/commit/8021998bb6011e31aa736abeafa4f1cf8f5a180c)]:
+* Updated dependencies [[`8021998b`](https://github.com/Wromo/wromo/commit/8021998bb6011e31aa736abeafa4f1cf8f5a180c)]:
   - @wromojs/telemetry@0.1.2
 
 ## 1.0.0-beta.26
 
 ### Patch Changes
 
-- [#3289](https://github.com/withwromo/wromo/pull/3289) [`61e1a267`](https://github.com/withwromo/wromo/commit/61e1a267a8d4653287cf8bbd2cff493699ac7d7f) Thanks [@matthewp](https://github.com/matthewp)! - Implements the Wromo.response RFC
+- [#3289](https://github.com/Wromo/wromo/pull/3289) [`61e1a267`](https://github.com/Wromo/wromo/commit/61e1a267a8d4653287cf8bbd2cff493699ac7d7f) Thanks [@matthewp](https://github.com/matthewp)! - Implements the Wromo.response RFC
 
-* [#3304](https://github.com/withwromo/wromo/pull/3304) [`3d901ca5`](https://github.com/withwromo/wromo/commit/3d901ca59d152ba82fa1471c0e45c9e576f5f864) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression that prevented passing classes to islands
+* [#3304](https://github.com/Wromo/wromo/pull/3304) [`3d901ca5`](https://github.com/Wromo/wromo/commit/3d901ca59d152ba82fa1471c0e45c9e576f5f864) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression that prevented passing classes to islands
 
 ## 1.0.0-beta.25
 
 ### Patch Changes
 
-- [#3272](https://github.com/withwromo/wromo/pull/3272) [`6643a393`](https://github.com/withwromo/wromo/commit/6643a3931d45e63363599bb0cf7b2b2951266cfb) Thanks [@matthewp](https://github.com/matthewp)! - Implements the Dynamic Route API RFC
+- [#3272](https://github.com/Wromo/wromo/pull/3272) [`6643a393`](https://github.com/Wromo/wromo/commit/6643a3931d45e63363599bb0cf7b2b2951266cfb) Thanks [@matthewp](https://github.com/matthewp)! - Implements the Dynamic Route API RFC
 
 ## 1.0.0-beta.24
 
 ### Patch Changes
 
-- [#3286](https://github.com/withwromo/wromo/pull/3286) [`e5f6de4e`](https://github.com/withwromo/wromo/commit/e5f6de4edbdfe2ae2f6e975511a5a571633e2fd6) Thanks [@thepassle](https://github.com/thepassle)! - Adds pages param to the wromo:build:setup integration hook
+- [#3286](https://github.com/Wromo/wromo/pull/3286) [`e5f6de4e`](https://github.com/Wromo/wromo/commit/e5f6de4edbdfe2ae2f6e975511a5a571633e2fd6) Thanks [@thepassle](https://github.com/thepassle)! - Adds pages param to the wromo:build:setup integration hook
 
 ## 1.0.0-beta.23
 
 ### Patch Changes
 
-- [`1032e450`](https://github.com/withwromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Introduce new @wromojs/rss package for RSS feed generation! This also adds a new global env variable for your project's configured "site": import.meta.env.SITE. This is consumed by the RSS feed helper to generate the correct canonical URL.
+- [`1032e450`](https://github.com/Wromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Introduce new @wromojs/rss package for RSS feed generation! This also adds a new global env variable for your project's configured "site": import.meta.env.SITE. This is consumed by the RSS feed helper to generate the correct canonical URL.
 
-* [`1032e450`](https://github.com/withwromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Internal: removed `shorthash`
+* [`1032e450`](https://github.com/Wromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Internal: removed `shorthash`
 
-- [`1032e450`](https://github.com/withwromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Internal: replaces `serialize-javascript` with `devalue`
+- [`1032e450`](https://github.com/Wromo/wromo/commit/1032e450cc224e603e8e69ef1422de6dbf184dd2) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Internal: replaces `serialize-javascript` with `devalue`
 
-* [`82345fdd`](https://github.com/withwromo/wromo/commit/82345fdd54b7d035657c584ecfc3d98dbaecfc24) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Deprecate the markdown component in SSR.
+* [`82345fdd`](https://github.com/Wromo/wromo/commit/82345fdd54b7d035657c584ecfc3d98dbaecfc24) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Deprecate the markdown component in SSR.
 
   This was not working before, so now we make it official by throwing with a clean error message. See https://docs.wromo.build/en/guides/markdown-content/#markdown-component to learn more.
 
@@ -466,11 +466,11 @@
 
 ### Patch Changes
 
-- [#3275](https://github.com/withwromo/wromo/pull/3275) [`8f8f05c1`](https://github.com/withwromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in passing JS args to islands
+- [#3275](https://github.com/Wromo/wromo/pull/3275) [`8f8f05c1`](https://github.com/Wromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in passing JS args to islands
 
-* [#3262](https://github.com/withwromo/wromo/pull/3262) [`adada1ba`](https://github.com/withwromo/wromo/commit/adada1ba0169516495ca19107f974aa0d4cf1f49) Thanks [@thepassle](https://github.com/thepassle)! - Adds wromo:build:ssr integration hook
+* [#3262](https://github.com/Wromo/wromo/pull/3262) [`adada1ba`](https://github.com/Wromo/wromo/commit/adada1ba0169516495ca19107f974aa0d4cf1f49) Thanks [@thepassle](https://github.com/thepassle)! - Adds wromo:build:ssr integration hook
 
-* Updated dependencies [[`8f8f05c1`](https://github.com/withwromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d), [`6d5ef41b`](https://github.com/withwromo/wromo/commit/6d5ef41b1ed77ccc67f71e91adeab63a50a494a8)]:
+* Updated dependencies [[`8f8f05c1`](https://github.com/Wromo/wromo/commit/8f8f05c1b99d073a43af3020ba3922ea2d5b466d), [`6d5ef41b`](https://github.com/Wromo/wromo/commit/6d5ef41b1ed77ccc67f71e91adeab63a50a494a8)]:
   - @wromojs/markdown-remark@0.9.4
   - @wromojs/telemetry@0.1.1
 
@@ -478,13 +478,13 @@
 
 ### Patch Changes
 
-- [#3244](https://github.com/withwromo/wromo/pull/3244) [`48a35e60`](https://github.com/withwromo/wromo/commit/48a35e6042a6634c836ec333d18801e9d603b328) Thanks [@matthewp](https://github.com/matthewp)! - Consolidates hydration scripts into one
+- [#3244](https://github.com/Wromo/wromo/pull/3244) [`48a35e60`](https://github.com/Wromo/wromo/commit/48a35e6042a6634c836ec333d18801e9d603b328) Thanks [@matthewp](https://github.com/matthewp)! - Consolidates hydration scripts into one
 
-* [#3256](https://github.com/withwromo/wromo/pull/3256) [`f76038ac`](https://github.com/withwromo/wromo/commit/f76038ac7db986a13701fd316e53142b52e011c8) Thanks [@matthewp](https://github.com/matthewp)! - Adds anonymous telemetry data to the cli
+* [#3256](https://github.com/Wromo/wromo/pull/3256) [`f76038ac`](https://github.com/Wromo/wromo/commit/f76038ac7db986a13701fd316e53142b52e011c8) Thanks [@matthewp](https://github.com/matthewp)! - Adds anonymous telemetry data to the cli
 
-- [#3234](https://github.com/withwromo/wromo/pull/3234) [`de123b28`](https://github.com/withwromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Moved some type from `wromo` to `@wromojs/markdown-remark`
+- [#3234](https://github.com/Wromo/wromo/pull/3234) [`de123b28`](https://github.com/Wromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60) Thanks [@JuanM04](https://github.com/JuanM04)! - Moved some type from `wromo` to `@wromojs/markdown-remark`
 
-- Updated dependencies [[`de123b28`](https://github.com/withwromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60), [`f76038ac`](https://github.com/withwromo/wromo/commit/f76038ac7db986a13701fd316e53142b52e011c8), [`de123b28`](https://github.com/withwromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60)]:
+- Updated dependencies [[`de123b28`](https://github.com/Wromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60), [`f76038ac`](https://github.com/Wromo/wromo/commit/f76038ac7db986a13701fd316e53142b52e011c8), [`de123b28`](https://github.com/Wromo/wromo/commit/de123b28b3ff398b800cb598f20326ca85a0fb60)]:
   - @wromojs/markdown-remark@0.9.3
   - @wromojs/telemetry@0.1.0
 
@@ -492,222 +492,222 @@
 
 ### Patch Changes
 
-- [#3241](https://github.com/withwromo/wromo/pull/3241) [`d25dc4c4`](https://github.com/withwromo/wromo/commit/d25dc4c4484340a794eaac1e6d18cc5aa2071524) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix a bug in define:vars preventing variables from being included in rendered styles
+- [#3241](https://github.com/Wromo/wromo/pull/3241) [`d25dc4c4`](https://github.com/Wromo/wromo/commit/d25dc4c4484340a794eaac1e6d18cc5aa2071524) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix a bug in define:vars preventing variables from being included in rendered styles
 
 ## 1.0.0-beta.19
 
 ### Patch Changes
 
-- [#3224](https://github.com/withwromo/wromo/pull/3224) [`3d6e382b`](https://github.com/withwromo/wromo/commit/3d6e382b583646f047836b703a867c3b29ac91b2) Thanks [@JuanM04](https://github.com/JuanM04)! - Replaced deprecated String.substr with String.slice
+- [#3224](https://github.com/Wromo/wromo/pull/3224) [`3d6e382b`](https://github.com/Wromo/wromo/commit/3d6e382b583646f047836b703a867c3b29ac91b2) Thanks [@JuanM04](https://github.com/JuanM04)! - Replaced deprecated String.substr with String.slice
 
-* [#3221](https://github.com/withwromo/wromo/pull/3221) [`f23d6c52`](https://github.com/withwromo/wromo/commit/f23d6c528ed5fbb37614789a5abd480ee731cd0f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: bump Wromo core to update available starter templates. Find new "Just the Basics" option in create-wromo!
+* [#3221](https://github.com/Wromo/wromo/pull/3221) [`f23d6c52`](https://github.com/Wromo/wromo/commit/f23d6c528ed5fbb37614789a5abd480ee731cd0f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: bump Wromo core to update available starter templates. Find new "Just the Basics" option in create-wromo!
 
 ## 1.0.0-beta.18
 
 ### Patch Changes
 
-- [#3207](https://github.com/withwromo/wromo/pull/3207) [`22cb4b7b`](https://github.com/withwromo/wromo/commit/22cb4b7b320428378633a3044f07a548dbbc8dc2) Thanks [@matthewp](https://github.com/matthewp)! - Disables file watching during the build
+- [#3207](https://github.com/Wromo/wromo/pull/3207) [`22cb4b7b`](https://github.com/Wromo/wromo/commit/22cb4b7b320428378633a3044f07a548dbbc8dc2) Thanks [@matthewp](https://github.com/matthewp)! - Disables file watching during the build
 
-* [#3191](https://github.com/withwromo/wromo/pull/3191) [`205d1f07`](https://github.com/withwromo/wromo/commit/205d1f07f13ae60f21954648d530895d479e42cf) Thanks [@JuanM04](https://github.com/JuanM04)! - Added better types to importing Markdown
+* [#3191](https://github.com/Wromo/wromo/pull/3191) [`205d1f07`](https://github.com/Wromo/wromo/commit/205d1f07f13ae60f21954648d530895d479e42cf) Thanks [@JuanM04](https://github.com/JuanM04)! - Added better types to importing Markdown
 
-- [#3183](https://github.com/withwromo/wromo/pull/3183) [`7a61977d`](https://github.com/withwromo/wromo/commit/7a61977db11c4472f9210b8de22ec281870e5dc3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Support "wromo add" before installing project dependencies
+- [#3183](https://github.com/Wromo/wromo/pull/3183) [`7a61977d`](https://github.com/Wromo/wromo/commit/7a61977db11c4472f9210b8de22ec281870e5dc3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Support "wromo add" before installing project dependencies
 
-* [#3209](https://github.com/withwromo/wromo/pull/3209) [`fdd607c5`](https://github.com/withwromo/wromo/commit/fdd607c5755034edf262e7b275732519328a33b2) Thanks [@Princesseuh](https://github.com/Princesseuh)! - Add `is:raw` to WromoBuiltinAttributes
+* [#3209](https://github.com/Wromo/wromo/pull/3209) [`fdd607c5`](https://github.com/Wromo/wromo/commit/fdd607c5755034edf262e7b275732519328a33b2) Thanks [@Princesseuh](https://github.com/Princesseuh)! - Add `is:raw` to WromoBuiltinAttributes
 
-- [#3198](https://github.com/withwromo/wromo/pull/3198) [`1a86e77c`](https://github.com/withwromo/wromo/commit/1a86e77c37109f6a6006d6acb00eb52b4a54683c) Thanks [@JuanM04](https://github.com/JuanM04)! - Markdown file.url now respects `trailingSlash` and `base`
+- [#3198](https://github.com/Wromo/wromo/pull/3198) [`1a86e77c`](https://github.com/Wromo/wromo/commit/1a86e77c37109f6a6006d6acb00eb52b4a54683c) Thanks [@JuanM04](https://github.com/JuanM04)! - Markdown file.url now respects `trailingSlash` and `base`
 
-* [#3187](https://github.com/withwromo/wromo/pull/3187) [`75dab3ca`](https://github.com/withwromo/wromo/commit/75dab3ca3de33da825c2a9695c2ad46cc104b7b1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: remove online editor configs (stackblitz and code sandbox) from create-wromo output
+* [#3187](https://github.com/Wromo/wromo/pull/3187) [`75dab3ca`](https://github.com/Wromo/wromo/commit/75dab3ca3de33da825c2a9695c2ad46cc104b7b1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: remove online editor configs (stackblitz and code sandbox) from create-wromo output
 
-- [#3205](https://github.com/withwromo/wromo/pull/3205) [`e4bb2767`](https://github.com/withwromo/wromo/commit/e4bb2767d5f44b0a97bdbd1349b9f329b324b78a) Thanks [@Princesseuh](https://github.com/Princesseuh)! - Added Wromo attributes to SVG elements in JSX definition
+- [#3205](https://github.com/Wromo/wromo/pull/3205) [`e4bb2767`](https://github.com/Wromo/wromo/commit/e4bb2767d5f44b0a97bdbd1349b9f329b324b78a) Thanks [@Princesseuh](https://github.com/Princesseuh)! - Added Wromo attributes to SVG elements in JSX definition
 
-* [#3170](https://github.com/withwromo/wromo/pull/3170) [`19667c45`](https://github.com/withwromo/wromo/commit/19667c45f318ec13cdc2b51016f3fa3487b2a32d) Thanks [@matthewp](https://github.com/matthewp)! - Netlify Edge: Forward requests for static assets
+* [#3170](https://github.com/Wromo/wromo/pull/3170) [`19667c45`](https://github.com/Wromo/wromo/commit/19667c45f318ec13cdc2b51016f3fa3487b2a32d) Thanks [@matthewp](https://github.com/matthewp)! - Netlify Edge: Forward requests for static assets
 
-- [#3186](https://github.com/withwromo/wromo/pull/3186) [`2b702d6a`](https://github.com/withwromo/wromo/commit/2b702d6abaa296c0eb77d3fd1a8231a186341b1f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: wromo add generating "wromo.config.mjs" outside project root
+- [#3186](https://github.com/Wromo/wromo/pull/3186) [`2b702d6a`](https://github.com/Wromo/wromo/commit/2b702d6abaa296c0eb77d3fd1a8231a186341b1f) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: wromo add generating "wromo.config.mjs" outside project root
 
 ## 1.0.0-beta.17
 
 ### Patch Changes
 
-- [#3171](https://github.com/withwromo/wromo/pull/3171) [`908fffb5`](https://github.com/withwromo/wromo/commit/908fffb5ec2de4efb55d03a69381e3aa376e4c42) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix various edge cases in the compiler, upgrading to `@wromojs/compiler@0.14.2`. Read the [full changelog](https://github.com/withwromo/compiler/blob/main/packages/compiler/CHANGELOG.md#0142).
+- [#3171](https://github.com/Wromo/wromo/pull/3171) [`908fffb5`](https://github.com/Wromo/wromo/commit/908fffb5ec2de4efb55d03a69381e3aa376e4c42) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix various edge cases in the compiler, upgrading to `@wromojs/compiler@0.14.2`. Read the [full changelog](https://github.com/Wromo/compiler/blob/main/packages/compiler/CHANGELOG.md#0142).
 
 ## 1.0.0-beta.16
 
 ### Patch Changes
 
-- [#3156](https://github.com/withwromo/wromo/pull/3156) [`637919c8`](https://github.com/withwromo/wromo/commit/637919c8b63df1608e88d153742db098722265d8) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds subpath to assets/scripts when statically generating
+- [#3156](https://github.com/Wromo/wromo/pull/3156) [`637919c8`](https://github.com/Wromo/wromo/commit/637919c8b63df1608e88d153742db098722265d8) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds subpath to assets/scripts when statically generating
 
 ## 1.0.0-beta.15
 
 ### Patch Changes
 
-- [#3138](https://github.com/withwromo/wromo/pull/3138) [`37a7a834`](https://github.com/withwromo/wromo/commit/37a7a8347ce49cb773ed907260ffe169bd3aa15f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - General HMR Improvements, including new HMR support for framework components that are only server-side rendered (do not have a `client:*` directive)
+- [#3138](https://github.com/Wromo/wromo/pull/3138) [`37a7a834`](https://github.com/Wromo/wromo/commit/37a7a8347ce49cb773ed907260ffe169bd3aa15f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - General HMR Improvements, including new HMR support for framework components that are only server-side rendered (do not have a `client:*` directive)
 
-* [#3164](https://github.com/withwromo/wromo/pull/3164) [`e85b16e2`](https://github.com/withwromo/wromo/commit/e85b16e2b3d846333f542139c82640de19bfd2f5) Thanks [@matthewp](https://github.com/matthewp)! - Fixes lit when running in SSR
+* [#3164](https://github.com/Wromo/wromo/pull/3164) [`e85b16e2`](https://github.com/Wromo/wromo/commit/e85b16e2b3d846333f542139c82640de19bfd2f5) Thanks [@matthewp](https://github.com/matthewp)! - Fixes lit when running in SSR
 
 ## 1.0.0-beta.14
 
 ### Patch Changes
 
-- [#3152](https://github.com/withwromo/wromo/pull/3152) [`9ba1f4f8`](https://github.com/withwromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix JSX expression inconsistencies within markdown files
+- [#3152](https://github.com/Wromo/wromo/pull/3152) [`9ba1f4f8`](https://github.com/Wromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix JSX expression inconsistencies within markdown files
 
-* [#3141](https://github.com/withwromo/wromo/pull/3141) [`0247b542`](https://github.com/withwromo/wromo/commit/0247b54270e2befab91b9e65029ba929ac26381d) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Wromo internals: remove all legacy build logic from the codebase, now that the legacy build flag has been removed
+* [#3141](https://github.com/Wromo/wromo/pull/3141) [`0247b542`](https://github.com/Wromo/wromo/commit/0247b54270e2befab91b9e65029ba929ac26381d) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Wromo internals: remove all legacy build logic from the codebase, now that the legacy build flag has been removed
 
-* Updated dependencies [[`9ba1f4f8`](https://github.com/withwromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120)]:
+* Updated dependencies [[`9ba1f4f8`](https://github.com/Wromo/wromo/commit/9ba1f4f8251155b69398a8af22d6ab8587b96120)]:
   - @wromojs/markdown-remark@0.9.2
 
 ## 1.0.0-beta.13
 
 ### Patch Changes
 
-- [#3130](https://github.com/withwromo/wromo/pull/3130) [`394ab905`](https://github.com/withwromo/wromo/commit/394ab9054714586c1b5bb163f02fe17412527ebc) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates `<Code />` component to cache and reuse Shiki highlighters
+- [#3130](https://github.com/Wromo/wromo/pull/3130) [`394ab905`](https://github.com/Wromo/wromo/commit/394ab9054714586c1b5bb163f02fe17412527ebc) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates `<Code />` component to cache and reuse Shiki highlighters
 
-* [#3087](https://github.com/withwromo/wromo/pull/3087) [`e0f838ca`](https://github.com/withwromo/wromo/commit/e0f838ca393c974e80f23a07b04c3a85f8829221) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds support for numeric route parameters in getStaticPaths()
+* [#3087](https://github.com/Wromo/wromo/pull/3087) [`e0f838ca`](https://github.com/Wromo/wromo/commit/e0f838ca393c974e80f23a07b04c3a85f8829221) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds support for numeric route parameters in getStaticPaths()
 
-- [#3116](https://github.com/withwromo/wromo/pull/3116) [`44bacd20`](https://github.com/withwromo/wromo/commit/44bacd20116e69459c6cc4a8c104122a2d5adb67) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: Wromo components used in dynamically imported markdown (ex. Wromo.glob('\*.md') will now retain their CSS styles in dev and production builds
+- [#3116](https://github.com/Wromo/wromo/pull/3116) [`44bacd20`](https://github.com/Wromo/wromo/commit/44bacd20116e69459c6cc4a8c104122a2d5adb67) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: Wromo components used in dynamically imported markdown (ex. Wromo.glob('\*.md') will now retain their CSS styles in dev and production builds
 
-* [#3108](https://github.com/withwromo/wromo/pull/3108) [`ef198ff8`](https://github.com/withwromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265) Thanks [@FredKSchott](https://github.com/FredKSchott)! - shiki: Add `diff` symbol handling to disable `user-select` on `+`/`-` symbols.
+* [#3108](https://github.com/Wromo/wromo/pull/3108) [`ef198ff8`](https://github.com/Wromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265) Thanks [@FredKSchott](https://github.com/FredKSchott)! - shiki: Add `diff` symbol handling to disable `user-select` on `+`/`-` symbols.
 
-- [#3137](https://github.com/withwromo/wromo/pull/3137) [`facf8016`](https://github.com/withwromo/wromo/commit/facf8016e249058d6e5cce7a0e7ef6c42fc854ad) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: show correct stacktrace on dev server errors, instead of cryptic "package.json" error
+- [#3137](https://github.com/Wromo/wromo/pull/3137) [`facf8016`](https://github.com/Wromo/wromo/commit/facf8016e249058d6e5cce7a0e7ef6c42fc854ad) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: show correct stacktrace on dev server errors, instead of cryptic "package.json" error
 
-- Updated dependencies [[`ef198ff8`](https://github.com/withwromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265)]:
+- Updated dependencies [[`ef198ff8`](https://github.com/Wromo/wromo/commit/ef198ff8351ac8fbc868e209f9cd410dc8b6f265)]:
   - @wromojs/markdown-remark@0.9.1
 
 ## 1.0.0-beta.12
 
 ### Patch Changes
 
-- [#3113](https://github.com/withwromo/wromo/pull/3113) [`1687009f`](https://github.com/withwromo/wromo/commit/1687009f31fa23f193cbbf95fd018a51f3f3c671) Thanks [@matthewp](https://github.com/matthewp)! - Fixes client:only CSS
+- [#3113](https://github.com/Wromo/wromo/pull/3113) [`1687009f`](https://github.com/Wromo/wromo/commit/1687009f31fa23f193cbbf95fd018a51f3f3c671) Thanks [@matthewp](https://github.com/matthewp)! - Fixes client:only CSS
 
 ## 1.0.0-beta.11
 
 ### Patch Changes
 
-- [#3036](https://github.com/withwromo/wromo/pull/3036) [`4ac0d5d4`](https://github.com/withwromo/wromo/commit/4ac0d5d4e73aa41cb2269f1428c4eed5e69b5947) Thanks [@matthewp](https://github.com/matthewp)! - Support runtime markdown parsing
+- [#3036](https://github.com/Wromo/wromo/pull/3036) [`4ac0d5d4`](https://github.com/Wromo/wromo/commit/4ac0d5d4e73aa41cb2269f1428c4eed5e69b5947) Thanks [@matthewp](https://github.com/matthewp)! - Support runtime markdown parsing
 
-* [#3036](https://github.com/withwromo/wromo/pull/3036) [`4ac0d5d4`](https://github.com/withwromo/wromo/commit/4ac0d5d4e73aa41cb2269f1428c4eed5e69b5947) Thanks [@matthewp](https://github.com/matthewp)! - Fixes usage of the Markdown component in SSR
+* [#3036](https://github.com/Wromo/wromo/pull/3036) [`4ac0d5d4`](https://github.com/Wromo/wromo/commit/4ac0d5d4e73aa41cb2269f1428c4eed5e69b5947) Thanks [@matthewp](https://github.com/matthewp)! - Fixes usage of the Markdown component in SSR
 
 ## 1.0.0-beta.10
 
 ### Patch Changes
 
-- [#3095](https://github.com/withwromo/wromo/pull/3095) [`5acf77dd`](https://github.com/withwromo/wromo/commit/5acf77dd22be95e33ff838383a2c1790f484e380) Thanks [@matthewp](https://github.com/matthewp)! - Fixes rendering of "undefined" on custom element children
+- [#3095](https://github.com/Wromo/wromo/pull/3095) [`5acf77dd`](https://github.com/Wromo/wromo/commit/5acf77dd22be95e33ff838383a2c1790f484e380) Thanks [@matthewp](https://github.com/matthewp)! - Fixes rendering of "undefined" on custom element children
 
-- Updated dependencies [[`5acf77dd`](https://github.com/withwromo/wromo/commit/5acf77dd22be95e33ff838383a2c1790f484e380)]:
+- Updated dependencies [[`5acf77dd`](https://github.com/Wromo/wromo/commit/5acf77dd22be95e33ff838383a2c1790f484e380)]:
   - @wromojs/webapi@0.11.1
 
 ## 1.0.0-beta.9
 
 ### Minor Changes
 
-- [#3078](https://github.com/withwromo/wromo/pull/3078) [`d33e1778`](https://github.com/withwromo/wromo/commit/d33e17781775545f8e6a40ee7a2b36f06e9b5c4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Support the "del" API method, because "delete" is a reserved word.
+- [#3078](https://github.com/Wromo/wromo/pull/3078) [`d33e1778`](https://github.com/Wromo/wromo/commit/d33e17781775545f8e6a40ee7a2b36f06e9b5c4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Support the "del" API method, because "delete" is a reserved word.
 
-* [#3078](https://github.com/withwromo/wromo/pull/3078) [`d33e1778`](https://github.com/withwromo/wromo/commit/d33e17781775545f8e6a40ee7a2b36f06e9b5c4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add support for an "all" API method, to handle all requests
+* [#3078](https://github.com/Wromo/wromo/pull/3078) [`d33e1778`](https://github.com/Wromo/wromo/commit/d33e17781775545f8e6a40ee7a2b36f06e9b5c4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add support for an "all" API method, to handle all requests
 
 ### Patch Changes
 
-- [#3094](https://github.com/withwromo/wromo/pull/3094) [`564caf24`](https://github.com/withwromo/wromo/commit/564caf24c23a40c0fa7dc75ff3374492761d88fb) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Expose "metadata" to component integrations renderToStaticMarkup function
+- [#3094](https://github.com/Wromo/wromo/pull/3094) [`564caf24`](https://github.com/Wromo/wromo/commit/564caf24c23a40c0fa7dc75ff3374492761d88fb) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Expose "metadata" to component integrations renderToStaticMarkup function
 
-* [#3068](https://github.com/withwromo/wromo/pull/3068) [`81e210e0`](https://github.com/withwromo/wromo/commit/81e210e03c7d88c7b80b0b11a532c5b8e03cef93) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an issue around build not respecting your base config
+* [#3068](https://github.com/Wromo/wromo/pull/3068) [`81e210e0`](https://github.com/Wromo/wromo/commit/81e210e03c7d88c7b80b0b11a532c5b8e03cef93) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an issue around build not respecting your base config
 
-* Updated dependencies [[`53162534`](https://github.com/withwromo/wromo/commit/53162534450e160f65b95e7ef1523a106347ca28)]:
+* Updated dependencies [[`53162534`](https://github.com/Wromo/wromo/commit/53162534450e160f65b95e7ef1523a106347ca28)]:
   - @wromojs/markdown-remark@0.9.0
 
 ## 1.0.0-beta.8
 
 ### Patch Changes
 
-- [#3066](https://github.com/withwromo/wromo/pull/3066) [`5b3464a8`](https://github.com/withwromo/wromo/commit/5b3464a803ba2aa00a4e248dc3ebceb5924cc073) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix bug with inconsistent url search params
+- [#3066](https://github.com/Wromo/wromo/pull/3066) [`5b3464a8`](https://github.com/Wromo/wromo/commit/5b3464a803ba2aa00a4e248dc3ebceb5924cc073) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix bug with inconsistent url search params
 
-* [#2970](https://github.com/withwromo/wromo/pull/2970) [`b835e285`](https://github.com/withwromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b) Thanks [@JuanM04](https://github.com/JuanM04)! - Improved markdown config type checking
+* [#2970](https://github.com/Wromo/wromo/pull/2970) [`b835e285`](https://github.com/Wromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b) Thanks [@JuanM04](https://github.com/JuanM04)! - Improved markdown config type checking
 
-* Updated dependencies [[`b835e285`](https://github.com/withwromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b)]:
+* Updated dependencies [[`b835e285`](https://github.com/Wromo/wromo/commit/b835e285defb4f31fc5ac1039c7f607c07f3c00b)]:
   - @wromojs/markdown-remark@0.8.2
 
 ## 1.0.0-beta.7
 
 ### Patch Changes
 
-- [`815d62f1`](https://github.com/withwromo/wromo/commit/815d62f151a36fef7d09590d4962ca71bda61b32) Thanks [@FredKSchott](https://github.com/FredKSchott)! - no changes.
+- [`815d62f1`](https://github.com/Wromo/wromo/commit/815d62f151a36fef7d09590d4962ca71bda61b32) Thanks [@FredKSchott](https://github.com/FredKSchott)! - no changes.
 
 ## 1.0.0-beta.6
 
 ### Patch Changes
 
-- [#3004](https://github.com/withwromo/wromo/pull/3004) [`9724d844`](https://github.com/withwromo/wromo/commit/9724d844b32fb30c91ec3d060421bbb0cc36428a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix bug causing `wromo preview` server to close immediately
+- [#3004](https://github.com/Wromo/wromo/pull/3004) [`9724d844`](https://github.com/Wromo/wromo/commit/9724d844b32fb30c91ec3d060421bbb0cc36428a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix bug causing `wromo preview` server to close immediately
 
-* [#3028](https://github.com/withwromo/wromo/pull/3028) [`982f64f6`](https://github.com/withwromo/wromo/commit/982f64f69a82d3c5f99b326a2ddcd368435d9b4a) Thanks [@JuanM04](https://github.com/JuanM04)! - Updated esbuild
+* [#3028](https://github.com/Wromo/wromo/pull/3028) [`982f64f6`](https://github.com/Wromo/wromo/commit/982f64f69a82d3c5f99b326a2ddcd368435d9b4a) Thanks [@JuanM04](https://github.com/JuanM04)! - Updated esbuild
 
 ## 1.0.0-beta.5
 
 ### Patch Changes
 
-- [#3026](https://github.com/withwromo/wromo/pull/3026) [`4b0f27d9`](https://github.com/withwromo/wromo/commit/4b0f27d9ffa6ec90e898de504588ba92630064c0) Thanks [@matthewp](https://github.com/matthewp)! - Fix for adding set-cookie multiple times
+- [#3026](https://github.com/Wromo/wromo/pull/3026) [`4b0f27d9`](https://github.com/Wromo/wromo/commit/4b0f27d9ffa6ec90e898de504588ba92630064c0) Thanks [@matthewp](https://github.com/matthewp)! - Fix for adding set-cookie multiple times
 
-* [#3020](https://github.com/withwromo/wromo/pull/3020) [`c773dcde`](https://github.com/withwromo/wromo/commit/c773dcde317d46e3f8e68088cda580c30bc8e1da) Thanks [@tony-sull](https://github.com/tony-sull)! - Add support for advanced CSS imports with `?raw` and `?url`
+* [#3020](https://github.com/Wromo/wromo/pull/3020) [`c773dcde`](https://github.com/Wromo/wromo/commit/c773dcde317d46e3f8e68088cda580c30bc8e1da) Thanks [@tony-sull](https://github.com/tony-sull)! - Add support for advanced CSS imports with `?raw` and `?url`
 
   > ⚠️WARNING⚠️:
   > Be careful when bypassing Wromo's built-in CSS bundling! Styles won't be included in the built output - this is best used in combination with `set:html` to inline styles directly into the built HTML page.
 
-- [#3022](https://github.com/withwromo/wromo/pull/3022) [`8c04ff1f`](https://github.com/withwromo/wromo/commit/8c04ff1f0bea42d033832ce5047076e315cb38a3) Thanks [@matthewp](https://github.com/matthewp)! - Allows adapters to export default
+- [#3022](https://github.com/Wromo/wromo/pull/3022) [`8c04ff1f`](https://github.com/Wromo/wromo/commit/8c04ff1f0bea42d033832ce5047076e315cb38a3) Thanks [@matthewp](https://github.com/matthewp)! - Allows adapters to export default
 
-* [#3021](https://github.com/withwromo/wromo/pull/3021) [`7e9d82d7`](https://github.com/withwromo/wromo/commit/7e9d82d75e4b19993b4246d3546169c8476702c4) Thanks [@matthewp](https://github.com/matthewp)! - Warn when attempting to access headers in SSG mode
+* [#3021](https://github.com/Wromo/wromo/pull/3021) [`7e9d82d7`](https://github.com/Wromo/wromo/commit/7e9d82d75e4b19993b4246d3546169c8476702c4) Thanks [@matthewp](https://github.com/matthewp)! - Warn when attempting to access headers in SSG mode
 
 ## 1.0.0-beta.4
 
 ### Patch Changes
 
-- [#3001](https://github.com/withwromo/wromo/pull/3001) [`25cc9218`](https://github.com/withwromo/wromo/commit/25cc9218f8bfe0b0d1645fb869929d7fc89042c8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix relative config handling with the `--config` flag
+- [#3001](https://github.com/Wromo/wromo/pull/3001) [`25cc9218`](https://github.com/Wromo/wromo/commit/25cc9218f8bfe0b0d1645fb869929d7fc89042c8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix relative config handling with the `--config` flag
 
-* [#3008](https://github.com/withwromo/wromo/pull/3008) [`8bd49c95`](https://github.com/withwromo/wromo/commit/8bd49c95365f7bbce41e19b7e8658ad639c22f31) Thanks [@JuanM04](https://github.com/JuanM04)! - Updated integrations' `wromo:build:done` hook: now it matches the client dist when using SSR
+* [#3008](https://github.com/Wromo/wromo/pull/3008) [`8bd49c95`](https://github.com/Wromo/wromo/commit/8bd49c95365f7bbce41e19b7e8658ad639c22f31) Thanks [@JuanM04](https://github.com/JuanM04)! - Updated integrations' `wromo:build:done` hook: now it matches the client dist when using SSR
 
-- [#3011](https://github.com/withwromo/wromo/pull/3011) [`c6f8bce7`](https://github.com/withwromo/wromo/commit/c6f8bce7c35cc4fd450fe1b6cc8297a81e413b8e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes dynamic routes in the Netlify adapter
+- [#3011](https://github.com/Wromo/wromo/pull/3011) [`c6f8bce7`](https://github.com/Wromo/wromo/commit/c6f8bce7c35cc4fd450fe1b6cc8297a81e413b8e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes dynamic routes in the Netlify adapter
 
-* [#2958](https://github.com/withwromo/wromo/pull/2958) [`d0777ad3`](https://github.com/withwromo/wromo/commit/d0777ad3aff0084d7fc0e159ac32ebea062d921c) Thanks [@aFuzzyBear](https://github.com/aFuzzyBear)! - Add `wromo docs` command which opens the Wromo docs in your preferred browser.
+* [#2958](https://github.com/Wromo/wromo/pull/2958) [`d0777ad3`](https://github.com/Wromo/wromo/commit/d0777ad3aff0084d7fc0e159ac32ebea062d921c) Thanks [@aFuzzyBear](https://github.com/aFuzzyBear)! - Add `wromo docs` command which opens the Wromo docs in your preferred browser.
 
 ## 1.0.0-beta.3
 
 ### Patch Changes
 
-- [#3004](https://github.com/withwromo/wromo/pull/3004) [`9724d844`](https://github.com/withwromo/wromo/commit/9724d844b32fb30c91ec3d060421bbb0cc36428a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix bug causing `wromo preview` server to close immediately
+- [#3004](https://github.com/Wromo/wromo/pull/3004) [`9724d844`](https://github.com/Wromo/wromo/commit/9724d844b32fb30c91ec3d060421bbb0cc36428a) Thanks [@tony-sull](https://github.com/tony-sull)! - Fix bug causing `wromo preview` server to close immediately
 
-* [#3006](https://github.com/withwromo/wromo/pull/3006) [`68e1e2dd`](https://github.com/withwromo/wromo/commit/68e1e2dd31db2bdf073c30e3ff48b7f54dd61d8d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes dynamic API routes in SSR
+* [#3006](https://github.com/Wromo/wromo/pull/3006) [`68e1e2dd`](https://github.com/Wromo/wromo/commit/68e1e2dd31db2bdf073c30e3ff48b7f54dd61d8d) Thanks [@matthewp](https://github.com/matthewp)! - Fixes dynamic API routes in SSR
 
 ## 1.0.0-beta.2
 
 ### Patch Changes
 
-- [`572ca3dc`](https://github.com/withwromo/wromo/commit/572ca3dcbeb754d026ef322c5085c6d2b9054347) Thanks [@FredKSchott](https://github.com/FredKSchott)! - fix markdown issue with parsing components in setup
+- [`572ca3dc`](https://github.com/Wromo/wromo/commit/572ca3dcbeb754d026ef322c5085c6d2b9054347) Thanks [@FredKSchott](https://github.com/FredKSchott)! - fix markdown issue with parsing components in setup
 
 ## 1.0.0-beta.1
 
 ### Patch Changes
 
-- [`bc12edf0`](https://github.com/withwromo/wromo/commit/bc12edf09c9a217b02716cf9fd8a747cd5d28c95) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add missing entry to "files" field in package.json
+- [`bc12edf0`](https://github.com/Wromo/wromo/commit/bc12edf09c9a217b02716cf9fd8a747cd5d28c95) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add missing entry to "files" field in package.json
 
 ## 1.0.0-beta.0
 
 ### Major Changes
 
-- [#2979](https://github.com/withwromo/wromo/pull/2979) [`9d7a4b59`](https://github.com/withwromo/wromo/commit/9d7a4b59b53f8cb274266f5036d1cef841750252) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Welcome to the Wromo v1.0.0 Beta! Read the [official announcement](https://wromo.build/blog/wromo-1-beta-release/) for more details.
+- [#2979](https://github.com/Wromo/wromo/pull/2979) [`9d7a4b59`](https://github.com/Wromo/wromo/commit/9d7a4b59b53f8cb274266f5036d1cef841750252) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Welcome to the Wromo v1.0.0 Beta! Read the [official announcement](https://wromo.build/blog/wromo-1-beta-release/) for more details.
 
 ## 0.26.1
 
 ### Patch Changes
 
-- [#2978](https://github.com/withwromo/wromo/pull/2978) [`3f0bc5af`](https://github.com/withwromo/wromo/commit/3f0bc5af57550ee28697ba4910208276bd23fb3f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix edge case where default slots could be rendered too early for Wromo components. Slots are now only rendered on demand.
+- [#2978](https://github.com/Wromo/wromo/pull/2978) [`3f0bc5af`](https://github.com/Wromo/wromo/commit/3f0bc5af57550ee28697ba4910208276bd23fb3f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix edge case where default slots could be rendered too early for Wromo components. Slots are now only rendered on demand.
 
-* [#2973](https://github.com/withwromo/wromo/pull/2973) [`75919537`](https://github.com/withwromo/wromo/commit/75919537be17f3c11991d5bfc24a7d75b7c32e36) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates the @docs default value listed for config.publicDir and config.outputDir
+* [#2973](https://github.com/Wromo/wromo/pull/2973) [`75919537`](https://github.com/Wromo/wromo/commit/75919537be17f3c11991d5bfc24a7d75b7c32e36) Thanks [@tony-sull](https://github.com/tony-sull)! - Updates the @docs default value listed for config.publicDir and config.outputDir
 
-- [#2974](https://github.com/withwromo/wromo/pull/2974) [`82445879`](https://github.com/withwromo/wromo/commit/824458790a45e9b476e8acf6c406c49d28740dea) Thanks [@JuanM04](https://github.com/JuanM04)! - Prevent CLI from hanging
+- [#2974](https://github.com/Wromo/wromo/pull/2974) [`82445879`](https://github.com/Wromo/wromo/commit/824458790a45e9b476e8acf6c406c49d28740dea) Thanks [@JuanM04](https://github.com/JuanM04)! - Prevent CLI from hanging
 
-- Updated dependencies [[`ad3c3916`](https://github.com/withwromo/wromo/commit/ad3c391696c5b9cc350a22831717682e73e25776)]:
+- Updated dependencies [[`ad3c3916`](https://github.com/Wromo/wromo/commit/ad3c391696c5b9cc350a22831717682e73e25776)]:
   - @wromojs/markdown-remark@0.8.1
 
 ## 0.26.0
 
 ### Minor Changes
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implement RFC [#0017](https://github.com/withwromo/rfcs/blob/main/proposals/0017-markdown-content-redesign.md)
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implement RFC [#0017](https://github.com/Wromo/rfcs/blob/main/proposals/0017-markdown-content-redesign.md)
 
   - New Markdown API
   - New `Wromo.glob()` API
@@ -720,80 +720,80 @@
   + let allPosts = await Wromo.glob('./posts/*.md');
   ```
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implement [RFC0016](https://github.com/withwromo/rfcs/blob/main/proposals/0016-style-script-defaults.md) which changes the default behavior of `script`, introduces `is:inline`, and changes `<style global>` to `<style is:global>`
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implement [RFC0016](https://github.com/Wromo/rfcs/blob/main/proposals/0016-style-script-defaults.md) which changes the default behavior of `script`, introduces `is:inline`, and changes `<style global>` to `<style is:global>`
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implements the Wromo.request RFC
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Implements the Wromo.request RFC
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/withwromo/rfcs/blob/main/proposals/0019-config-finalization.md)
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/Wromo/rfcs/blob/main/proposals/0019-config-finalization.md)
 
 ### Patch Changes
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Allow components to return a Response
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Allow components to return a Response
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - `--experimental-ssr` now is only required when using a 3rd-party adapter
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - `--experimental-ssr` now is only required when using a 3rd-party adapter
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve `Wromo.slots` API to support passing arguments to function-based slots.
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve `Wromo.slots` API to support passing arguments to function-based slots.
 
   This allows for more ergonomic utility components that accept a callback function as a child.
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fixes non-GET API routes in dev with Node 14
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fixes non-GET API routes in dev with Node 14
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update CLI error format and style
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update CLI error format and style
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update `@wromojs/compiler`, fixing some bugs related to RegExp usage in frontmatter
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update `@wromojs/compiler`, fixing some bugs related to RegExp usage in frontmatter
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add a Deno adapter for SSR
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add a Deno adapter for SSR
 
-* [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix for copying public when using SSR and not client JS
+* [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix for copying public when using SSR and not client JS
 
-* Updated dependencies [[`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee)]:
+* Updated dependencies [[`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee)]:
   - @wromojs/markdown-remark@0.8.0
 
 ## 0.25.4
 
 ### Patch Changes
 
-- [#2907](https://github.com/withwromo/wromo/pull/2907) [`22b1432e`](https://github.com/withwromo/wromo/commit/22b1432e3eed6ff40a0ab383c8f1f06f0df10d62) Thanks [@delucis](https://github.com/delucis)! - Fix typing of `integrations` array in user config
+- [#2907](https://github.com/Wromo/wromo/pull/2907) [`22b1432e`](https://github.com/Wromo/wromo/commit/22b1432e3eed6ff40a0ab383c8f1f06f0df10d62) Thanks [@delucis](https://github.com/delucis)! - Fix typing of `integrations` array in user config
 
 ## 0.25.3
 
 ### Patch Changes
 
-- [#2918](https://github.com/withwromo/wromo/pull/2918) [`77354c89`](https://github.com/withwromo/wromo/commit/77354c89bd606beba71231cce6ce935905de68a7) Thanks [@matthewp](https://github.com/matthewp)! - Prevent CSS from being added to the wrong pages
+- [#2918](https://github.com/Wromo/wromo/pull/2918) [`77354c89`](https://github.com/Wromo/wromo/commit/77354c89bd606beba71231cce6ce935905de68a7) Thanks [@matthewp](https://github.com/matthewp)! - Prevent CSS from being added to the wrong pages
 
 ## 0.25.2
 
 ### Patch Changes
 
-- [#2894](https://github.com/withwromo/wromo/pull/2894) [`9d6e0b5d`](https://github.com/withwromo/wromo/commit/9d6e0b5dbac1e5c31f580c6234e977a3a3a4918f) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add the "--experimental-integrations" flag to enable 3rd-party integrations.
+- [#2894](https://github.com/Wromo/wromo/pull/2894) [`9d6e0b5d`](https://github.com/Wromo/wromo/commit/9d6e0b5dbac1e5c31f580c6234e977a3a3a4918f) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add the "--experimental-integrations" flag to enable 3rd-party integrations.
 
-* [#2893](https://github.com/withwromo/wromo/pull/2893) [`f2684512`](https://github.com/withwromo/wromo/commit/f26845126863e7566e43f118af5d4eb2d991733c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - tailwind: add a default "contents" configuration that works for most Wromo projects
+* [#2893](https://github.com/Wromo/wromo/pull/2893) [`f2684512`](https://github.com/Wromo/wromo/commit/f26845126863e7566e43f118af5d4eb2d991733c) Thanks [@FredKSchott](https://github.com/FredKSchott)! - tailwind: add a default "contents" configuration that works for most Wromo projects
 
 ## 0.25.1
 
 ### Patch Changes
 
-- [#2891](https://github.com/withwromo/wromo/pull/2891) [`a0d67b1d`](https://github.com/withwromo/wromo/commit/a0d67b1d252a7ecbebb3d39a24ec11d723f6303e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add missing `execa` dependency
+- [#2891](https://github.com/Wromo/wromo/pull/2891) [`a0d67b1d`](https://github.com/Wromo/wromo/commit/a0d67b1d252a7ecbebb3d39a24ec11d723f6303e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add missing `execa` dependency
 
 ## 0.25.0
 
 ### Minor Changes
 
-- [#2849](https://github.com/withwromo/wromo/pull/2849) [`72ef7ae6`](https://github.com/withwromo/wromo/commit/72ef7ae64a6d0fd17077bf6920ce11613116b659) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Introduce new `wromo add` command to automatically configure integrations.
+- [#2849](https://github.com/Wromo/wromo/pull/2849) [`72ef7ae6`](https://github.com/Wromo/wromo/commit/72ef7ae64a6d0fd17077bf6920ce11613116b659) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Introduce new `wromo add` command to automatically configure integrations.
 
   ```shell
   npx wromo add
   ```
 
-* [#2833](https://github.com/withwromo/wromo/pull/2833) [`79545412`](https://github.com/withwromo/wromo/commit/7954541291a3dd7adbc1d5610e0c2e615d3dde46) Thanks [@natemoo-re](https://github.com/natemoo-re)! - This PR introduces a new internal CSS parser for `@wromojs/compiler`. See [`withwromo/compiler#329`](https://github.com/withwromo/compiler/pull/329) for more details.
+* [#2833](https://github.com/Wromo/wromo/pull/2833) [`79545412`](https://github.com/Wromo/wromo/commit/7954541291a3dd7adbc1d5610e0c2e615d3dde46) Thanks [@natemoo-re](https://github.com/natemoo-re)! - This PR introduces a new internal CSS parser for `@wromojs/compiler`. See [`Wromo/compiler#329`](https://github.com/Wromo/compiler/pull/329) for more details.
 
   This fixes Wromo's support for modern CSS syntax like `@container`, `@layer`, and nesting. **Note** While Wromo now correctly parses this modern syntax, it does not automatically compile features for browser compatability purposes.
 
-- [#2824](https://github.com/withwromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
+- [#2824](https://github.com/Wromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
 
 ### Patch Changes
 
-- [#2879](https://github.com/withwromo/wromo/pull/2879) [`80034c6c`](https://github.com/withwromo/wromo/commit/80034c6cbc89761618847e6df43fd49560a05aa9) Thanks [@matthewp](https://github.com/matthewp)! - Netlify Adapter
+- [#2879](https://github.com/Wromo/wromo/pull/2879) [`80034c6c`](https://github.com/Wromo/wromo/commit/80034c6cbc89761618847e6df43fd49560a05aa9) Thanks [@matthewp](https://github.com/matthewp)! - Netlify Adapter
 
   This change adds a Netlify adapter that uses Netlify Functions. You can use it like so:
 
@@ -806,13 +806,13 @@
   });
   ```
 
-* [#2871](https://github.com/withwromo/wromo/pull/2871) [`5029382a`](https://github.com/withwromo/wromo/commit/5029382a8cab17f048372ee878d0778c89998009) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug where tailwind integration wouldn't apply to markdown pages
+* [#2871](https://github.com/Wromo/wromo/pull/2871) [`5029382a`](https://github.com/Wromo/wromo/commit/5029382a8cab17f048372ee878d0778c89998009) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug where tailwind integration wouldn't apply to markdown pages
 
-- [#2852](https://github.com/withwromo/wromo/pull/2852) [`96372e6b`](https://github.com/withwromo/wromo/commit/96372e6beb976b57a8c52fd7c65f126899325160) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix "isSelfAccepting" exception when using the new @wromojs/react integration in development
+- [#2852](https://github.com/Wromo/wromo/pull/2852) [`96372e6b`](https://github.com/Wromo/wromo/commit/96372e6beb976b57a8c52fd7c65f126899325160) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix "isSelfAccepting" exception when using the new @wromojs/react integration in development
 
-* [#2798](https://github.com/withwromo/wromo/pull/2798) [`4c25a1c2`](https://github.com/withwromo/wromo/commit/4c25a1c2eacf897427a7d6dac3bf476ef56799de) Thanks [@matthewp](https://github.com/matthewp)! - Implement APIs for headers for SSR flag
+* [#2798](https://github.com/Wromo/wromo/pull/2798) [`4c25a1c2`](https://github.com/Wromo/wromo/commit/4c25a1c2eacf897427a7d6dac3bf476ef56799de) Thanks [@matthewp](https://github.com/matthewp)! - Implement APIs for headers for SSR flag
 
-- [#2855](https://github.com/withwromo/wromo/pull/2855) [`5e52814d`](https://github.com/withwromo/wromo/commit/5e52814d97a5723dbe7ebb32fbe040a7a4c0ea77) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for the Node adapter (SSR)
+- [#2855](https://github.com/Wromo/wromo/pull/2855) [`5e52814d`](https://github.com/Wromo/wromo/commit/5e52814d97a5723dbe7ebb32fbe040a7a4c0ea77) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for the Node adapter (SSR)
 
   This provides the first SSR adapter available using the `integrations` API. It is a Node.js adapter that can be used with the `http` module or any framework that wraps it, like Express.
 
@@ -838,31 +838,31 @@
   app.listen(8080);
   ```
 
-* [#2859](https://github.com/withwromo/wromo/pull/2859) [`c781b12f`](https://github.com/withwromo/wromo/commit/c781b12f87398d51a6ecf5dcb8b35afb08591c29) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Ensure private, internal APIs are not enumerable
+* [#2859](https://github.com/Wromo/wromo/pull/2859) [`c781b12f`](https://github.com/Wromo/wromo/commit/c781b12f87398d51a6ecf5dcb8b35afb08591c29) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Ensure private, internal APIs are not enumerable
 
-- [#2835](https://github.com/withwromo/wromo/pull/2835) [`77ebab8b`](https://github.com/withwromo/wromo/commit/77ebab8bb27d67bc45a5af160d6b545521897802) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix missing `postcss-load-config` dependency
+- [#2835](https://github.com/Wromo/wromo/pull/2835) [`77ebab8b`](https://github.com/Wromo/wromo/commit/77ebab8bb27d67bc45a5af160d6b545521897802) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix missing `postcss-load-config` dependency
 
-* [#2878](https://github.com/withwromo/wromo/pull/2878) [`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
+* [#2878](https://github.com/Wromo/wromo/pull/2878) [`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
 
-- [#2857](https://github.com/withwromo/wromo/pull/2857) [`1061d647`](https://github.com/withwromo/wromo/commit/1061d6477af328e93c9a727e70900ae20c0116c8) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Improve granularity of production build logs. This now lists:
+- [#2857](https://github.com/Wromo/wromo/pull/2857) [`1061d647`](https://github.com/Wromo/wromo/commit/1061d6477af328e93c9a727e70900ae20c0116c8) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Improve granularity of production build logs. This now lists:
   - the "data collection" build step, with timeout warnings for larger imports. This is useful for understanding large `import.meta.glob` calls.
   - the Vite client bundling step. This logs all Vite production build info to clarify what assets are built alongside your HTML.
   - the route generation step, complete with all output HTML files for a given input file. This is especially useful when debugging `getStaticPaths`.
   - fixes "0 pages in Infinityms" log when building to SSR
 
-* [#2825](https://github.com/withwromo/wromo/pull/2825) [`1cd7184c`](https://github.com/withwromo/wromo/commit/1cd7184ca6fa6e60a69918e461f42c055e8a795e) Thanks [@hlynursmari1](https://github.com/hlynursmari1)! - Fix island deduplication ignoring props.Re-resolves an issue initially patched in https://github.com/withwromo/wromo/pull/846 but seemingly lost in the 0.21.0 mega-merge (https://github.com/withwromo/wromo/commit/d84bfe719a546ad855640338d5ed49ad3aa4ccb4).This change makes the component render step account for all props, even if they don't affect the generated HTML, when deduplicating island mounts.
+* [#2825](https://github.com/Wromo/wromo/pull/2825) [`1cd7184c`](https://github.com/Wromo/wromo/commit/1cd7184ca6fa6e60a69918e461f42c055e8a795e) Thanks [@hlynursmari1](https://github.com/hlynursmari1)! - Fix island deduplication ignoring props.Re-resolves an issue initially patched in https://github.com/Wromo/wromo/pull/846 but seemingly lost in the 0.21.0 mega-merge (https://github.com/Wromo/wromo/commit/d84bfe719a546ad855640338d5ed49ad3aa4ccb4).This change makes the component render step account for all props, even if they don't affect the generated HTML, when deduplicating island mounts.
 
-- [#2873](https://github.com/withwromo/wromo/pull/2873) [`e4025d1f`](https://github.com/withwromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering
+- [#2873](https://github.com/Wromo/wromo/pull/2873) [`e4025d1f`](https://github.com/Wromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering
 
-* [#2815](https://github.com/withwromo/wromo/pull/2815) [`7b9d042d`](https://github.com/withwromo/wromo/commit/7b9d042dde0c6ae74225de208222e0addf5f4989) Thanks [@matthewp](https://github.com/matthewp)! - Allows dynamic routes in SSR to avoid implementing getStaticPaths
+* [#2815](https://github.com/Wromo/wromo/pull/2815) [`7b9d042d`](https://github.com/Wromo/wromo/commit/7b9d042dde0c6ae74225de208222e0addf5f4989) Thanks [@matthewp](https://github.com/matthewp)! - Allows dynamic routes in SSR to avoid implementing getStaticPaths
 
-- [#2875](https://github.com/withwromo/wromo/pull/2875) [`55712277`](https://github.com/withwromo/wromo/commit/5571227718442e1ec38f4553863b6160b74df722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Generalize output assets to avoid adblocker false positives
+- [#2875](https://github.com/Wromo/wromo/pull/2875) [`55712277`](https://github.com/Wromo/wromo/commit/5571227718442e1ec38f4553863b6160b74df722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Generalize output assets to avoid adblocker false positives
 
-* [#2848](https://github.com/withwromo/wromo/pull/2848) [`981e2a83`](https://github.com/withwromo/wromo/commit/981e2a839b5a0292513bf2009216250f2a8730eb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - add missing injected "page" scripts into markdown pages
+* [#2848](https://github.com/Wromo/wromo/pull/2848) [`981e2a83`](https://github.com/Wromo/wromo/commit/981e2a839b5a0292513bf2009216250f2a8730eb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - add missing injected "page" scripts into markdown pages
 
-- [#2872](https://github.com/withwromo/wromo/pull/2872) [`098f6f6b`](https://github.com/withwromo/wromo/commit/098f6f6b06396441c576dc689d8552629ef260e1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix `isSelfAccepting` errors when using the Preact integration with the Wromo dev server
+- [#2872](https://github.com/Wromo/wromo/pull/2872) [`098f6f6b`](https://github.com/Wromo/wromo/commit/098f6f6b06396441c576dc689d8552629ef260e1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix `isSelfAccepting` errors when using the Preact integration with the Wromo dev server
 
-- Updated dependencies [[`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634), [`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b), [`d763ec18`](https://github.com/withwromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c)]:
+- Updated dependencies [[`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634), [`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b), [`d763ec18`](https://github.com/Wromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c)]:
   - @wromojs/markdown-remark@0.7.0
   - @wromojs/prism@0.4.1
 
@@ -870,9 +870,9 @@
 
 ### Patch Changes
 
-- [#2871](https://github.com/withwromo/wromo/pull/2871) [`5029382a`](https://github.com/withwromo/wromo/commit/5029382a8cab17f048372ee878d0778c89998009) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug where tailwind integration wouldn't apply to markdown pages
+- [#2871](https://github.com/Wromo/wromo/pull/2871) [`5029382a`](https://github.com/Wromo/wromo/commit/5029382a8cab17f048372ee878d0778c89998009) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix a bug where tailwind integration wouldn't apply to markdown pages
 
-* [#2855](https://github.com/withwromo/wromo/pull/2855) [`5e52814d`](https://github.com/withwromo/wromo/commit/5e52814d97a5723dbe7ebb32fbe040a7a4c0ea77) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for the Node adapter (SSR)
+* [#2855](https://github.com/Wromo/wromo/pull/2855) [`5e52814d`](https://github.com/Wromo/wromo/commit/5e52814d97a5723dbe7ebb32fbe040a7a4c0ea77) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for the Node adapter (SSR)
 
   This provides the first SSR adapter available using the `integrations` API. It is a Node.js adapter that can be used with the `http` module or any framework that wraps it, like Express.
 
@@ -898,23 +898,23 @@
   app.listen(8080);
   ```
 
-- [#2859](https://github.com/withwromo/wromo/pull/2859) [`c781b12f`](https://github.com/withwromo/wromo/commit/c781b12f87398d51a6ecf5dcb8b35afb08591c29) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Ensure private, internal APIs are not enumerable
+- [#2859](https://github.com/Wromo/wromo/pull/2859) [`c781b12f`](https://github.com/Wromo/wromo/commit/c781b12f87398d51a6ecf5dcb8b35afb08591c29) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Ensure private, internal APIs are not enumerable
 
-* [#2878](https://github.com/withwromo/wromo/pull/2878) [`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
+* [#2878](https://github.com/Wromo/wromo/pull/2878) [`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Move the built-in `Prism` component from `wromo/components` to `@wromojs/prism/component`.
 
-- [#2857](https://github.com/withwromo/wromo/pull/2857) [`1061d647`](https://github.com/withwromo/wromo/commit/1061d6477af328e93c9a727e70900ae20c0116c8) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Improve granularity of production build logs. This now lists:
+- [#2857](https://github.com/Wromo/wromo/pull/2857) [`1061d647`](https://github.com/Wromo/wromo/commit/1061d6477af328e93c9a727e70900ae20c0116c8) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Improve granularity of production build logs. This now lists:
   - the "data collection" build step, with timeout warnings for larger imports. This is useful for understanding large `import.meta.glob` calls.
   - the Vite client bundling step. This logs all Vite production build info to clarify what assets are built alongside your HTML.
   - the route generation step, complete with all output HTML files for a given input file. This is especially useful when debugging `getStaticPaths`.
   - fixes "0 pages in Infinityms" log when building to SSR
 
-* [#2873](https://github.com/withwromo/wromo/pull/2873) [`e4025d1f`](https://github.com/withwromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering
+* [#2873](https://github.com/Wromo/wromo/pull/2873) [`e4025d1f`](https://github.com/Wromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering
 
-- [#2875](https://github.com/withwromo/wromo/pull/2875) [`55712277`](https://github.com/withwromo/wromo/commit/5571227718442e1ec38f4553863b6160b74df722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Generalize output assets to avoid adblocker false positives
+- [#2875](https://github.com/Wromo/wromo/pull/2875) [`55712277`](https://github.com/Wromo/wromo/commit/5571227718442e1ec38f4553863b6160b74df722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Generalize output assets to avoid adblocker false positives
 
-* [#2872](https://github.com/withwromo/wromo/pull/2872) [`098f6f6b`](https://github.com/withwromo/wromo/commit/098f6f6b06396441c576dc689d8552629ef260e1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix `isSelfAccepting` errors when using the Preact integration with the Wromo dev server
+* [#2872](https://github.com/Wromo/wromo/pull/2872) [`098f6f6b`](https://github.com/Wromo/wromo/commit/098f6f6b06396441c576dc689d8552629ef260e1) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix `isSelfAccepting` errors when using the Preact integration with the Wromo dev server
 
-* Updated dependencies [[`2db97f10`](https://github.com/withwromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b), [`d763ec18`](https://github.com/withwromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c)]:
+* Updated dependencies [[`2db97f10`](https://github.com/Wromo/wromo/commit/2db97f10dc50f9498413181b78c477fe8833895b), [`d763ec18`](https://github.com/Wromo/wromo/commit/d763ec183ea391ad79ca16bf2b2e76848fc1180c)]:
   - @wromojs/prism@0.4.1-next.0
   - @wromojs/markdown-remark@0.7.0-next.1
 
@@ -922,55 +922,55 @@
 
 ### Patch Changes
 
-- [#2852](https://github.com/withwromo/wromo/pull/2852) [`96372e6b`](https://github.com/withwromo/wromo/commit/96372e6beb976b57a8c52fd7c65f126899325160) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix "isSelfAccepting" exception when using the new @wromojs/react integration in development
+- [#2852](https://github.com/Wromo/wromo/pull/2852) [`96372e6b`](https://github.com/Wromo/wromo/commit/96372e6beb976b57a8c52fd7c65f126899325160) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix "isSelfAccepting" exception when using the new @wromojs/react integration in development
 
-* [#2848](https://github.com/withwromo/wromo/pull/2848) [`981e2a83`](https://github.com/withwromo/wromo/commit/981e2a839b5a0292513bf2009216250f2a8730eb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - add missing injected "page" scripts into markdown pages
+* [#2848](https://github.com/Wromo/wromo/pull/2848) [`981e2a83`](https://github.com/Wromo/wromo/commit/981e2a839b5a0292513bf2009216250f2a8730eb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - add missing injected "page" scripts into markdown pages
 
 ## 0.25.0-next.1
 
 ### Patch Changes
 
-- [#2835](https://github.com/withwromo/wromo/pull/2835) [`77ebab8b`](https://github.com/withwromo/wromo/commit/77ebab8bb27d67bc45a5af160d6b545521897802) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix missing `postcss-load-config` dependency
+- [#2835](https://github.com/Wromo/wromo/pull/2835) [`77ebab8b`](https://github.com/Wromo/wromo/commit/77ebab8bb27d67bc45a5af160d6b545521897802) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix missing `postcss-load-config` dependency
 
 ## 0.25.0-next.0
 
 ### Minor Changes
 
-- [#2833](https://github.com/withwromo/wromo/pull/2833) [`79545412`](https://github.com/withwromo/wromo/commit/7954541291a3dd7adbc1d5610e0c2e615d3dde46) Thanks [@natemoo-re](https://github.com/natemoo-re)! - This PR introduces a new internal CSS parser for `@wromojs/compiler`. See [`withwromo/compiler#329`](https://github.com/withwromo/compiler/pull/329) for more details.
+- [#2833](https://github.com/Wromo/wromo/pull/2833) [`79545412`](https://github.com/Wromo/wromo/commit/7954541291a3dd7adbc1d5610e0c2e615d3dde46) Thanks [@natemoo-re](https://github.com/natemoo-re)! - This PR introduces a new internal CSS parser for `@wromojs/compiler`. See [`Wromo/compiler#329`](https://github.com/Wromo/compiler/pull/329) for more details.
 
   This fixes Wromo's support for modern CSS syntax like `@container`, `@layer`, and nesting. **Note** While Wromo now correctly parses this modern syntax, it does not automatically compile features for browser compatability purposes.
 
-* [#2824](https://github.com/withwromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
+* [#2824](https://github.com/Wromo/wromo/pull/2824) [`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Change shiki to our default markdown syntax highlighter. This includes updates to all relevant starter projects that used Prism-specific styles.
 
 ### Patch Changes
 
-- [#2798](https://github.com/withwromo/wromo/pull/2798) [`4c25a1c2`](https://github.com/withwromo/wromo/commit/4c25a1c2eacf897427a7d6dac3bf476ef56799de) Thanks [@matthewp](https://github.com/matthewp)! - Implement APIs for headers for SSR flag
+- [#2798](https://github.com/Wromo/wromo/pull/2798) [`4c25a1c2`](https://github.com/Wromo/wromo/commit/4c25a1c2eacf897427a7d6dac3bf476ef56799de) Thanks [@matthewp](https://github.com/matthewp)! - Implement APIs for headers for SSR flag
 
-* [#2825](https://github.com/withwromo/wromo/pull/2825) [`1cd7184c`](https://github.com/withwromo/wromo/commit/1cd7184ca6fa6e60a69918e461f42c055e8a795e) Thanks [@hlynursmari1](https://github.com/hlynursmari1)! - Fix island deduplication ignoring props.Re-resolves an issue initially patched in https://github.com/withwromo/wromo/pull/846 but seemingly lost in the 0.21.0 mega-merge (https://github.com/withwromo/wromo/commit/d84bfe719a546ad855640338d5ed49ad3aa4ccb4).This change makes the component render step account for all props, even if they don't affect the generated HTML, when deduplicating island mounts.
+* [#2825](https://github.com/Wromo/wromo/pull/2825) [`1cd7184c`](https://github.com/Wromo/wromo/commit/1cd7184ca6fa6e60a69918e461f42c055e8a795e) Thanks [@hlynursmari1](https://github.com/hlynursmari1)! - Fix island deduplication ignoring props.Re-resolves an issue initially patched in https://github.com/Wromo/wromo/pull/846 but seemingly lost in the 0.21.0 mega-merge (https://github.com/Wromo/wromo/commit/d84bfe719a546ad855640338d5ed49ad3aa4ccb4).This change makes the component render step account for all props, even if they don't affect the generated HTML, when deduplicating island mounts.
 
-- [#2815](https://github.com/withwromo/wromo/pull/2815) [`7b9d042d`](https://github.com/withwromo/wromo/commit/7b9d042dde0c6ae74225de208222e0addf5f4989) Thanks [@matthewp](https://github.com/matthewp)! - Allows dynamic routes in SSR to avoid implementing getStaticPaths
+- [#2815](https://github.com/Wromo/wromo/pull/2815) [`7b9d042d`](https://github.com/Wromo/wromo/commit/7b9d042dde0c6ae74225de208222e0addf5f4989) Thanks [@matthewp](https://github.com/matthewp)! - Allows dynamic routes in SSR to avoid implementing getStaticPaths
 
-- Updated dependencies [[`0a3d3e51`](https://github.com/withwromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634)]:
+- Updated dependencies [[`0a3d3e51`](https://github.com/Wromo/wromo/commit/0a3d3e51a66af80fa949ba0f5e2104439d2be634)]:
   - @wromojs/markdown-remark@0.7.0-next.0
 
 ## 0.24.3
 
 ### Patch Changes
 
-- [#2806](https://github.com/withwromo/wromo/pull/2806) [`9e59ec92`](https://github.com/withwromo/wromo/commit/9e59ec921fe539233a1a22b9f0c34ca3cfd05247) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix a warning from Vite regarding internal sourcemaps
+- [#2806](https://github.com/Wromo/wromo/pull/2806) [`9e59ec92`](https://github.com/Wromo/wromo/commit/9e59ec921fe539233a1a22b9f0c34ca3cfd05247) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix a warning from Vite regarding internal sourcemaps
 
-- Updated dependencies [[`79282163`](https://github.com/withwromo/wromo/commit/79282163e229bfe332b1221be3099f751b05807b)]:
+- Updated dependencies [[`79282163`](https://github.com/Wromo/wromo/commit/79282163e229bfe332b1221be3099f751b05807b)]:
   - @wromojs/renderer-svelte@0.5.2
 
 ## 0.24.2
 
 ### Patch Changes
 
-- [#2801](https://github.com/withwromo/wromo/pull/2801) [`11fb3745`](https://github.com/withwromo/wromo/commit/11fb3745dd548c6a8fa94c6a29e0ee89bac591aa) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix: Handle CLI output in a cross-compat way
+- [#2801](https://github.com/Wromo/wromo/pull/2801) [`11fb3745`](https://github.com/Wromo/wromo/commit/11fb3745dd548c6a8fa94c6a29e0ee89bac591aa) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix: Handle CLI output in a cross-compat way
 
-* [#2793](https://github.com/withwromo/wromo/pull/2793) [`6eb49479`](https://github.com/withwromo/wromo/commit/6eb494796e5144a4f2c12a6cce3fb2345c9b4e4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix HTML double-escaping issue
+* [#2793](https://github.com/Wromo/wromo/pull/2793) [`6eb49479`](https://github.com/Wromo/wromo/commit/6eb494796e5144a4f2c12a6cce3fb2345c9b4e4e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix HTML double-escaping issue
 
-- [#2803](https://github.com/withwromo/wromo/pull/2803) [`2b76ee8d`](https://github.com/withwromo/wromo/commit/2b76ee8d75d44492af18b9ead35293da7178930a) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add an `wromo/config` entrypoint with a `defineConfig` utility.
+- [#2803](https://github.com/Wromo/wromo/pull/2803) [`2b76ee8d`](https://github.com/Wromo/wromo/commit/2b76ee8d75d44492af18b9ead35293da7178930a) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add an `wromo/config` entrypoint with a `defineConfig` utility.
 
   Config files can now be easily benefit from Intellisense using the following approach:
 
@@ -982,33 +982,33 @@
   });
   ```
 
-* [#2791](https://github.com/withwromo/wromo/pull/2791) [`2d95541b`](https://github.com/withwromo/wromo/commit/2d95541b52118f787144720cb28cdd64644b903a) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix missing styles on initial dev server load (ex. Tailwind styles)
+* [#2791](https://github.com/Wromo/wromo/pull/2791) [`2d95541b`](https://github.com/Wromo/wromo/commit/2d95541b52118f787144720cb28cdd64644b903a) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix missing styles on initial dev server load (ex. Tailwind styles)
 
 ## 0.24.1
 
 ### Patch Changes
 
-- [#2797](https://github.com/withwromo/wromo/pull/2797) [`58d8686e`](https://github.com/withwromo/wromo/commit/58d8686e94816da649b0210f5288173fb4b9a483) Thanks [@matthewp](https://github.com/matthewp)! - Fix for projects with a folder name containing a space
+- [#2797](https://github.com/Wromo/wromo/pull/2797) [`58d8686e`](https://github.com/Wromo/wromo/commit/58d8686e94816da649b0210f5288173fb4b9a483) Thanks [@matthewp](https://github.com/matthewp)! - Fix for projects with a folder name containing a space
 
-* [#2785](https://github.com/withwromo/wromo/pull/2785) [`2c4fd919`](https://github.com/withwromo/wromo/commit/2c4fd919faa887df659d756ed3d095e0e83ed87d) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update Wromo.props to show object properties on console.log(Wromo.props), interating over properties, and anything else outside direct key access
+* [#2785](https://github.com/Wromo/wromo/pull/2785) [`2c4fd919`](https://github.com/Wromo/wromo/commit/2c4fd919faa887df659d756ed3d095e0e83ed87d) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update Wromo.props to show object properties on console.log(Wromo.props), interating over properties, and anything else outside direct key access
 
-- [#2790](https://github.com/withwromo/wromo/pull/2790) [`6b34840d`](https://github.com/withwromo/wromo/commit/6b34840d3d082d6491515ff96976f603947316d3) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve `set:html` behavior for `null` and `undefined` values
+- [#2790](https://github.com/Wromo/wromo/pull/2790) [`6b34840d`](https://github.com/Wromo/wromo/commit/6b34840d3d082d6491515ff96976f603947316d3) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve `set:html` behavior for `null` and `undefined` values
 
-* [#2772](https://github.com/withwromo/wromo/pull/2772) [`b4d34e2d`](https://github.com/withwromo/wromo/commit/b4d34e2d2c1429a9938074cd30ed13d9bb741a8b) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve build performance, especially on large sites
+* [#2772](https://github.com/Wromo/wromo/pull/2772) [`b4d34e2d`](https://github.com/Wromo/wromo/commit/b4d34e2d2c1429a9938074cd30ed13d9bb741a8b) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve build performance, especially on large sites
 
-- [#2772](https://github.com/withwromo/wromo/pull/2772) [`b4d34e2d`](https://github.com/withwromo/wromo/commit/b4d34e2d2c1429a9938074cd30ed13d9bb741a8b) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Surface vite warnings to the user
+- [#2772](https://github.com/Wromo/wromo/pull/2772) [`b4d34e2d`](https://github.com/Wromo/wromo/commit/b4d34e2d2c1429a9938074cd30ed13d9bb741a8b) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Surface vite warnings to the user
 
 ## 0.24.0
 
 ### Minor Changes
 
-- [#2760](https://github.com/withwromo/wromo/pull/2760) [`77b9c953`](https://github.com/withwromo/wromo/commit/77b9c95352f441021b8a0b03f891ea6ad00117ce) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Introduce a new --host flag + host devOption to expose your server on a network IP
+- [#2760](https://github.com/Wromo/wromo/pull/2760) [`77b9c953`](https://github.com/Wromo/wromo/commit/77b9c95352f441021b8a0b03f891ea6ad00117ce) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Introduce a new --host flag + host devOption to expose your server on a network IP
 
-* [`af075d81`](https://github.com/withwromo/wromo/commit/af075d81579d0a77f773435bbce391e42f9dff21) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Visual redesign of the `wromo dev` CLI, including new `wromo --help` and `wromo --version` outputs.
+* [`af075d81`](https://github.com/Wromo/wromo/commit/af075d81579d0a77f773435bbce391e42f9dff21) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Visual redesign of the `wromo dev` CLI, including new `wromo --help` and `wromo --version` outputs.
 
   These changes introduce a new startup screen, make it more obvious when a file triggers in-place HMR (`update`) or a full reload (`reload`), and improve the way Wromo surfaces errors during dev.
 
-- [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - New default build strategy
+- [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - New default build strategy
 
   This change marks the "static build" as the new default build strategy. If you are unfamiliar with this build strategy check out the [migration guide](https://docs.wromo.build/en/migrate/#planned-deprecations) on how to change your code to be compatible with this new bulid strategy.
 
@@ -1024,15 +1024,15 @@
 
   Note that the legacy build _is_ deprecated and will be removed in a future version. You should only use this flag until you have the time to migration your code.
 
-* [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - ## Updated `<head>` and `<body>` behavior
+* [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - ## Updated `<head>` and `<body>` behavior
 
   Since `wromo@0.21`, Wromo placed certain restrictions on what files could use `<head>` or `<body>` tags. In `wromo@0.24`, the restrictions have been lifted. Wromo will be able to correctly handle `<head>` and `<body>` tags in _any_ component, not just those in `src/pages/` or `src/layouts/`.
 
-- [#2747](https://github.com/withwromo/wromo/pull/2747) [`05b66bd6`](https://github.com/withwromo/wromo/commit/05b66bd68b173d30921c9f0565b3dc2379039fcd) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Escape HTML inside of expressions by default. Please see [our migration guide](https://docs.wromo.build/en/migrate/#deprecated-unescaped-html) for more details.
+- [#2747](https://github.com/Wromo/wromo/pull/2747) [`05b66bd6`](https://github.com/Wromo/wromo/commit/05b66bd68b173d30921c9f0565b3dc2379039fcd) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Escape HTML inside of expressions by default. Please see [our migration guide](https://docs.wromo.build/en/migrate/#deprecated-unescaped-html) for more details.
 
 ### Patch Changes
 
-- [#2695](https://github.com/withwromo/wromo/pull/2695) [`ae8d9256`](https://github.com/withwromo/wromo/commit/ae8d925666dac0008d8a607afa5f6223f95689a4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `Wromo.slots` API with new public `has` and `render` methods.
+- [#2695](https://github.com/Wromo/wromo/pull/2695) [`ae8d9256`](https://github.com/Wromo/wromo/commit/ae8d925666dac0008d8a607afa5f6223f95689a4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `Wromo.slots` API with new public `has` and `render` methods.
 
   This is a backwards-compatible change—`Wromo.slots.default` will still be `true` if the component has been passed a `default` slot.
 
@@ -1042,7 +1042,7 @@
   }
   ```
 
-* [#2755](https://github.com/withwromo/wromo/pull/2755) [`10843aba`](https://github.com/withwromo/wromo/commit/10843aba634c9cae663d8181b9d90d3213cb9142) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add user-configurable `sitemapFilter` option.
+* [#2755](https://github.com/Wromo/wromo/pull/2755) [`10843aba`](https://github.com/Wromo/wromo/commit/10843aba634c9cae663d8181b9d90d3213cb9142) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add user-configurable `sitemapFilter` option.
 
   This option can be used to ensure certain pages are excluded from your final sitemap.
 
@@ -1057,33 +1057,33 @@
   export default config;
   ```
 
-- [#2767](https://github.com/withwromo/wromo/pull/2767) [`2bb2c2f7`](https://github.com/withwromo/wromo/commit/2bb2c2f7d153863319652dbc93396bedd1a16756) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to `0.12.0`
+- [#2767](https://github.com/Wromo/wromo/pull/2767) [`2bb2c2f7`](https://github.com/Wromo/wromo/commit/2bb2c2f7d153863319652dbc93396bedd1a16756) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to `0.12.0`
 
-* [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes the static build to write to 404.html
+* [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes the static build to write to 404.html
 
-- [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes use of private .env variables with the static build
+- [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes use of private .env variables with the static build
 
-* [#2750](https://github.com/withwromo/wromo/pull/2750) [`79fc3204`](https://github.com/withwromo/wromo/commit/79fc320480b2a638ef707079a624519bd54f1550) Thanks [@FredKSchott](https://github.com/FredKSchott)! - update esbuild@0.14.25
+* [#2750](https://github.com/Wromo/wromo/pull/2750) [`79fc3204`](https://github.com/Wromo/wromo/commit/79fc320480b2a638ef707079a624519bd54f1550) Thanks [@FredKSchott](https://github.com/FredKSchott)! - update esbuild@0.14.25
 
-- [#2737](https://github.com/withwromo/wromo/pull/2737) [`e8d4e568`](https://github.com/withwromo/wromo/commit/e8d4e56803d21cd187bd7d72899ba5d545522786) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Wromo's logger has been redesigned for an improved experience! In addition to deduping identical messages, we've surfaced more error details and exposed new events like `update` (for in-place HMR) and `reload` (for full-reload HMR).
+- [#2737](https://github.com/Wromo/wromo/pull/2737) [`e8d4e568`](https://github.com/Wromo/wromo/commit/e8d4e56803d21cd187bd7d72899ba5d545522786) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Wromo's logger has been redesigned for an improved experience! In addition to deduping identical messages, we've surfaced more error details and exposed new events like `update` (for in-place HMR) and `reload` (for full-reload HMR).
 
-* [#2733](https://github.com/withwromo/wromo/pull/2733) [`6bf124fb`](https://github.com/withwromo/wromo/commit/6bf124fb2f8ffd3909148ccc0e253c1f72f364cb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Remove a bad dev warning
+* [#2733](https://github.com/Wromo/wromo/pull/2733) [`6bf124fb`](https://github.com/Wromo/wromo/commit/6bf124fb2f8ffd3909148ccc0e253c1f72f364cb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Remove a bad dev warning
 
-- [#2768](https://github.com/withwromo/wromo/pull/2768) [`49c0d997`](https://github.com/withwromo/wromo/commit/49c0d9970fe362af06c6ac70c25c1b6b0c4dd393) Thanks [@matthewp](https://github.com/matthewp)! - Fixes loading wromo/client/\* on Windows in dev
+- [#2768](https://github.com/Wromo/wromo/pull/2768) [`49c0d997`](https://github.com/Wromo/wromo/commit/49c0d9970fe362af06c6ac70c25c1b6b0c4dd393) Thanks [@matthewp](https://github.com/matthewp)! - Fixes loading wromo/client/\* on Windows in dev
 
-* [#2758](https://github.com/withwromo/wromo/pull/2758) [`499fb6a3`](https://github.com/withwromo/wromo/commit/499fb6a3356967123a7cb9b28f94d9a3bf1dff91) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add CLI warnings when running a prerelease or outdated version of Wromo
+* [#2758](https://github.com/Wromo/wromo/pull/2758) [`499fb6a3`](https://github.com/Wromo/wromo/commit/499fb6a3356967123a7cb9b28f94d9a3bf1dff91) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add CLI warnings when running a prerelease or outdated version of Wromo
 
-- [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `send` dependency with `sirv`
+- [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `send` dependency with `sirv`
 
-* [#2732](https://github.com/withwromo/wromo/pull/2732) [`0ae96bb7`](https://github.com/withwromo/wromo/commit/0ae96bb7491a60eb2032bab23377ca54951a67a7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update server start message to use localhost for local hostnames
+* [#2732](https://github.com/Wromo/wromo/pull/2732) [`0ae96bb7`](https://github.com/Wromo/wromo/commit/0ae96bb7491a60eb2032bab23377ca54951a67a7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update server start message to use localhost for local hostnames
 
-- [#2743](https://github.com/withwromo/wromo/pull/2743) [`a14075e2`](https://github.com/withwromo/wromo/commit/a14075e2a4d8897e24e2928318e653b63637ebe3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix - show 404 for bad static paths with console message, rather than a 500
+- [#2743](https://github.com/Wromo/wromo/pull/2743) [`a14075e2`](https://github.com/Wromo/wromo/commit/a14075e2a4d8897e24e2928318e653b63637ebe3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix - show 404 for bad static paths with console message, rather than a 500
 
 ## 0.24.0-next.2
 
 ### Patch Changes
 
-- [#2755](https://github.com/withwromo/wromo/pull/2755) [`10843aba`](https://github.com/withwromo/wromo/commit/10843aba634c9cae663d8181b9d90d3213cb9142) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add user-configurable `sitemapFilter` option.
+- [#2755](https://github.com/Wromo/wromo/pull/2755) [`10843aba`](https://github.com/Wromo/wromo/commit/10843aba634c9cae663d8181b9d90d3213cb9142) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add user-configurable `sitemapFilter` option.
 
   This option can be used to ensure certain pages are excluded from your final sitemap.
 
@@ -1098,25 +1098,25 @@
   export default config;
   ```
 
-* [#2750](https://github.com/withwromo/wromo/pull/2750) [`79fc3204`](https://github.com/withwromo/wromo/commit/79fc320480b2a638ef707079a624519bd54f1550) Thanks [@FredKSchott](https://github.com/FredKSchott)! - update esbuild@0.14.25
+* [#2750](https://github.com/Wromo/wromo/pull/2750) [`79fc3204`](https://github.com/Wromo/wromo/commit/79fc320480b2a638ef707079a624519bd54f1550) Thanks [@FredKSchott](https://github.com/FredKSchott)! - update esbuild@0.14.25
 
-- [#2758](https://github.com/withwromo/wromo/pull/2758) [`499fb6a3`](https://github.com/withwromo/wromo/commit/499fb6a3356967123a7cb9b28f94d9a3bf1dff91) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add CLI warnings when running a prerelease or outdated version of Wromo
+- [#2758](https://github.com/Wromo/wromo/pull/2758) [`499fb6a3`](https://github.com/Wromo/wromo/commit/499fb6a3356967123a7cb9b28f94d9a3bf1dff91) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add CLI warnings when running a prerelease or outdated version of Wromo
 
-* [#2743](https://github.com/withwromo/wromo/pull/2743) [`a14075e2`](https://github.com/withwromo/wromo/commit/a14075e2a4d8897e24e2928318e653b63637ebe3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix - show 404 for bad static paths with console message, rather than a 500
+* [#2743](https://github.com/Wromo/wromo/pull/2743) [`a14075e2`](https://github.com/Wromo/wromo/commit/a14075e2a4d8897e24e2928318e653b63637ebe3) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix - show 404 for bad static paths with console message, rather than a 500
 
 ## 0.24.0-next.1
 
 ### Minor Changes
 
-- [`af075d81`](https://github.com/withwromo/wromo/commit/af075d81579d0a77f773435bbce391e42f9dff21) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Visual redesign of the `wromo dev` CLI, including new `wromo --help` and `wromo --version` outputs.
+- [`af075d81`](https://github.com/Wromo/wromo/commit/af075d81579d0a77f773435bbce391e42f9dff21) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Visual redesign of the `wromo dev` CLI, including new `wromo --help` and `wromo --version` outputs.
 
   These changes introduce a new startup screen, make it more obvious when a file triggers in-place HMR (`update`) or a full reload (`reload`), and improve the way Wromo surfaces errors during dev.
 
-* [#2747](https://github.com/withwromo/wromo/pull/2747) [`05b66bd6`](https://github.com/withwromo/wromo/commit/05b66bd68b173d30921c9f0565b3dc2379039fcd) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Escape HTML inside of expressions by default. Please see [our migration guide](https://docs.wromo.build/en/migrate/#deprecated-unescaped-html) for more details.
+* [#2747](https://github.com/Wromo/wromo/pull/2747) [`05b66bd6`](https://github.com/Wromo/wromo/commit/05b66bd68b173d30921c9f0565b3dc2379039fcd) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Escape HTML inside of expressions by default. Please see [our migration guide](https://docs.wromo.build/en/migrate/#deprecated-unescaped-html) for more details.
 
 ### Patch Changes
 
-- [#2695](https://github.com/withwromo/wromo/pull/2695) [`ae8d9256`](https://github.com/withwromo/wromo/commit/ae8d925666dac0008d8a607afa5f6223f95689a4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `Wromo.slots` API with new public `has` and `render` methods.
+- [#2695](https://github.com/Wromo/wromo/pull/2695) [`ae8d9256`](https://github.com/Wromo/wromo/commit/ae8d925666dac0008d8a607afa5f6223f95689a4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `Wromo.slots` API with new public `has` and `render` methods.
 
   This is a backwards-compatible change—`Wromo.slots.default` will still be `true` if the component has been passed a `default` slot.
 
@@ -1126,19 +1126,19 @@
   }
   ```
 
-* [#2705](https://github.com/withwromo/wromo/pull/2705) [`72c2c86e`](https://github.com/withwromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes the static build to write to 404.html
+* [#2705](https://github.com/Wromo/wromo/pull/2705) [`72c2c86e`](https://github.com/Wromo/wromo/commit/72c2c86e9d7c9b2ce6be13ddb273d4b0b11a5723) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes the static build to write to 404.html
 
-- [#2737](https://github.com/withwromo/wromo/pull/2737) [`e8d4e568`](https://github.com/withwromo/wromo/commit/e8d4e56803d21cd187bd7d72899ba5d545522786) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Wromo's logger has been redesigned for an improved experience! In addition to deduping identical messages, we've surfaced more error details and exposed new events like `update` (for in-place HMR) and `reload` (for full-reload HMR).
+- [#2737](https://github.com/Wromo/wromo/pull/2737) [`e8d4e568`](https://github.com/Wromo/wromo/commit/e8d4e56803d21cd187bd7d72899ba5d545522786) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Wromo's logger has been redesigned for an improved experience! In addition to deduping identical messages, we've surfaced more error details and exposed new events like `update` (for in-place HMR) and `reload` (for full-reload HMR).
 
-* [#2733](https://github.com/withwromo/wromo/pull/2733) [`6bf124fb`](https://github.com/withwromo/wromo/commit/6bf124fb2f8ffd3909148ccc0e253c1f72f364cb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Remove a bad dev warning
+* [#2733](https://github.com/Wromo/wromo/pull/2733) [`6bf124fb`](https://github.com/Wromo/wromo/commit/6bf124fb2f8ffd3909148ccc0e253c1f72f364cb) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Remove a bad dev warning
 
-- [#2732](https://github.com/withwromo/wromo/pull/2732) [`0ae96bb7`](https://github.com/withwromo/wromo/commit/0ae96bb7491a60eb2032bab23377ca54951a67a7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update server start message to use localhost for local hostnames
+- [#2732](https://github.com/Wromo/wromo/pull/2732) [`0ae96bb7`](https://github.com/Wromo/wromo/commit/0ae96bb7491a60eb2032bab23377ca54951a67a7) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Update server start message to use localhost for local hostnames
 
 ## 0.24.0-next.0
 
 ### Minor Changes
 
-- [#2705](https://github.com/withwromo/wromo/pull/2705) [`8ce63ee6`](https://github.com/withwromo/wromo/commit/8ce63ee658677ecabcb3068f00413b51e7db30ef) Thanks [@natemoo-re](https://github.com/natemoo-re)! - New default build strategy
+- [#2705](https://github.com/Wromo/wromo/pull/2705) [`8ce63ee6`](https://github.com/Wromo/wromo/commit/8ce63ee658677ecabcb3068f00413b51e7db30ef) Thanks [@natemoo-re](https://github.com/natemoo-re)! - New default build strategy
 
   This change marks the "static build" as the new default build strategy. If you are unfamiliar with this build strategy check out the [migration guide](https://docs.wromo.build/en/migrate/#planned-deprecations) on how to change your code to be compatible with this new bulid strategy.
 
@@ -1160,94 +1160,94 @@
 
 ### Patch Changes
 
-- [#2705](https://github.com/withwromo/wromo/pull/2705) [`176d4082`](https://github.com/withwromo/wromo/commit/176d4082ca642e3d7b996529f1efed7048b4d04f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes use of private .env variables with the static build
+- [#2705](https://github.com/Wromo/wromo/pull/2705) [`176d4082`](https://github.com/Wromo/wromo/commit/176d4082ca642e3d7b996529f1efed7048b4d04f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes use of private .env variables with the static build
 
-* [#2705](https://github.com/withwromo/wromo/pull/2705) [`a483c044`](https://github.com/withwromo/wromo/commit/a483c0446ba222edf4258f4683cd918ea209b8f4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `send` dependency with `sirv`
+* [#2705](https://github.com/Wromo/wromo/pull/2705) [`a483c044`](https://github.com/Wromo/wromo/commit/a483c0446ba222edf4258f4683cd918ea209b8f4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `send` dependency with `sirv`
 
 ## 0.23.7
 
 ### Patch Changes
 
-- Updated dependencies [[`0d37f8e0`](https://github.com/withwromo/wromo/commit/0d37f8e0a51ac7bcf9e108151828b733bbba6e94)]:
+- Updated dependencies [[`0d37f8e0`](https://github.com/Wromo/wromo/commit/0d37f8e0a51ac7bcf9e108151828b733bbba6e94)]:
   - @wromojs/renderer-svelte@0.5.1
 
 ## 0.23.6
 
 ### Patch Changes
 
-- Updated dependencies [[`5f91e007`](https://github.com/withwromo/wromo/commit/5f91e007cbbb3a5ff7322964d811844b0921db61)]:
+- Updated dependencies [[`5f91e007`](https://github.com/Wromo/wromo/commit/5f91e007cbbb3a5ff7322964d811844b0921db61)]:
   - @wromojs/renderer-svelte@0.5.0
 
 ## 0.23.5
 
 ### Patch Changes
 
-- [#2706](https://github.com/withwromo/wromo/pull/2706) [`b2c37385`](https://github.com/withwromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8) Thanks [@JuanM04](https://github.com/JuanM04)! - Changed `data-wromo-raw` to `is:raw` internally
+- [#2706](https://github.com/Wromo/wromo/pull/2706) [`b2c37385`](https://github.com/Wromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8) Thanks [@JuanM04](https://github.com/JuanM04)! - Changed `data-wromo-raw` to `is:raw` internally
 
-- Updated dependencies [[`b2c37385`](https://github.com/withwromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8)]:
+- Updated dependencies [[`b2c37385`](https://github.com/Wromo/wromo/commit/b2c37385f94614232d9a378ef2ef3264d5405cc8)]:
   - @wromojs/markdown-remark@0.6.4
 
 ## 0.23.4
 
 ### Patch Changes
 
-- [#2678](https://github.com/withwromo/wromo/pull/2678) [`caf9135c`](https://github.com/withwromo/wromo/commit/caf9135c4843889c2773667d591d72d796e14c7b) Thanks [@JuanM04](https://github.com/JuanM04)! - Upgraded Vite to v2.8.6
+- [#2678](https://github.com/Wromo/wromo/pull/2678) [`caf9135c`](https://github.com/Wromo/wromo/commit/caf9135c4843889c2773667d591d72d796e14c7b) Thanks [@JuanM04](https://github.com/JuanM04)! - Upgraded Vite to v2.8.6
 
-* [#2697](https://github.com/withwromo/wromo/pull/2697) [`91765d79`](https://github.com/withwromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve build performance by processing `ssrPreload` in serial rather than in parallel
+* [#2697](https://github.com/Wromo/wromo/pull/2697) [`91765d79`](https://github.com/Wromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve build performance by processing `ssrPreload` in serial rather than in parallel
 
-- [#2684](https://github.com/withwromo/wromo/pull/2684) [`c7bbb112`](https://github.com/withwromo/wromo/commit/c7bbb1128936207164cb5ac0c0ad9b1af86d861e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix issue where HMR could be triggered during `wromo build`
+- [#2684](https://github.com/Wromo/wromo/pull/2684) [`c7bbb112`](https://github.com/Wromo/wromo/commit/c7bbb1128936207164cb5ac0c0ad9b1af86d861e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix issue where HMR could be triggered during `wromo build`
 
-- Updated dependencies [[`91765d79`](https://github.com/withwromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e)]:
+- Updated dependencies [[`91765d79`](https://github.com/Wromo/wromo/commit/91765d79b1ec1181417fb6a4604a9e20564bb10e)]:
   - @wromojs/markdown-remark@0.6.3
 
 ## 0.23.3
 
 ### Patch Changes
 
-- [#2681](https://github.com/withwromo/wromo/pull/2681) [`046af364`](https://github.com/withwromo/wromo/commit/046af364750ffc29c68a93c024045228aa16a5ab) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix HMR regression related to fine-grained `.wromo` HMR. This fixes HMR for Tailwind and CSS styles when `.wromo` files are edited.
+- [#2681](https://github.com/Wromo/wromo/pull/2681) [`046af364`](https://github.com/Wromo/wromo/commit/046af364750ffc29c68a93c024045228aa16a5ab) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix HMR regression related to fine-grained `.wromo` HMR. This fixes HMR for Tailwind and CSS styles when `.wromo` files are edited.
 
 ## 0.23.2
 
 ### Patch Changes
 
-- [#2665](https://github.com/withwromo/wromo/pull/2665) [`0494f74e`](https://github.com/withwromo/wromo/commit/0494f74e4e95e0840a6cb05d3fd0eea785d8db90) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve compatability with third-party Wromo packages
+- [#2665](https://github.com/Wromo/wromo/pull/2665) [`0494f74e`](https://github.com/Wromo/wromo/commit/0494f74e4e95e0840a6cb05d3fd0eea785d8db90) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve compatability with third-party Wromo packages
 
-* [#2656](https://github.com/withwromo/wromo/pull/2656) [`fca64073`](https://github.com/withwromo/wromo/commit/fca6407318f7f189fb65f096f8166b85a322efda) Thanks [@FredKSchott](https://github.com/FredKSchott)! - fix wromo scoping of "@import" inside of style tags
+* [#2656](https://github.com/Wromo/wromo/pull/2656) [`fca64073`](https://github.com/Wromo/wromo/commit/fca6407318f7f189fb65f096f8166b85a322efda) Thanks [@FredKSchott](https://github.com/FredKSchott)! - fix wromo scoping of "@import" inside of style tags
 
 ## 0.23.1
 
 ### Patch Changes
 
-- [`ac6d2e8c`](https://github.com/withwromo/wromo/commit/ac6d2e8c645e7f6821ace02067ceb4d5402f66ae) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue with Non-HTML pages in static build for dev
+- [`ac6d2e8c`](https://github.com/Wromo/wromo/commit/ac6d2e8c645e7f6821ace02067ceb4d5402f66ae) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue with Non-HTML pages in static build for dev
 
-* [#2628](https://github.com/withwromo/wromo/pull/2628) [`9b7e2ab2`](https://github.com/withwromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed shiki to work with `{ "type": "module" }`
+* [#2628](https://github.com/Wromo/wromo/pull/2628) [`9b7e2ab2`](https://github.com/Wromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed shiki to work with `{ "type": "module" }`
 
-- [#2630](https://github.com/withwromo/wromo/pull/2630) [`a2128f8e`](https://github.com/withwromo/wromo/commit/a2128f8e478cec8f60292206d3d22760c46f4aa9) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed incorrect types and imports
+- [#2630](https://github.com/Wromo/wromo/pull/2630) [`a2128f8e`](https://github.com/Wromo/wromo/commit/a2128f8e478cec8f60292206d3d22760c46f4aa9) Thanks [@JuanM04](https://github.com/JuanM04)! - Fixed incorrect types and imports
 
-* [#2653](https://github.com/withwromo/wromo/pull/2653) [`17032cd0`](https://github.com/withwromo/wromo/commit/17032cd064ecb4233b66e30b49ca0a12a8afc476) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler`, fixing a bug with self-closing tags that need special consideration like `<title />` and `<script />`
+* [#2653](https://github.com/Wromo/wromo/pull/2653) [`17032cd0`](https://github.com/Wromo/wromo/commit/17032cd064ecb4233b66e30b49ca0a12a8afc476) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler`, fixing a bug with self-closing tags that need special consideration like `<title />` and `<script />`
 
-- [#2654](https://github.com/withwromo/wromo/pull/2654) [`a0fc5cb5`](https://github.com/withwromo/wromo/commit/a0fc5cb5ff0003e9bb4b54cbf98035b1e0a6b113) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an issue where utf8 encoding was skipped in the dev server.
+- [#2654](https://github.com/Wromo/wromo/pull/2654) [`a0fc5cb5`](https://github.com/Wromo/wromo/commit/a0fc5cb5ff0003e9bb4b54cbf98035b1e0a6b113) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix an issue where utf8 encoding was skipped in the dev server.
 
-* [#2649](https://github.com/withwromo/wromo/pull/2649) [`5091d788`](https://github.com/withwromo/wromo/commit/5091d788f624060756d04488506b4f1f4eadcf8e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add fine-grained HMR support for Wromo files
+* [#2649](https://github.com/Wromo/wromo/pull/2649) [`5091d788`](https://github.com/Wromo/wromo/commit/5091d788f624060756d04488506b4f1f4eadcf8e) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add fine-grained HMR support for Wromo files
 
-- [#2645](https://github.com/withwromo/wromo/pull/2645) [`2e5c3b51`](https://github.com/withwromo/wromo/commit/2e5c3b512638bf06c7eb896fcf5cd8179fe91ca8) Thanks [@xavikortes](https://github.com/xavikortes)! - Fix issue when process.env.LANG was longer than 5 characters
+- [#2645](https://github.com/Wromo/wromo/pull/2645) [`2e5c3b51`](https://github.com/Wromo/wromo/commit/2e5c3b512638bf06c7eb896fcf5cd8179fe91ca8) Thanks [@xavikortes](https://github.com/xavikortes)! - Fix issue when process.env.LANG was longer than 5 characters
 
-- Updated dependencies [[`9b7e2ab2`](https://github.com/withwromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3)]:
+- Updated dependencies [[`9b7e2ab2`](https://github.com/Wromo/wromo/commit/9b7e2ab2516cd36520364490df8e3482008292e3)]:
   - @wromojs/markdown-remark@0.6.2
 
 ## 0.23.0
 
 ### Minor Changes
 
-- [#2489](https://github.com/withwromo/wromo/pull/2489) [`618a16f5`](https://github.com/withwromo/wromo/commit/618a16f59d4037cff1665110f0ed111a96a96437) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for the `set:html` and `set:text` directives.
+- [#2489](https://github.com/Wromo/wromo/pull/2489) [`618a16f5`](https://github.com/Wromo/wromo/commit/618a16f59d4037cff1665110f0ed111a96a96437) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for the `set:html` and `set:text` directives.
 
   With the introduction of these directives, unescaped HTML content in expressions is now deprecated. Please migrate to `set:html` in order to continue injecting unescaped HTML in future versions of Wromo—you can use `<Fragment set:html={content}>` to avoid a wrapper element. `set:text` allows you to opt-in to escaping now, but it will soon become the default.
 
-* [#2494](https://github.com/withwromo/wromo/pull/2494) [`d7149f9b`](https://github.com/withwromo/wromo/commit/d7149f9b2f9a9092b33fa56cedecc446247faf64) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Refactor dev server to use vite server internally.
+* [#2494](https://github.com/Wromo/wromo/pull/2494) [`d7149f9b`](https://github.com/Wromo/wromo/commit/d7149f9b2f9a9092b33fa56cedecc446247faf64) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Refactor dev server to use vite server internally.
 
   This should be an invisible change, and no breaking changes are expected from this change. However, it is a big enough refactor that some unexpected changes may occur. If you've experienced a regression in the dev server, it is most likely a bug!
 
-- [#2586](https://github.com/withwromo/wromo/pull/2586) [`d6d35bca`](https://github.com/withwromo/wromo/commit/d6d35bcafcbe216caa1d9e8410bf2925a4d57467) Thanks [@tony-sull](https://github.com/tony-sull)! - Support for non-HTML pages
+- [#2586](https://github.com/Wromo/wromo/pull/2586) [`d6d35bca`](https://github.com/Wromo/wromo/commit/d6d35bcafcbe216caa1d9e8410bf2925a4d57467) Thanks [@tony-sull](https://github.com/tony-sull)! - Support for non-HTML pages
 
   > ⚠️ This feature is currently only supported with the `--experimental-static-build` CLI flag. This feature may be refined over the next few weeks/months as SSR support is finalized.
 
@@ -1288,15 +1288,15 @@
   }
   ```
 
-* [#2424](https://github.com/withwromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/withwromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `vite` to `2.8.x`, unvendoring `vite` and bringing Wromo's dependencies up-to-date.
+* [#2424](https://github.com/Wromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/Wromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `vite` to `2.8.x`, unvendoring `vite` and bringing Wromo's dependencies up-to-date.
 
   This is a low-level change that you shouldn't have to worry about too much, but it should fix many, many issues with CJS/ESM interoperability. It also allows Wromo to stay up-to-date with the `vite` ecosystem. If you run into any unexpected problems, please let us know by opening an issue.
 
-- [#2471](https://github.com/withwromo/wromo/pull/2471) [`c9bb1147`](https://github.com/withwromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Standardize trailing subpath behavior in config.
+- [#2471](https://github.com/Wromo/wromo/pull/2471) [`c9bb1147`](https://github.com/Wromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Standardize trailing subpath behavior in config.
 
   Most users are not aware of the subtle differences between `/foo` and `/foo/`. Internally, we have to handle both which means that we are constantly worrying about the format of the URL, needing to add/remove trailing slashes when we go to work with this property, etc. This change transforms all `site` values to use a trailing slash internally, which should help reduce bugs for both users and maintainers.
 
-* [#2548](https://github.com/withwromo/wromo/pull/2548) [`ba5e2b5e`](https://github.com/withwromo/wromo/commit/ba5e2b5e6c20207955991775dc4aa8879331542c) Thanks [@matthewp](https://github.com/matthewp)! - Experimental SSR Support
+* [#2548](https://github.com/Wromo/wromo/pull/2548) [`ba5e2b5e`](https://github.com/Wromo/wromo/commit/ba5e2b5e6c20207955991775dc4aa8879331542c) Thanks [@matthewp](https://github.com/matthewp)! - Experimental SSR Support
 
   > ⚠️ If you are a user of Wromo and see this PR and think that you can start deploying your app to a server and get SSR, slow down a second! This is only the initial flag and **very basic support**. Styles are not loading correctly at this point, for example. Like we did with the `--experimental-static-build` flag, this feature will be refined over the next few weeks/months and we'll let you know when its ready for community testing.
 
@@ -1325,63 +1325,63 @@
 
 ### Patch Changes
 
-- [#2486](https://github.com/withwromo/wromo/pull/2486) [`6bd165f8`](https://github.com/withwromo/wromo/commit/6bd165f84cd3a1550b29fec539af814360c87f54) Thanks [@matthewp](https://github.com/matthewp)! - Fix for the static build when project contains a space
+- [#2486](https://github.com/Wromo/wromo/pull/2486) [`6bd165f8`](https://github.com/Wromo/wromo/commit/6bd165f84cd3a1550b29fec539af814360c87f54) Thanks [@matthewp](https://github.com/matthewp)! - Fix for the static build when project contains a space
 
-* [#2424](https://github.com/withwromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/withwromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
+* [#2424](https://github.com/Wromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/Wromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
 
-- [#2522](https://github.com/withwromo/wromo/pull/2522) [`3e8844fa`](https://github.com/withwromo/wromo/commit/3e8844fa871fa477026375db6d921beb4b23b0dc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS superset support and HMR in the static build
+- [#2522](https://github.com/Wromo/wromo/pull/2522) [`3e8844fa`](https://github.com/Wromo/wromo/commit/3e8844fa871fa477026375db6d921beb4b23b0dc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS superset support and HMR in the static build
 
-* [#2506](https://github.com/withwromo/wromo/pull/2506) [`187d5128`](https://github.com/withwromo/wromo/commit/187d5128af9ea388589f12e7b062b1e6a38ac67a) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix an issue rendering content within HTMLElement
+* [#2506](https://github.com/Wromo/wromo/pull/2506) [`187d5128`](https://github.com/Wromo/wromo/commit/187d5128af9ea388589f12e7b062b1e6a38ac67a) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix an issue rendering content within HTMLElement
 
-- [#2606](https://github.com/withwromo/wromo/pull/2606) [`96609d4c`](https://github.com/withwromo/wromo/commit/96609d4c9ef66ef6852e590fa439a2177e9ae847) Thanks [@matthewp](https://github.com/matthewp)! - Fixes 404 to HMR script in the static build
+- [#2606](https://github.com/Wromo/wromo/pull/2606) [`96609d4c`](https://github.com/Wromo/wromo/commit/96609d4c9ef66ef6852e590fa439a2177e9ae847) Thanks [@matthewp](https://github.com/matthewp)! - Fixes 404 to HMR script in the static build
 
-* [#2599](https://github.com/withwromo/wromo/pull/2599) [`929fae68`](https://github.com/withwromo/wromo/commit/929fae684f2e375bfae2dd2b69d440abcf944378) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`v0.11.0`](https://github.com/withwromo/compiler/blob/main/lib/compiler/CHANGELOG.md#0110), which moves from TinyGo to Go's built-in WASM output. This will be a significant improvement for stability and memory safety.
+* [#2599](https://github.com/Wromo/wromo/pull/2599) [`929fae68`](https://github.com/Wromo/wromo/commit/929fae684f2e375bfae2dd2b69d440abcf944378) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`v0.11.0`](https://github.com/Wromo/compiler/blob/main/lib/compiler/CHANGELOG.md#0110), which moves from TinyGo to Go's built-in WASM output. This will be a significant improvement for stability and memory safety.
 
-- [#2532](https://github.com/withwromo/wromo/pull/2532) [`b210fd00`](https://github.com/withwromo/wromo/commit/b210fd008b9253f0c755c21e157cd7fb069c8445) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of .wromo modules in wromo@next
+- [#2532](https://github.com/Wromo/wromo/pull/2532) [`b210fd00`](https://github.com/Wromo/wromo/commit/b210fd008b9253f0c755c21e157cd7fb069c8445) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of .wromo modules in wromo@next
 
-* [#2552](https://github.com/withwromo/wromo/pull/2552) [`e81bc3cf`](https://github.com/withwromo/wromo/commit/e81bc3cf14d9516a76a3328d277eb2e4db9d7279) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build slowness on large apps
+* [#2552](https://github.com/Wromo/wromo/pull/2552) [`e81bc3cf`](https://github.com/Wromo/wromo/commit/e81bc3cf14d9516a76a3328d277eb2e4db9d7279) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build slowness on large apps
 
   This fixes slowness on large apps, particularly during the static build. Fix is to prevent the Vite dev server plugin from being run during build, as it is not needed.
 
-- [#2605](https://github.com/withwromo/wromo/pull/2605) [`87762410`](https://github.com/withwromo/wromo/commit/87762410f3c2b887e049422d61a17e9c0fdabd88) Thanks [@matthewp](https://github.com/matthewp)! - Fixes Wromo style resolution in the static build
+- [#2605](https://github.com/Wromo/wromo/pull/2605) [`87762410`](https://github.com/Wromo/wromo/commit/87762410f3c2b887e049422d61a17e9c0fdabd88) Thanks [@matthewp](https://github.com/matthewp)! - Fixes Wromo style resolution in the static build
 
-* [#2569](https://github.com/withwromo/wromo/pull/2569) [`82544e41`](https://github.com/withwromo/wromo/commit/82544e413406a62ecf3e408ca1aac5c8c15b7453) Thanks [@matthewp](https://github.com/matthewp)! - Fixes pageUrlFormat: 'file' in the static build
+* [#2569](https://github.com/Wromo/wromo/pull/2569) [`82544e41`](https://github.com/Wromo/wromo/commit/82544e413406a62ecf3e408ca1aac5c8c15b7453) Thanks [@matthewp](https://github.com/matthewp)! - Fixes pageUrlFormat: 'file' in the static build
 
-- [#2588](https://github.com/withwromo/wromo/pull/2588) [`10216176`](https://github.com/withwromo/wromo/commit/102161761de629fe1bfee7d151d4956c57ea2f42) Thanks [@matthewp](https://github.com/matthewp)! - Fix for passing children to client component when the component does not render them
+- [#2588](https://github.com/Wromo/wromo/pull/2588) [`10216176`](https://github.com/Wromo/wromo/commit/102161761de629fe1bfee7d151d4956c57ea2f42) Thanks [@matthewp](https://github.com/matthewp)! - Fix for passing children to client component when the component does not render them
 
-* [#2531](https://github.com/withwromo/wromo/pull/2531) [`ef1d81ef`](https://github.com/withwromo/wromo/commit/ef1d81effd4e0c420c6eb2e5e500cfaac3106ea8) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue where hostname was not passed to dev server
+* [#2531](https://github.com/Wromo/wromo/pull/2531) [`ef1d81ef`](https://github.com/Wromo/wromo/commit/ef1d81effd4e0c420c6eb2e5e500cfaac3106ea8) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue where hostname was not passed to dev server
 
-- [#2537](https://github.com/withwromo/wromo/pull/2537) [`b0666286`](https://github.com/withwromo/wromo/commit/b066628693d9d9a526b3e8ab2a2d493aad38a722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve debug logs
+- [#2537](https://github.com/Wromo/wromo/pull/2537) [`b0666286`](https://github.com/Wromo/wromo/commit/b066628693d9d9a526b3e8ab2a2d493aad38a722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve debug logs
 
-* [#2511](https://github.com/withwromo/wromo/pull/2511) [`3d2c1849`](https://github.com/withwromo/wromo/commit/3d2c184962925300ca75c96b8115f88e68140ec7) Thanks [@matthewp](https://github.com/matthewp)! - Bug fix for `define:vars` with the --experimental-static-build flag
+* [#2511](https://github.com/Wromo/wromo/pull/2511) [`3d2c1849`](https://github.com/Wromo/wromo/commit/3d2c184962925300ca75c96b8115f88e68140ec7) Thanks [@matthewp](https://github.com/matthewp)! - Bug fix for `define:vars` with the --experimental-static-build flag
 
-- [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
+- [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
 
-* [#2612](https://github.com/withwromo/wromo/pull/2612) [`39cbe500`](https://github.com/withwromo/wromo/commit/39cbe5008549517d9360bc7c473793523c0c9207) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve suppport for `import.meta.env`.
+* [#2612](https://github.com/Wromo/wromo/pull/2612) [`39cbe500`](https://github.com/Wromo/wromo/commit/39cbe5008549517d9360bc7c473793523c0c9207) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Improve suppport for `import.meta.env`.
 
   Prior to this change, all variables defined in `.env` files had to include the `PUBLIC_` prefix, meaning that they could potentially be visible to the client if referenced.
 
   Now, Wromo includes _any_ referenced variables defined in `.env` files on `import.meta.env` during server-side rendering, but only referenced `PUBLIC_` variables on the client.
 
-- [#2471](https://github.com/withwromo/wromo/pull/2471) [`c9bb1147`](https://github.com/withwromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Respect subpath URL paths in the fetchContent url property.
+- [#2471](https://github.com/Wromo/wromo/pull/2471) [`c9bb1147`](https://github.com/Wromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Respect subpath URL paths in the fetchContent url property.
 
   This fixes an issue where fetchContent() URL property did not include the buildOptions.site path in it.
 
-* [#2538](https://github.com/withwromo/wromo/pull/2538) [`16d532fe`](https://github.com/withwromo/wromo/commit/16d532fe1772a2c0880beda0f49883efb2469e44) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix rendering of HTML boolean attributes like `open` and `async`.
+* [#2538](https://github.com/Wromo/wromo/pull/2538) [`16d532fe`](https://github.com/Wromo/wromo/commit/16d532fe1772a2c0880beda0f49883efb2469e44) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix rendering of HTML boolean attributes like `open` and `async`.
 
   Fix rendering of HTML and SVG enumerated attributes like `contenteditable` and `spellcheck`.
 
-- [#2570](https://github.com/withwromo/wromo/pull/2570) [`34317bc0`](https://github.com/withwromo/wromo/commit/34317bc05c707179af0be6c9fe743c1fd1299532) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bug with wromo/components not loading in the next release
+- [#2570](https://github.com/Wromo/wromo/pull/2570) [`34317bc0`](https://github.com/Wromo/wromo/commit/34317bc05c707179af0be6c9fe743c1fd1299532) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bug with wromo/components not loading in the next release
 
-* [#2581](https://github.com/withwromo/wromo/pull/2581) [`ec6f148f`](https://github.com/withwromo/wromo/commit/ec6f148fc8623c6549885af70512839c08905fdb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for resolving relative imports from hoisted scripts in the static build.
+* [#2581](https://github.com/Wromo/wromo/pull/2581) [`ec6f148f`](https://github.com/Wromo/wromo/commit/ec6f148fc8623c6549885af70512839c08905fdb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for resolving relative imports from hoisted scripts in the static build.
 
-- [#2593](https://github.com/withwromo/wromo/pull/2593) [`40c0e2b3`](https://github.com/withwromo/wromo/commit/40c0e2b3f69e81cd7bb3fc2d8d0b3448c11b6ed8) Thanks [@tony-sull](https://github.com/tony-sull)! - Dynamic route params should ignore param order when matching paths
+- [#2593](https://github.com/Wromo/wromo/pull/2593) [`40c0e2b3`](https://github.com/Wromo/wromo/commit/40c0e2b3f69e81cd7bb3fc2d8d0b3448c11b6ed8) Thanks [@tony-sull](https://github.com/tony-sull)! - Dynamic route params should ignore param order when matching paths
 
-* [#2497](https://github.com/withwromo/wromo/pull/2497) [`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Bumped Shiki version
+* [#2497](https://github.com/Wromo/wromo/pull/2497) [`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Bumped Shiki version
 
-- [#2594](https://github.com/withwromo/wromo/pull/2594) [`085468e9`](https://github.com/withwromo/wromo/commit/085468e949f1d6e9e19bd7039574b586a78e7601) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `@wromojs/compiler` to `v0.10.2`
+- [#2594](https://github.com/Wromo/wromo/pull/2594) [`085468e9`](https://github.com/Wromo/wromo/commit/085468e949f1d6e9e19bd7039574b586a78e7601) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `@wromojs/compiler` to `v0.10.2`
 
-- Updated dependencies [[`a907a73b`](https://github.com/withwromo/wromo/commit/a907a73b8cd14726d158ea460932f9cd8891923a), [`cfeaa941`](https://github.com/withwromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee), [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21), [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`d71c4620`](https://github.com/withwromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b)]:
+- Updated dependencies [[`a907a73b`](https://github.com/Wromo/wromo/commit/a907a73b8cd14726d158ea460932f9cd8891923a), [`cfeaa941`](https://github.com/Wromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee), [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21), [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`d71c4620`](https://github.com/Wromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b)]:
   - @wromojs/renderer-preact@0.5.0
   - @wromojs/renderer-react@0.5.0
   - @wromojs/renderer-svelte@0.4.0
@@ -1392,29 +1392,29 @@
 
 ### Patch Changes
 
-- [#2606](https://github.com/withwromo/wromo/pull/2606) [`96609d4c`](https://github.com/withwromo/wromo/commit/96609d4c9ef66ef6852e590fa439a2177e9ae847) Thanks [@matthewp](https://github.com/matthewp)! - Fixes 404 to HMR script in the static build
+- [#2606](https://github.com/Wromo/wromo/pull/2606) [`96609d4c`](https://github.com/Wromo/wromo/commit/96609d4c9ef66ef6852e590fa439a2177e9ae847) Thanks [@matthewp](https://github.com/matthewp)! - Fixes 404 to HMR script in the static build
 
-* [#2605](https://github.com/withwromo/wromo/pull/2605) [`87762410`](https://github.com/withwromo/wromo/commit/87762410f3c2b887e049422d61a17e9c0fdabd88) Thanks [@matthewp](https://github.com/matthewp)! - Fixes Wromo style resolution in the static build
+* [#2605](https://github.com/Wromo/wromo/pull/2605) [`87762410`](https://github.com/Wromo/wromo/commit/87762410f3c2b887e049422d61a17e9c0fdabd88) Thanks [@matthewp](https://github.com/matthewp)! - Fixes Wromo style resolution in the static build
 
 ## 0.23.0-next.9
 
 ### Patch Changes
 
-- [#2599](https://github.com/withwromo/wromo/pull/2599) [`929fae68`](https://github.com/withwromo/wromo/commit/929fae684f2e375bfae2dd2b69d440abcf944378) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`v0.11.0`](https://github.com/withwromo/compiler/blob/main/lib/compiler/CHANGELOG.md#0110), which moves from TinyGo to Go's built-in WASM output. This will be a significant improvement for stability and memory safety.
+- [#2599](https://github.com/Wromo/wromo/pull/2599) [`929fae68`](https://github.com/Wromo/wromo/commit/929fae684f2e375bfae2dd2b69d440abcf944378) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`v0.11.0`](https://github.com/Wromo/compiler/blob/main/lib/compiler/CHANGELOG.md#0110), which moves from TinyGo to Go's built-in WASM output. This will be a significant improvement for stability and memory safety.
 
 ## 0.23.0-next.8
 
 ### Patch Changes
 
-- [#2588](https://github.com/withwromo/wromo/pull/2588) [`10216176`](https://github.com/withwromo/wromo/commit/102161761de629fe1bfee7d151d4956c57ea2f42) Thanks [@matthewp](https://github.com/matthewp)! - Fix for passing children to client component when the component does not render them
+- [#2588](https://github.com/Wromo/wromo/pull/2588) [`10216176`](https://github.com/Wromo/wromo/commit/102161761de629fe1bfee7d151d4956c57ea2f42) Thanks [@matthewp](https://github.com/matthewp)! - Fix for passing children to client component when the component does not render them
 
-* [#2593](https://github.com/withwromo/wromo/pull/2593) [`40c0e2b3`](https://github.com/withwromo/wromo/commit/40c0e2b3f69e81cd7bb3fc2d8d0b3448c11b6ed8) Thanks [@tony-sull](https://github.com/tony-sull)! - Dynamic route params should ignore param order when matching paths
+* [#2593](https://github.com/Wromo/wromo/pull/2593) [`40c0e2b3`](https://github.com/Wromo/wromo/commit/40c0e2b3f69e81cd7bb3fc2d8d0b3448c11b6ed8) Thanks [@tony-sull](https://github.com/tony-sull)! - Dynamic route params should ignore param order when matching paths
 
 ## 0.23.0-next.7
 
 ### Patch Changes
 
-- [#2586](https://github.com/withwromo/wromo/pull/2586) [`d6d35bca`](https://github.com/withwromo/wromo/commit/d6d35bcafcbe216caa1d9e8410bf2925a4d57467) Thanks [@tony-sull](https://github.com/tony-sull)! - Support for non-HTML pages
+- [#2586](https://github.com/Wromo/wromo/pull/2586) [`d6d35bca`](https://github.com/Wromo/wromo/commit/d6d35bcafcbe216caa1d9e8410bf2925a4d57467) Thanks [@tony-sull](https://github.com/tony-sull)! - Support for non-HTML pages
 
   > ⚠️ This feature is currently only supported with the `--experimental-static-build` CLI flag. This feature may be refined over the next few weeks/months as SSR support is finalized.
 
@@ -1455,7 +1455,7 @@
   }
   ```
 
-* [#2548](https://github.com/withwromo/wromo/pull/2548) [`ba5e2b5e`](https://github.com/withwromo/wromo/commit/ba5e2b5e6c20207955991775dc4aa8879331542c) Thanks [@matthewp](https://github.com/matthewp)! - Experimental SSR Support
+* [#2548](https://github.com/Wromo/wromo/pull/2548) [`ba5e2b5e`](https://github.com/Wromo/wromo/commit/ba5e2b5e6c20207955991775dc4aa8879331542c) Thanks [@matthewp](https://github.com/matthewp)! - Experimental SSR Support
 
   > ⚠️ If you are a user of Wromo and see this PR and think that you can start deploying your app to a server and get SSR, slow down a second! This is only the initial flag and **very basic support**. Styles are not loading correctly at this point, for example. Like we did with the `--experimental-static-build` flag, this feature will be refined over the next few weeks/months and we'll let you know when its ready for community testing.
 
@@ -1482,38 +1482,38 @@
   - This only works in Node.js at the moment.
   - Many features will likely not work correctly, but rendering HTML at least should.
 
-- [#2581](https://github.com/withwromo/wromo/pull/2581) [`ec6f148f`](https://github.com/withwromo/wromo/commit/ec6f148fc8623c6549885af70512839c08905fdb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for resolving relative imports from hoisted scripts in the static build.
+- [#2581](https://github.com/Wromo/wromo/pull/2581) [`ec6f148f`](https://github.com/Wromo/wromo/commit/ec6f148fc8623c6549885af70512839c08905fdb) Thanks [@matthewp](https://github.com/matthewp)! - Fix for resolving relative imports from hoisted scripts in the static build.
 
-* [#2594](https://github.com/withwromo/wromo/pull/2594) [`085468e9`](https://github.com/withwromo/wromo/commit/085468e949f1d6e9e19bd7039574b586a78e7601) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `@wromojs/compiler` to `v0.10.2`
+* [#2594](https://github.com/Wromo/wromo/pull/2594) [`085468e9`](https://github.com/Wromo/wromo/commit/085468e949f1d6e9e19bd7039574b586a78e7601) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `@wromojs/compiler` to `v0.10.2`
 
 ## 0.23.0-next.6
 
 ### Patch Changes
 
-- [#2570](https://github.com/withwromo/wromo/pull/2570) [`34317bc0`](https://github.com/withwromo/wromo/commit/34317bc05c707179af0be6c9fe743c1fd1299532) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bug with wromo/components not loading in the next release
+- [#2570](https://github.com/Wromo/wromo/pull/2570) [`34317bc0`](https://github.com/Wromo/wromo/commit/34317bc05c707179af0be6c9fe743c1fd1299532) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bug with wromo/components not loading in the next release
 
 ## 0.23.0-next.5
 
 ### Patch Changes
 
-- [#2569](https://github.com/withwromo/wromo/pull/2569) [`82544e41`](https://github.com/withwromo/wromo/commit/82544e413406a62ecf3e408ca1aac5c8c15b7453) Thanks [@matthewp](https://github.com/matthewp)! - Fixes pageUrlFormat: 'file' in the static build
+- [#2569](https://github.com/Wromo/wromo/pull/2569) [`82544e41`](https://github.com/Wromo/wromo/commit/82544e413406a62ecf3e408ca1aac5c8c15b7453) Thanks [@matthewp](https://github.com/matthewp)! - Fixes pageUrlFormat: 'file' in the static build
 
-- Updated dependencies [[`d71c4620`](https://github.com/withwromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b)]:
+- Updated dependencies [[`d71c4620`](https://github.com/Wromo/wromo/commit/d71c46207af40de6811596ca4f5e10aa9006377b)]:
   - @wromojs/markdown-remark@0.6.1-next.2
 
 ## 0.23.0-next.4
 
 ### Minor Changes
 
-- [#2424](https://github.com/withwromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/withwromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `vite` to `2.8.x`, unvendoring `vite` and bringing Wromo's dependencies up-to-date.
+- [#2424](https://github.com/Wromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/Wromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Upgrade `vite` to `2.8.x`, unvendoring `vite` and bringing Wromo's dependencies up-to-date.
 
   This is a low-level change that you shouldn't have to worry about too much, but it should fix many, many issues with CJS/ESM interoperability. It also allows Wromo to stay up-to-date with the `vite` ecosystem. If you run into any unexpected problems, please let us know by opening an issue.
 
 ### Patch Changes
 
-- [#2424](https://github.com/withwromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/withwromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
+- [#2424](https://github.com/Wromo/wromo/pull/2424) [`1abb9ed0`](https://github.com/Wromo/wromo/commit/1abb9ed0800989f47351cc916f19fd8e0672e2c0) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
 
-- Updated dependencies [[`a907a73b`](https://github.com/withwromo/wromo/commit/a907a73b8cd14726d158ea460932f9cd8891923a)]:
+- Updated dependencies [[`a907a73b`](https://github.com/Wromo/wromo/commit/a907a73b8cd14726d158ea460932f9cd8891923a)]:
   - @wromojs/renderer-preact@0.5.0-next.0
   - @wromojs/renderer-react@0.5.0-next.0
   - @wromojs/renderer-svelte@0.4.0-next.0
@@ -1523,7 +1523,7 @@
 
 ### Patch Changes
 
-- [#2552](https://github.com/withwromo/wromo/pull/2552) [`e81bc3cf`](https://github.com/withwromo/wromo/commit/e81bc3cf14d9516a76a3328d277eb2e4db9d7279) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build slowness on large apps
+- [#2552](https://github.com/Wromo/wromo/pull/2552) [`e81bc3cf`](https://github.com/Wromo/wromo/commit/e81bc3cf14d9516a76a3328d277eb2e4db9d7279) Thanks [@matthewp](https://github.com/matthewp)! - Fixes build slowness on large apps
 
   This fixes slowness on large apps, particularly during the static build. Fix is to prevent the Vite dev server plugin from being run during build, as it is not needed.
 
@@ -1531,111 +1531,111 @@
 
 ### Patch Changes
 
-- [#2532](https://github.com/withwromo/wromo/pull/2532) [`b210fd00`](https://github.com/withwromo/wromo/commit/b210fd008b9253f0c755c21e157cd7fb069c8445) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of .wromo modules in wromo@next
+- [#2532](https://github.com/Wromo/wromo/pull/2532) [`b210fd00`](https://github.com/Wromo/wromo/commit/b210fd008b9253f0c755c21e157cd7fb069c8445) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of .wromo modules in wromo@next
 
-* [#2531](https://github.com/withwromo/wromo/pull/2531) [`ef1d81ef`](https://github.com/withwromo/wromo/commit/ef1d81effd4e0c420c6eb2e5e500cfaac3106ea8) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue where hostname was not passed to dev server
+* [#2531](https://github.com/Wromo/wromo/pull/2531) [`ef1d81ef`](https://github.com/Wromo/wromo/commit/ef1d81effd4e0c420c6eb2e5e500cfaac3106ea8) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Fix issue where hostname was not passed to dev server
 
-- [#2537](https://github.com/withwromo/wromo/pull/2537) [`b0666286`](https://github.com/withwromo/wromo/commit/b066628693d9d9a526b3e8ab2a2d493aad38a722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve debug logs
+- [#2537](https://github.com/Wromo/wromo/pull/2537) [`b0666286`](https://github.com/Wromo/wromo/commit/b066628693d9d9a526b3e8ab2a2d493aad38a722) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve debug logs
 
-* [#2518](https://github.com/withwromo/wromo/pull/2518) [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
+* [#2518](https://github.com/Wromo/wromo/pull/2518) [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141) Thanks [@JuanM04](https://github.com/JuanM04)! - Added the ability to use custom themes and langs with Shiki (`<Code />` and `@wromojs/markdown-remark`)
 
-- [#2538](https://github.com/withwromo/wromo/pull/2538) [`16d532fe`](https://github.com/withwromo/wromo/commit/16d532fe1772a2c0880beda0f49883efb2469e44) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix rendering of HTML boolean attributes like `open` and `async`.
+- [#2538](https://github.com/Wromo/wromo/pull/2538) [`16d532fe`](https://github.com/Wromo/wromo/commit/16d532fe1772a2c0880beda0f49883efb2469e44) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix rendering of HTML boolean attributes like `open` and `async`.
 
   Fix rendering of HTML and SVG enumerated attributes like `contenteditable` and `spellcheck`.
 
-- Updated dependencies [[`cfeaa941`](https://github.com/withwromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee), [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`2bc91543`](https://github.com/withwromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141)]:
+- Updated dependencies [[`cfeaa941`](https://github.com/Wromo/wromo/commit/cfeaa9414acdecec6f5d66ee0e33fe4fde574eee), [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141), [`2bc91543`](https://github.com/Wromo/wromo/commit/2bc91543ceeb5f3dd45e201bf75d79f186e85141)]:
   - @wromojs/markdown-remark@0.6.1-next.1
 
 ## 0.23.0-next.1
 
 ### Patch Changes
 
-- [#2522](https://github.com/withwromo/wromo/pull/2522) [`3e8844fa`](https://github.com/withwromo/wromo/commit/3e8844fa871fa477026375db6d921beb4b23b0dc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS superset support and HMR in the static build
+- [#2522](https://github.com/Wromo/wromo/pull/2522) [`3e8844fa`](https://github.com/Wromo/wromo/commit/3e8844fa871fa477026375db6d921beb4b23b0dc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS superset support and HMR in the static build
 
 ## 0.23.0-next.0
 
 ### Minor Changes
 
-- [#2489](https://github.com/withwromo/wromo/pull/2489) [`618a16f5`](https://github.com/withwromo/wromo/commit/618a16f59d4037cff1665110f0ed111a96a96437) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for the `set:html` and `set:text` directives.
+- [#2489](https://github.com/Wromo/wromo/pull/2489) [`618a16f5`](https://github.com/Wromo/wromo/commit/618a16f59d4037cff1665110f0ed111a96a96437) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for the `set:html` and `set:text` directives.
 
   With the introduction of these directives, unescaped HTML content in expressions is now deprecated. Please migrate to `set:html` in order to continue injecting unescaped HTML in future versions of Wromo—you can use `<Fragment set:html={content}>` to avoid a wrapper element. `set:text` allows you to opt-in to escaping now, but it will soon become the default.
 
-* [#2494](https://github.com/withwromo/wromo/pull/2494) [`d7149f9b`](https://github.com/withwromo/wromo/commit/d7149f9b2f9a9092b33fa56cedecc446247faf64) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Refactor dev server to use vite server internally.
+* [#2494](https://github.com/Wromo/wromo/pull/2494) [`d7149f9b`](https://github.com/Wromo/wromo/commit/d7149f9b2f9a9092b33fa56cedecc446247faf64) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Refactor dev server to use vite server internally.
 
   This should be an invisible change, and no breaking changes are expected from this change. However, it is a big enough refactor that some unexpected changes may occur. If you've experienced a regression in the dev server, it is most likely a bug!
 
-- [#2471](https://github.com/withwromo/wromo/pull/2471) [`c9bb1147`](https://github.com/withwromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Standardize trailing subpath behavior in config.
+- [#2471](https://github.com/Wromo/wromo/pull/2471) [`c9bb1147`](https://github.com/Wromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Standardize trailing subpath behavior in config.
 
   Most users are not aware of the subtle differences between `/foo` and `/foo/`. Internally, we have to handle both which means that we are constantly worrying about the format of the URL, needing to add/remove trailing slashes when we go to work with this property, etc. This change transforms all `site` values to use a trailing slash internally, which should help reduce bugs for both users and maintainers.
 
 ### Patch Changes
 
-- [#2486](https://github.com/withwromo/wromo/pull/2486) [`6bd165f8`](https://github.com/withwromo/wromo/commit/6bd165f84cd3a1550b29fec539af814360c87f54) Thanks [@matthewp](https://github.com/matthewp)! - Fix for the static build when project contains a space
+- [#2486](https://github.com/Wromo/wromo/pull/2486) [`6bd165f8`](https://github.com/Wromo/wromo/commit/6bd165f84cd3a1550b29fec539af814360c87f54) Thanks [@matthewp](https://github.com/matthewp)! - Fix for the static build when project contains a space
 
-* [#2506](https://github.com/withwromo/wromo/pull/2506) [`187d5128`](https://github.com/withwromo/wromo/commit/187d5128af9ea388589f12e7b062b1e6a38ac67a) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix an issue rendering content within HTMLElement
+* [#2506](https://github.com/Wromo/wromo/pull/2506) [`187d5128`](https://github.com/Wromo/wromo/commit/187d5128af9ea388589f12e7b062b1e6a38ac67a) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix an issue rendering content within HTMLElement
 
-- [#2511](https://github.com/withwromo/wromo/pull/2511) [`3d2c1849`](https://github.com/withwromo/wromo/commit/3d2c184962925300ca75c96b8115f88e68140ec7) Thanks [@matthewp](https://github.com/matthewp)! - Bug fix for `define:vars` with the --experimental-static-build flag
+- [#2511](https://github.com/Wromo/wromo/pull/2511) [`3d2c1849`](https://github.com/Wromo/wromo/commit/3d2c184962925300ca75c96b8115f88e68140ec7) Thanks [@matthewp](https://github.com/matthewp)! - Bug fix for `define:vars` with the --experimental-static-build flag
 
-* [#2471](https://github.com/withwromo/wromo/pull/2471) [`c9bb1147`](https://github.com/withwromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Respect subpath URL paths in the fetchContent url property.
+* [#2471](https://github.com/Wromo/wromo/pull/2471) [`c9bb1147`](https://github.com/Wromo/wromo/commit/c9bb1147cbfae20e3ecdf29ef2866a183b3b18e3) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Respect subpath URL paths in the fetchContent url property.
 
   This fixes an issue where fetchContent() URL property did not include the buildOptions.site path in it.
 
-- [#2497](https://github.com/withwromo/wromo/pull/2497) [`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Bumped Shiki version
+- [#2497](https://github.com/Wromo/wromo/pull/2497) [`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21) Thanks [@JuanM04](https://github.com/JuanM04)! - Bumped Shiki version
 
-- Updated dependencies [[`6fe1b027`](https://github.com/withwromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21)]:
+- Updated dependencies [[`6fe1b027`](https://github.com/Wromo/wromo/commit/6fe1b0279fce5a7a0e90ff79746ea0b641da3e21)]:
   - @wromojs/markdown-remark@0.6.1-next.0
 
 ## 0.22.20
 
 ### Patch Changes
 
-- [#2491](https://github.com/withwromo/wromo/pull/2491) [`c7a6ed9a`](https://github.com/withwromo/wromo/commit/c7a6ed9a8df88fcc643ec2667627fbf9b670db53) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fixed top-level await and other es features with the static build
+- [#2491](https://github.com/Wromo/wromo/pull/2491) [`c7a6ed9a`](https://github.com/Wromo/wromo/commit/c7a6ed9a8df88fcc643ec2667627fbf9b670db53) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fixed top-level await and other es features with the static build
 
-* [#2479](https://github.com/withwromo/wromo/pull/2479) [`005751a9`](https://github.com/withwromo/wromo/commit/005751a920c14423648fd45b53cebc94e5108e9f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add the `escapeHTML` utility to `wromo/internal`
+* [#2479](https://github.com/Wromo/wromo/pull/2479) [`005751a9`](https://github.com/Wromo/wromo/commit/005751a920c14423648fd45b53cebc94e5108e9f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add the `escapeHTML` utility to `wromo/internal`
 
-- [#2490](https://github.com/withwromo/wromo/pull/2490) [`69d5b709`](https://github.com/withwromo/wromo/commit/69d5b70900c6392bae1db89efcad57dbdcfa87da) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS preprocessing using the static build
+- [#2490](https://github.com/Wromo/wromo/pull/2490) [`69d5b709`](https://github.com/Wromo/wromo/commit/69d5b70900c6392bae1db89efcad57dbdcfa87da) Thanks [@matthewp](https://github.com/matthewp)! - Fix for CSS preprocessing using the static build
 
-* [#2491](https://github.com/withwromo/wromo/pull/2491) [`c7a6ed9a`](https://github.com/withwromo/wromo/commit/c7a6ed9a8df88fcc643ec2667627fbf9b670db53) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Renders server-side HTMLElement as HTML tag
+* [#2491](https://github.com/Wromo/wromo/pull/2491) [`c7a6ed9a`](https://github.com/Wromo/wromo/commit/c7a6ed9a8df88fcc643ec2667627fbf9b670db53) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Renders server-side HTMLElement as HTML tag
 
 ## 0.22.19
 
 ### Patch Changes
 
-- [#2440](https://github.com/withwromo/wromo/pull/2440) [`462e3159`](https://github.com/withwromo/wromo/commit/462e315956601f3404bbb5d821ede6545ed76d03) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
+- [#2440](https://github.com/Wromo/wromo/pull/2440) [`462e3159`](https://github.com/Wromo/wromo/commit/462e315956601f3404bbb5d821ede6545ed76d03) Thanks [@matthewp](https://github.com/matthewp)! - Fixes HMR of CSS that is imported from wromo, when using the static build flag
 
 ## 0.22.18
 
 ### Patch Changes
 
-- [#2423](https://github.com/withwromo/wromo/pull/2423) [`ebe414f0`](https://github.com/withwromo/wromo/commit/ebe414f05b69d50de4aab64358cd4a31c254f7e6) Thanks [@delucis](https://github.com/delucis)! - Resolve sitemap URLs in relation to full site path
+- [#2423](https://github.com/Wromo/wromo/pull/2423) [`ebe414f0`](https://github.com/Wromo/wromo/commit/ebe414f05b69d50de4aab64358cd4a31c254f7e6) Thanks [@delucis](https://github.com/delucis)! - Resolve sitemap URLs in relation to full site path
 
-* [#2443](https://github.com/withwromo/wromo/pull/2443) [`ed0b46f9`](https://github.com/withwromo/wromo/commit/ed0b46f96faf144fe0946bce1528f4d605a4a42c) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix bug with RSS feed generation. `rss()` can now be called multiple times and URLs can now be fully qualified.
+* [#2443](https://github.com/Wromo/wromo/pull/2443) [`ed0b46f9`](https://github.com/Wromo/wromo/commit/ed0b46f96faf144fe0946bce1528f4d605a4a42c) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix bug with RSS feed generation. `rss()` can now be called multiple times and URLs can now be fully qualified.
 
-- [#2442](https://github.com/withwromo/wromo/pull/2442) [`dfe1f8b4`](https://github.com/withwromo/wromo/commit/dfe1f8b4e7d25b7887e34b6514bd2f50a86c7a7d) Thanks [@matthewp](https://github.com/matthewp)! - Allow setting ssr Vite config in the static build
+- [#2442](https://github.com/Wromo/wromo/pull/2442) [`dfe1f8b4`](https://github.com/Wromo/wromo/commit/dfe1f8b4e7d25b7887e34b6514bd2f50a86c7a7d) Thanks [@matthewp](https://github.com/matthewp)! - Allow setting ssr Vite config in the static build
 
 ## 0.22.17
 
 ### Patch Changes
 
-- [#2432](https://github.com/withwromo/wromo/pull/2432) [`9e1bc175`](https://github.com/withwromo/wromo/commit/9e1bc1752f44db8f996c35f64cec259ce3fbc731) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bugs with apostrophes in the title tag
+- [#2432](https://github.com/Wromo/wromo/pull/2432) [`9e1bc175`](https://github.com/Wromo/wromo/commit/9e1bc1752f44db8f996c35f64cec259ce3fbc731) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bugs with apostrophes in the title tag
 
-* [#2414](https://github.com/withwromo/wromo/pull/2414) [`f2b8372c`](https://github.com/withwromo/wromo/commit/f2b8372c0cd7988246db3c7087fb7d7ebcff0340) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for hoisted scripts to the static build
+* [#2414](https://github.com/Wromo/wromo/pull/2414) [`f2b8372c`](https://github.com/Wromo/wromo/commit/f2b8372c0cd7988246db3c7087fb7d7ebcff0340) Thanks [@matthewp](https://github.com/matthewp)! - Adds support for hoisted scripts to the static build
 
 ## 0.22.16
 
 ### Patch Changes
 
-- [#2428](https://github.com/withwromo/wromo/pull/2428) [`3ad236ba`](https://github.com/withwromo/wromo/commit/3ad236ba01a694f3645b9b238af33d994fd7e6d9) Thanks [@matthewp](https://github.com/matthewp)! - Pin the compiler to fix obscure Windows bug
+- [#2428](https://github.com/Wromo/wromo/pull/2428) [`3ad236ba`](https://github.com/Wromo/wromo/commit/3ad236ba01a694f3645b9b238af33d994fd7e6d9) Thanks [@matthewp](https://github.com/matthewp)! - Pin the compiler to fix obscure Windows bug
 
 ## 0.22.15
 
 ### Patch Changes
 
-- [#2371](https://github.com/withwromo/wromo/pull/2371) [`85ad1aab`](https://github.com/withwromo/wromo/commit/85ad1aab67b9f1b9214db3200458ac37675b9afb) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for styled RSS feeds using the new `stylesheet` option
+- [#2371](https://github.com/Wromo/wromo/pull/2371) [`85ad1aab`](https://github.com/Wromo/wromo/commit/85ad1aab67b9f1b9214db3200458ac37675b9afb) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for styled RSS feeds using the new `stylesheet` option
 
-* [#2416](https://github.com/withwromo/wromo/pull/2416) [`5208c88a`](https://github.com/withwromo/wromo/commit/5208c88aeb512250f2a443edede574710dbccffa) Thanks [@matthewp](https://github.com/matthewp)! - Adds Wromo.resolve deprecation for the static build
+* [#2416](https://github.com/Wromo/wromo/pull/2416) [`5208c88a`](https://github.com/Wromo/wromo/commit/5208c88aeb512250f2a443edede574710dbccffa) Thanks [@matthewp](https://github.com/matthewp)! - Adds Wromo.resolve deprecation for the static build
 
-- [#2392](https://github.com/withwromo/wromo/pull/2392) [`24aa3245`](https://github.com/withwromo/wromo/commit/24aa3245aef4e12a80946c6d56f731b14aed6220) Thanks [@obnoxiousnerd](https://github.com/obnoxiousnerd)! - Support markdown draft pages.
+- [#2392](https://github.com/Wromo/wromo/pull/2392) [`24aa3245`](https://github.com/Wromo/wromo/commit/24aa3245aef4e12a80946c6d56f731b14aed6220) Thanks [@obnoxiousnerd](https://github.com/obnoxiousnerd)! - Support markdown draft pages.
   Markdown draft pages are markdown pages which have `draft` set in their frontmatter. By default, these will not be built by Wromo while running `wromo build`. To disable this behavior, you need to set `buildOptions.drafts` to `true` or pass the `--drafts` flag while running `wromo build`. An exaple of a markdown draft page is:
 
   ```markdown
@@ -1652,125 +1652,125 @@
 
 ### Patch Changes
 
-- [#2393](https://github.com/withwromo/wromo/pull/2393) [`bcc617f9`](https://github.com/withwromo/wromo/commit/bcc617f9dc560bd61535c136297e97fb11013d6f) Thanks [@matthewp](https://github.com/matthewp)! - Prepends site subpath when using --experimental-static-build
+- [#2393](https://github.com/Wromo/wromo/pull/2393) [`bcc617f9`](https://github.com/Wromo/wromo/commit/bcc617f9dc560bd61535c136297e97fb11013d6f) Thanks [@matthewp](https://github.com/matthewp)! - Prepends site subpath when using --experimental-static-build
 
 ## 0.22.13
 
 ### Patch Changes
 
-- [#2391](https://github.com/withwromo/wromo/pull/2391) [`c8a257ad`](https://github.com/withwromo/wromo/commit/c8a257adc4b2ed92aaf4aa74b0e1ac4db48530f2) Thanks [@matthewp](https://github.com/matthewp)! - Improvements performance for building sites with thousands of pages with the static build
+- [#2391](https://github.com/Wromo/wromo/pull/2391) [`c8a257ad`](https://github.com/Wromo/wromo/commit/c8a257adc4b2ed92aaf4aa74b0e1ac4db48530f2) Thanks [@matthewp](https://github.com/matthewp)! - Improvements performance for building sites with thousands of pages with the static build
 
 ## 0.22.12
 
 ### Patch Changes
 
-- [#2370](https://github.com/withwromo/wromo/pull/2370) [`a7967530`](https://github.com/withwromo/wromo/commit/a7967530dfe9cfab5d6d866c8d2bcba9c47de39c) Thanks [@matthewp](https://github.com/matthewp)! - Fixes support for Lit within the static build
+- [#2370](https://github.com/Wromo/wromo/pull/2370) [`a7967530`](https://github.com/Wromo/wromo/commit/a7967530dfe9cfab5d6d866c8d2bcba9c47de39c) Thanks [@matthewp](https://github.com/matthewp)! - Fixes support for Lit within the static build
 
-* [#2373](https://github.com/withwromo/wromo/pull/2373) [`92532b88`](https://github.com/withwromo/wromo/commit/92532b88820bc45f3f02bca0054e8433c3f7a743) Thanks [@matthewp](https://github.com/matthewp)! - Hydrated component fix with the static build
+* [#2373](https://github.com/Wromo/wromo/pull/2373) [`92532b88`](https://github.com/Wromo/wromo/commit/92532b88820bc45f3f02bca0054e8433c3f7a743) Thanks [@matthewp](https://github.com/matthewp)! - Hydrated component fix with the static build
 
-* Updated dependencies [[`20eaddb2`](https://github.com/withwromo/wromo/commit/20eaddb2a723253c7fbde3e56955a549bdf3f342)]:
+* Updated dependencies [[`20eaddb2`](https://github.com/Wromo/wromo/commit/20eaddb2a723253c7fbde3e56955a549bdf3f342)]:
   - @wromojs/renderer-react@0.4.1
 
 ## 0.22.11
 
 ### Patch Changes
 
-- [#2367](https://github.com/withwromo/wromo/pull/2367) [`2aa5ba5c`](https://github.com/withwromo/wromo/commit/2aa5ba5c52d0fa6eb2d17ca0b38a761ab40f8ca4) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of framework renderers in the static build
+- [#2367](https://github.com/Wromo/wromo/pull/2367) [`2aa5ba5c`](https://github.com/Wromo/wromo/commit/2aa5ba5c52d0fa6eb2d17ca0b38a761ab40f8ca4) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of framework renderers in the static build
 
-* [#2365](https://github.com/withwromo/wromo/pull/2365) [`20d0cce6`](https://github.com/withwromo/wromo/commit/20d0cce681d5e913ca19c2466055f69541bced23) Thanks [@matthewp](https://github.com/matthewp)! - Fixes shared CSS within the static build
+* [#2365](https://github.com/Wromo/wromo/pull/2365) [`20d0cce6`](https://github.com/Wromo/wromo/commit/20d0cce681d5e913ca19c2466055f69541bced23) Thanks [@matthewp](https://github.com/matthewp)! - Fixes shared CSS within the static build
 
 ## 0.22.10
 
 ### Patch Changes
 
-- [#2335](https://github.com/withwromo/wromo/pull/2335) [`f008a19c`](https://github.com/withwromo/wromo/commit/f008a19c9d4ad046ef7b24262605e8107c34a9bc) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Preserve pathnames for sitemap.xml
+- [#2335](https://github.com/Wromo/wromo/pull/2335) [`f008a19c`](https://github.com/Wromo/wromo/commit/f008a19c9d4ad046ef7b24262605e8107c34a9bc) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Preserve pathnames for sitemap.xml
 
-* [#2358](https://github.com/withwromo/wromo/pull/2358) [`10074972`](https://github.com/withwromo/wromo/commit/1007497297769455d41e23f48dfdbec90b403f2e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes the output when using the experimental-static-build flag
+* [#2358](https://github.com/Wromo/wromo/pull/2358) [`10074972`](https://github.com/Wromo/wromo/commit/1007497297769455d41e23f48dfdbec90b403f2e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes the output when using the experimental-static-build flag
 
-- [#2323](https://github.com/withwromo/wromo/pull/2323) [`69af658b`](https://github.com/withwromo/wromo/commit/69af658b00be0a3b1bb0eb11c2e480973a5a6301) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix issue with plugins running twice in dev and build
+- [#2323](https://github.com/Wromo/wromo/pull/2323) [`69af658b`](https://github.com/Wromo/wromo/commit/69af658b00be0a3b1bb0eb11c2e480973a5a6301) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix issue with plugins running twice in dev and build
 
-* [#2338](https://github.com/withwromo/wromo/pull/2338) [`c0cb7eea`](https://github.com/withwromo/wromo/commit/c0cb7eead5389e93c9a3e8206a301e44bd928702) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix preview issues triggered by pageUrlFormat & trailingSlash options
+* [#2338](https://github.com/Wromo/wromo/pull/2338) [`c0cb7eea`](https://github.com/Wromo/wromo/commit/c0cb7eead5389e93c9a3e8206a301e44bd928702) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fix preview issues triggered by pageUrlFormat & trailingSlash options
 
-- [#2363](https://github.com/withwromo/wromo/pull/2363) [`7e0b32c5`](https://github.com/withwromo/wromo/commit/7e0b32c5696ec9db3cdee3de732de056b380568a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of --experimental-static-build with markdown pages
+- [#2363](https://github.com/Wromo/wromo/pull/2363) [`7e0b32c5`](https://github.com/Wromo/wromo/commit/7e0b32c5696ec9db3cdee3de732de056b380568a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes use of --experimental-static-build with markdown pages
 
 ## 0.22.9
 
 ### Patch Changes
 
-- [#2337](https://github.com/withwromo/wromo/pull/2337) [`180dfcf2`](https://github.com/withwromo/wromo/commit/180dfcf2fc39c4697e178c47a3d3a5459d845cdf) Thanks [@matthewp](https://github.com/matthewp)! - Fix using the Code component in static build
+- [#2337](https://github.com/Wromo/wromo/pull/2337) [`180dfcf2`](https://github.com/Wromo/wromo/commit/180dfcf2fc39c4697e178c47a3d3a5459d845cdf) Thanks [@matthewp](https://github.com/matthewp)! - Fix using the Code component in static build
 
 ## 0.22.8
 
 ### Patch Changes
 
-- [#2330](https://github.com/withwromo/wromo/pull/2330) [`71ca0912`](https://github.com/withwromo/wromo/commit/71ca09125a86e74c73d30d01839e27859e1ade1a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes subpath support in `wromo preview`
+- [#2330](https://github.com/Wromo/wromo/pull/2330) [`71ca0912`](https://github.com/Wromo/wromo/commit/71ca09125a86e74c73d30d01839e27859e1ade1a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes subpath support in `wromo preview`
 
 ## 0.22.7
 
 ### Patch Changes
 
-- [#2324](https://github.com/withwromo/wromo/pull/2324) [`77ef43e6`](https://github.com/withwromo/wromo/commit/77ef43e66cf701de848a2998af646ee7762497d8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update compiler to remove console.log (sorry everyone!)
+- [#2324](https://github.com/Wromo/wromo/pull/2324) [`77ef43e6`](https://github.com/Wromo/wromo/commit/77ef43e66cf701de848a2998af646ee7762497d8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update compiler to remove console.log (sorry everyone!)
 
-* [`e0de21ef`](https://github.com/withwromo/wromo/commit/e0de21ef57227eb4c56f216280b8aa5e5e848937) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add `<guid>` to RSS feed.
+* [`e0de21ef`](https://github.com/Wromo/wromo/commit/e0de21ef57227eb4c56f216280b8aa5e5e848937) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add `<guid>` to RSS feed.
 
-- [#2318](https://github.com/withwromo/wromo/pull/2318) [`c0204c0a`](https://github.com/withwromo/wromo/commit/c0204c0a416865eab9b905b61231ed9a304120a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`0.7.3`](https://github.com/withwromo/compiler/blob/main/lib/compiler/CHANGELOG.md#073)
+- [#2318](https://github.com/Wromo/wromo/pull/2318) [`c0204c0a`](https://github.com/Wromo/wromo/commit/c0204c0a416865eab9b905b61231ed9a304120a8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update `@wromojs/compiler` to [`0.7.3`](https://github.com/Wromo/compiler/blob/main/lib/compiler/CHANGELOG.md#073)
 
-* [#2319](https://github.com/withwromo/wromo/pull/2319) [`e6379d51`](https://github.com/withwromo/wromo/commit/e6379d514df4924ac8679a8c5a251b56a1a6bee3) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Updated @wromopub/webapi
+* [#2319](https://github.com/Wromo/wromo/pull/2319) [`e6379d51`](https://github.com/Wromo/wromo/commit/e6379d514df4924ac8679a8c5a251b56a1a6bee3) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Updated @wromopub/webapi
 
 ## 0.22.6
 
 ### Patch Changes
 
-- [#2299](https://github.com/withwromo/wromo/pull/2299) [`5fbdd56f`](https://github.com/withwromo/wromo/commit/5fbdd56f157f58d9d768f9d5388340aaa316da81) Thanks [@tadeuzagallo](https://github.com/tadeuzagallo)! - Fix dynamic routes for sites with subpath
+- [#2299](https://github.com/Wromo/wromo/pull/2299) [`5fbdd56f`](https://github.com/Wromo/wromo/commit/5fbdd56f157f58d9d768f9d5388340aaa316da81) Thanks [@tadeuzagallo](https://github.com/tadeuzagallo)! - Fix dynamic routes for sites with subpath
 
-* [#2308](https://github.com/withwromo/wromo/pull/2308) [`e98659b7`](https://github.com/withwromo/wromo/commit/e98659b7d65c02e4e60a3621d0ce13ca5f9878f5) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update the Wromo compiler, fixing a number of bugs
+* [#2308](https://github.com/Wromo/wromo/pull/2308) [`e98659b7`](https://github.com/Wromo/wromo/commit/e98659b7d65c02e4e60a3621d0ce13ca5f9878f5) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update the Wromo compiler, fixing a number of bugs
 
 ## 0.22.5
 
 ### Patch Changes
 
-- [#2305](https://github.com/withwromo/wromo/pull/2305) [`193ca60f`](https://github.com/withwromo/wromo/commit/193ca60f40c8875b1d655dcd0682560cc2e2487e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes `wromo check` errors with import.meta usage
+- [#2305](https://github.com/Wromo/wromo/pull/2305) [`193ca60f`](https://github.com/Wromo/wromo/commit/193ca60f40c8875b1d655dcd0682560cc2e2487e) Thanks [@matthewp](https://github.com/matthewp)! - Fixes `wromo check` errors with import.meta usage
 
-- Updated dependencies [[`34486676`](https://github.com/withwromo/wromo/commit/344866762c3a96b92bd754cf3706db73e2d74647)]:
+- Updated dependencies [[`34486676`](https://github.com/Wromo/wromo/commit/344866762c3a96b92bd754cf3706db73e2d74647)]:
   - @wromojs/renderer-svelte@0.3.1
 
 ## 0.22.4
 
 ### Patch Changes
 
-- [#2302](https://github.com/withwromo/wromo/pull/2302) [`9db22b97`](https://github.com/withwromo/wromo/commit/9db22b97b604e2ab1908b28e3461aefb222dcf97) Thanks [@matthewp](https://github.com/matthewp)! - Fix to allow the static build to build hydrated components
+- [#2302](https://github.com/Wromo/wromo/pull/2302) [`9db22b97`](https://github.com/Wromo/wromo/commit/9db22b97b604e2ab1908b28e3461aefb222dcf97) Thanks [@matthewp](https://github.com/matthewp)! - Fix to allow the static build to build hydrated components
 
 ## 0.22.3
 
 ### Patch Changes
 
-- [#2292](https://github.com/withwromo/wromo/pull/2292) [`2e55dc26`](https://github.com/withwromo/wromo/commit/2e55dc2686b0e2bff2e2ec76c184a17a3d2368c4) Thanks [@matthewp](https://github.com/matthewp)! - Rolls back a feature flag feature that was breaking the docs site
+- [#2292](https://github.com/Wromo/wromo/pull/2292) [`2e55dc26`](https://github.com/Wromo/wromo/commit/2e55dc2686b0e2bff2e2ec76c184a17a3d2368c4) Thanks [@matthewp](https://github.com/matthewp)! - Rolls back a feature flag feature that was breaking the docs site
 
 ## 0.22.2
 
 ### Patch Changes
 
-- [#2290](https://github.com/withwromo/wromo/pull/2290) [`c77cf52e`](https://github.com/withwromo/wromo/commit/c77cf52e1648a2581479bd3187b5a5fa1f918832) Thanks [@matthewp](https://github.com/matthewp)! - Preserve wasm stack trace when verbose logging is enabled
+- [#2290](https://github.com/Wromo/wromo/pull/2290) [`c77cf52e`](https://github.com/Wromo/wromo/commit/c77cf52e1648a2581479bd3187b5a5fa1f918832) Thanks [@matthewp](https://github.com/matthewp)! - Preserve wasm stack trace when verbose logging is enabled
 
 ## 0.22.1
 
 ### Patch Changes
 
-- [#2258](https://github.com/withwromo/wromo/pull/2258) [`db79d2e9`](https://github.com/withwromo/wromo/commit/db79d2e9ec02f3e3f25c6c10aa365acdd5c1a7cc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for use of remote @import in inline styles
+- [#2258](https://github.com/Wromo/wromo/pull/2258) [`db79d2e9`](https://github.com/Wromo/wromo/commit/db79d2e9ec02f3e3f25c6c10aa365acdd5c1a7cc) Thanks [@matthewp](https://github.com/matthewp)! - Fix for use of remote @import in inline styles
 
 ## 0.22.0
 
 ### Minor Changes
 
-- [#2202](https://github.com/withwromo/wromo/pull/2202) [`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
+- [#2202](https://github.com/Wromo/wromo/pull/2202) [`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Officially drop support for Node v12. The minimum supported version is now Node v14.15+,
 
-* [`c5a7305f`](https://github.com/withwromo/wromo/commit/c5a7305f04222743c99d70b3ea061a1d31a67efa) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `fetch` detection via Vite plugin with a more resilient `globalThis` polyfill
+* [`c5a7305f`](https://github.com/Wromo/wromo/commit/c5a7305f04222743c99d70b3ea061a1d31a67efa) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Replace `fetch` detection via Vite plugin with a more resilient `globalThis` polyfill
 
 ### Patch Changes
 
-- [#2240](https://github.com/withwromo/wromo/pull/2240) [`e07c1cbd`](https://github.com/withwromo/wromo/commit/e07c1cbd7ea46c57d637f981aaed43a733a846b1) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Pin vite to v2.6, since that is the version that we have vendored.
+- [#2240](https://github.com/Wromo/wromo/pull/2240) [`e07c1cbd`](https://github.com/Wromo/wromo/commit/e07c1cbd7ea46c57d637f981aaed43a733a846b1) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Pin vite to v2.6, since that is the version that we have vendored.
 
-- Updated dependencies [[`45cea6ae`](https://github.com/withwromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539)]:
+- Updated dependencies [[`45cea6ae`](https://github.com/Wromo/wromo/commit/45cea6aec5a310fed4cb8da0d96670d6b99a2539)]:
   - @wromojs/prism@0.4.0
   - @wromojs/renderer-preact@0.4.0
   - @wromojs/renderer-react@0.4.0
@@ -1782,78 +1782,78 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`b8c821a0`](https://github.com/withwromo/wromo/commit/b8c821a0743ed004691eae0eea471a368d2fa35f)]:
+- Updated dependencies [[`b8c821a0`](https://github.com/Wromo/wromo/commit/b8c821a0743ed004691eae0eea471a368d2fa35f)]:
   - @wromojs/renderer-svelte@0.2.3
 
 ## 0.21.12
 
 ### Patch Changes
 
-- [#2115](https://github.com/withwromo/wromo/pull/2115) [`0ef682c9`](https://github.com/withwromo/wromo/commit/0ef682c924a0836790acd2d4f8c1663eb99ffb75) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve error message on bad JS/TS frontmatter
+- [#2115](https://github.com/Wromo/wromo/pull/2115) [`0ef682c9`](https://github.com/Wromo/wromo/commit/0ef682c924a0836790acd2d4f8c1663eb99ffb75) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Improve error message on bad JS/TS frontmatter
 
-* [#2156](https://github.com/withwromo/wromo/pull/2156) [`ef3950c6`](https://github.com/withwromo/wromo/commit/ef3950c647e523ff6f36cfa096c4a92596d32afa) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: missing CSS files
+* [#2156](https://github.com/Wromo/wromo/pull/2156) [`ef3950c6`](https://github.com/Wromo/wromo/commit/ef3950c647e523ff6f36cfa096c4a92596d32afa) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: missing CSS files
 
 ## 0.21.11
 
 ### Patch Changes
 
-- [#2137](https://github.com/withwromo/wromo/pull/2137) [`cc1dae55`](https://github.com/withwromo/wromo/commit/cc1dae55c8bbf0a7d862e227f7daed138c485be4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Exclude 404 pages from sitemap generation
+- [#2137](https://github.com/Wromo/wromo/pull/2137) [`cc1dae55`](https://github.com/Wromo/wromo/commit/cc1dae55c8bbf0a7d862e227f7daed138c485be4) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Exclude 404 pages from sitemap generation
 
-* [#2112](https://github.com/withwromo/wromo/pull/2112) [`da7b41f5`](https://github.com/withwromo/wromo/commit/da7b41f5b8eb6d3a3e3a765be447e03ef5691979) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: fix missing styles in build
+* [#2112](https://github.com/Wromo/wromo/pull/2112) [`da7b41f5`](https://github.com/Wromo/wromo/commit/da7b41f5b8eb6d3a3e3a765be447e03ef5691979) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: fix missing styles in build
 
-- [#2116](https://github.com/withwromo/wromo/pull/2116) [`d9d3906a`](https://github.com/withwromo/wromo/commit/d9d3906a3c215436a1e3d2ab64e63d23a772e059) Thanks [@e111077](https://github.com/e111077)! - add lit renderer reflection tests
+- [#2116](https://github.com/Wromo/wromo/pull/2116) [`d9d3906a`](https://github.com/Wromo/wromo/commit/d9d3906a3c215436a1e3d2ab64e63d23a772e059) Thanks [@e111077](https://github.com/e111077)! - add lit renderer reflection tests
 
-* [#2135](https://github.com/withwromo/wromo/pull/2135) [`77c3fda3`](https://github.com/withwromo/wromo/commit/77c3fda379b5858a74fa54d278058efaf33fdac5) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Patch `fetch` support to prioritize authored code. Existing `fetch` imports and declarations are respected.
+* [#2135](https://github.com/Wromo/wromo/pull/2135) [`77c3fda3`](https://github.com/Wromo/wromo/commit/77c3fda379b5858a74fa54d278058efaf33fdac5) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Patch `fetch` support to prioritize authored code. Existing `fetch` imports and declarations are respected.
 
 ## 0.21.10
 
 ### Patch Changes
 
-- [#2109](https://github.com/withwromo/wromo/pull/2109) [`3e4cfea4`](https://github.com/withwromo/wromo/commit/3e4cfea4e29ab958d69e4502c1f634a007393a7b) Thanks [@Mikkel-T](https://github.com/Mikkel-T)! - Fixes aliases on windows.
+- [#2109](https://github.com/Wromo/wromo/pull/2109) [`3e4cfea4`](https://github.com/Wromo/wromo/commit/3e4cfea4e29ab958d69e4502c1f634a007393a7b) Thanks [@Mikkel-T](https://github.com/Mikkel-T)! - Fixes aliases on windows.
 
-* [#2117](https://github.com/withwromo/wromo/pull/2117) [`8346a1f2`](https://github.com/withwromo/wromo/commit/8346a1f2b9e38d68788e0c6dc62f872a46ebe8a7) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes regression introduced in `@wromojs/compiler` related to active formatting elements
+* [#2117](https://github.com/Wromo/wromo/pull/2117) [`8346a1f2`](https://github.com/Wromo/wromo/commit/8346a1f2b9e38d68788e0c6dc62f872a46ebe8a7) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fixes regression introduced in `@wromojs/compiler` related to active formatting elements
 
-  See [CHANGELOG](https://github.com/withwromo/compiler/blob/main/lib/compiler/CHANGELOG.md#057).
+  See [CHANGELOG](https://github.com/Wromo/compiler/blob/main/lib/compiler/CHANGELOG.md#057).
 
 ## 0.21.9
 
 ### Patch Changes
 
-- [#2107](https://github.com/withwromo/wromo/pull/2107) [`4c444676`](https://github.com/withwromo/wromo/commit/4c44467668045733b4e5c3bbed8a1bde2ba421de) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in build caused by use of URL module
+- [#2107](https://github.com/Wromo/wromo/pull/2107) [`4c444676`](https://github.com/Wromo/wromo/commit/4c44467668045733b4e5c3bbed8a1bde2ba421de) Thanks [@matthewp](https://github.com/matthewp)! - Fixes regression in build caused by use of URL module
 
   Using this module breaks the build because Vite tries to shim it, incorrectly.
 
-* [#2106](https://github.com/withwromo/wromo/pull/2106) [`583459d0`](https://github.com/withwromo/wromo/commit/583459d0b6476fc79b351648c0db3c2869edfa12) Thanks [@matthewp](https://github.com/matthewp)! - Fix for using ?url with CSS imports
+* [#2106](https://github.com/Wromo/wromo/pull/2106) [`583459d0`](https://github.com/Wromo/wromo/commit/583459d0b6476fc79b351648c0db3c2869edfa12) Thanks [@matthewp](https://github.com/matthewp)! - Fix for using ?url with CSS imports
 
 ## 0.21.8
 
 ### Patch Changes
 
-- [#2096](https://github.com/withwromo/wromo/pull/2096) [`11798a32`](https://github.com/withwromo/wromo/commit/11798a3209521664e02989e5ea3e791c8c5fb036) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Updates @wromo/compiler and @wromo/language-server.
+- [#2096](https://github.com/Wromo/wromo/pull/2096) [`11798a32`](https://github.com/Wromo/wromo/commit/11798a3209521664e02989e5ea3e791c8c5fb036) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Updates @wromo/compiler and @wromo/language-server.
 
 ## 0.21.7
 
 ### Patch Changes
 
-- [#2065](https://github.com/withwromo/wromo/pull/2065) [`c6e4e283`](https://github.com/withwromo/wromo/commit/c6e4e2831e122cced890dfad47825fab3bd32db9) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: improve CSS import order
+- [#2065](https://github.com/Wromo/wromo/pull/2065) [`c6e4e283`](https://github.com/Wromo/wromo/commit/c6e4e2831e122cced890dfad47825fab3bd32db9) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: improve CSS import order
 
-* [#2081](https://github.com/withwromo/wromo/pull/2081) [`62a5e98c`](https://github.com/withwromo/wromo/commit/62a5e98c9008a1ac88c3c38db64b74723f8fd422) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: CSS import ordering, empty CSS output on build
+* [#2081](https://github.com/Wromo/wromo/pull/2081) [`62a5e98c`](https://github.com/Wromo/wromo/commit/62a5e98c9008a1ac88c3c38db64b74723f8fd422) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: CSS import ordering, empty CSS output on build
 
-- [#2086](https://github.com/withwromo/wromo/pull/2086) [`2a2eaadc`](https://github.com/withwromo/wromo/commit/2a2eaadc2f5ca0ac88eb3fd987881a47b41e9bdd) Thanks [@matthewp](https://github.com/matthewp)! - Fixes invalidation of proxy module (inline script modules)
+- [#2086](https://github.com/Wromo/wromo/pull/2086) [`2a2eaadc`](https://github.com/Wromo/wromo/commit/2a2eaadc2f5ca0ac88eb3fd987881a47b41e9bdd) Thanks [@matthewp](https://github.com/matthewp)! - Fixes invalidation of proxy module (inline script modules)
 
-* [#2048](https://github.com/withwromo/wromo/pull/2048) [`1301f3da`](https://github.com/withwromo/wromo/commit/1301f3daa9991078652577f2addf4aaad6014712) Thanks [@matthewp](https://github.com/matthewp)! - Updates Wromo.resolve to return project-relative paths
+* [#2048](https://github.com/Wromo/wromo/pull/2048) [`1301f3da`](https://github.com/Wromo/wromo/commit/1301f3daa9991078652577f2addf4aaad6014712) Thanks [@matthewp](https://github.com/matthewp)! - Updates Wromo.resolve to return project-relative paths
 
-- [#2078](https://github.com/withwromo/wromo/pull/2078) [`ac3e8702`](https://github.com/withwromo/wromo/commit/ac3e870280e983a7977da79b6eec0568d38d8420) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix behavior of renderers when no children are passed in
+- [#2078](https://github.com/Wromo/wromo/pull/2078) [`ac3e8702`](https://github.com/Wromo/wromo/commit/ac3e870280e983a7977da79b6eec0568d38d8420) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix behavior of renderers when no children are passed in
 
-* [#2091](https://github.com/withwromo/wromo/pull/2091) [`0a826c99`](https://github.com/withwromo/wromo/commit/0a826c999c8ee30d5ee2ae61ac4165fb9797da70) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: allow special characters in filenames
+* [#2091](https://github.com/Wromo/wromo/pull/2091) [`0a826c99`](https://github.com/Wromo/wromo/commit/0a826c999c8ee30d5ee2ae61ac4165fb9797da70) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: allow special characters in filenames
 
-- [#2064](https://github.com/withwromo/wromo/pull/2064) [`5bda895f`](https://github.com/withwromo/wromo/commit/5bda895fcb7d1aa21223aa89d33912f97716c3ab) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fixes an issue where void elements are rendered with opening and closing tags.
+- [#2064](https://github.com/Wromo/wromo/pull/2064) [`5bda895f`](https://github.com/Wromo/wromo/commit/5bda895fcb7d1aa21223aa89d33912f97716c3ab) Thanks [@jonathantneal](https://github.com/jonathantneal)! - Fixes an issue where void elements are rendered with opening and closing tags.
 
-* [#2076](https://github.com/withwromo/wromo/pull/2076) [`920d3da1`](https://github.com/withwromo/wromo/commit/920d3da135f29a3b4229aa7166902ae00be0a51f) Thanks [@tony-sull](https://github.com/tony-sull)! - Improving build validation and error messages for client hydration directives
+* [#2076](https://github.com/Wromo/wromo/pull/2076) [`920d3da1`](https://github.com/Wromo/wromo/commit/920d3da135f29a3b4229aa7166902ae00be0a51f) Thanks [@tony-sull](https://github.com/tony-sull)! - Improving build validation and error messages for client hydration directives
 
-- [#2075](https://github.com/withwromo/wromo/pull/2075) [`b348ca6c`](https://github.com/withwromo/wromo/commit/b348ca6c9fbc13dcf49718c7b3335f06b1ea0982) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: allow dynamic importing of rehype plugins
+- [#2075](https://github.com/Wromo/wromo/pull/2075) [`b348ca6c`](https://github.com/Wromo/wromo/commit/b348ca6c9fbc13dcf49718c7b3335f06b1ea0982) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: allow dynamic importing of rehype plugins
 
-- Updated dependencies [[`ac3e8702`](https://github.com/withwromo/wromo/commit/ac3e870280e983a7977da79b6eec0568d38d8420)]:
+- Updated dependencies [[`ac3e8702`](https://github.com/Wromo/wromo/commit/ac3e870280e983a7977da79b6eec0568d38d8420)]:
   - @wromojs/renderer-preact@0.3.1
   - @wromojs/renderer-react@0.3.1
   - @wromojs/renderer-svelte@0.2.2
@@ -1863,11 +1863,11 @@
 
 ### Patch Changes
 
-- [#2050](https://github.com/withwromo/wromo/pull/2050) [`4e06767c`](https://github.com/withwromo/wromo/commit/4e06767c0148539f6fe868c4fc0335755908c110) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix `wromo preview` port retry logic
+- [#2050](https://github.com/Wromo/wromo/pull/2050) [`4e06767c`](https://github.com/Wromo/wromo/commit/4e06767c0148539f6fe868c4fc0335755908c110) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Fix `wromo preview` port retry logic
 
-* [#2049](https://github.com/withwromo/wromo/pull/2049) [`c491d1f4`](https://github.com/withwromo/wromo/commit/c491d1f423cc8ed7ba25d7d0dea6336ad9659a55) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: Sass compile errors cause compiler panic
+* [#2049](https://github.com/Wromo/wromo/pull/2049) [`c491d1f4`](https://github.com/Wromo/wromo/commit/c491d1f423cc8ed7ba25d7d0dea6336ad9659a55) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: Sass compile errors cause compiler panic
 
-- [#2066](https://github.com/withwromo/wromo/pull/2066) [`f5efbe14`](https://github.com/withwromo/wromo/commit/f5efbe141cf3b0956252a42ffc35a95211ee7513) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: Windows error in dev for hydrated components
+- [#2066](https://github.com/Wromo/wromo/pull/2066) [`f5efbe14`](https://github.com/Wromo/wromo/commit/f5efbe141cf3b0956252a42ffc35a95211ee7513) Thanks [@drwpow](https://github.com/drwpow)! - Bugfix: Windows error in dev for hydrated components
 
 ## 0.21.5
 
@@ -1935,7 +1935,7 @@
 
   This new version of Wromo includes:
 
-  - A new, faster, [Go-based compiler](https://github.com/withwromo/wromo-compiler)
+  - A new, faster, [Go-based compiler](https://github.com/Wromo/wromo-compiler)
   - A completely new runtime backed by [Vite](https://vitejs.dev/), with significantly dev experience improvements
   - Improved support for loading Wromo config files, including `.cjs`, `.js`, and `.ts` files
   - And [many more features](https://wromo.build/blog/wromo-021-preview/)!
@@ -2943,7 +2943,7 @@ _Rolling back to 0.13.10 to prevent a regression in the dev server output._
 ### Patch Changes
 
 - 6573bea: Fixed README header aspect ratio
-- 2671b6f: Fix [472](https://github.com/withwromo/wromo/issues/472) by not injecting `wromo-*` scoped class unless it is actually used
+- 2671b6f: Fix [472](https://github.com/Wromo/wromo/issues/472) by not injecting `wromo-*` scoped class unless it is actually used
 - b547892: Makes providing a head element on pages optional
 - b547892: Allows wromo documents to omit the head element
 - 0abd251: Allows renderers to provide knownEntrypoint config values
@@ -3093,7 +3093,7 @@ _Rolling back to 0.13.10 to prevent a regression in the dev server output._
 ### Patch Changes
 
 - 0d6afae: Fixes a few small bugs with the `Markdown` component when there are multiple instances on the same page
-- 1d930ff: Adds [`--verbose`](https://docs.wromo.build/cli.md#--verbose) and [`--reload`](https://github.com/withwromo/wromo/blob/main/docs/cli/#--reload) flags to the `wromo` CLI.
+- 1d930ff: Adds [`--verbose`](https://docs.wromo.build/cli.md#--verbose) and [`--reload`](https://github.com/Wromo/wromo/blob/main/docs/cli/#--reload) flags to the `wromo` CLI.
 
 ## 0.12.3
 

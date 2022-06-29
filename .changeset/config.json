@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.7.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "withwromo/wromo" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "Wromo/wromo" }],
   "commit": false,
   "linked": [],
   "access": "public",

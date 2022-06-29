@@ -67,7 +67,7 @@ Please upgrade to a version of Node.js with complete ESM support: "^14.15.0 || >
 		console.error(`\nNode.js v${version} is not supported by Wromo!
 Supported versions: ${engines}\n
 Issue Detected! This Node.js version was expected to work, but failed a system check.
-Please file an issue so that we can take a look: https://github.com/withwromo/wromo/issues/new\n`);
+Please file an issue so that we can take a look: https://github.com/Wromo/wromo/issues/new\n`);
 	} else {
 		console.error(`\nNode.js v${version} is not supported by Wromo!
 Please upgrade Node.js to a supported version: "${engines}"\n`);

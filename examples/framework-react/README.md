@@ -4,7 +4,7 @@
 npm init wromo -- --template framework-react
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withwromo/wromo/tree/latest/examples/framework-react)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/framework-react)
 
 This example showcases Wromo working with [React](https://reactjs.org/).
 

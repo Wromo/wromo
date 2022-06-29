@@ -4,51 +4,51 @@
 
 ### Patch Changes
 
-- [#3673](https://github.com/withwromo/wromo/pull/3673) [`ba5ad785`](https://github.com/withwromo/wromo/commit/ba5ad7855c4252e10e76b41b88fd4c74b4b7295b) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix react dependencies to improve test reliability
+- [#3673](https://github.com/Wromo/wromo/pull/3673) [`ba5ad785`](https://github.com/Wromo/wromo/commit/ba5ad7855c4252e10e76b41b88fd4c74b4b7295b) Thanks [@hippotastic](https://github.com/hippotastic)! - Fix react dependencies to improve test reliability
 
 ## 0.1.5
 
 ### Patch Changes
 
-- [#3532](https://github.com/withwromo/wromo/pull/3532) [`c22a07db`](https://github.com/withwromo/wromo/commit/c22a07db134a9d0741a05123fb506595aabf145b) Thanks [@matthewp](https://github.com/matthewp)! - Fix for using Wromo.glob when using the Deno Deploy adapter
+- [#3532](https://github.com/Wromo/wromo/pull/3532) [`c22a07db`](https://github.com/Wromo/wromo/commit/c22a07db134a9d0741a05123fb506595aabf145b) Thanks [@matthewp](https://github.com/matthewp)! - Fix for using Wromo.glob when using the Deno Deploy adapter
 
 ## 0.1.4
 
 ### Patch Changes
 
-- [#3503](https://github.com/withwromo/wromo/pull/3503) [`207f58d1`](https://github.com/withwromo/wromo/commit/207f58d1715ac024cc7c81b76e26aa49fca5173f) Thanks [@williamtetlow](https://github.com/williamtetlow)! - Alias `from 'wromo'` imports to `'@wromo/types'`
+- [#3503](https://github.com/Wromo/wromo/pull/3503) [`207f58d1`](https://github.com/Wromo/wromo/commit/207f58d1715ac024cc7c81b76e26aa49fca5173f) Thanks [@williamtetlow](https://github.com/williamtetlow)! - Alias `from 'wromo'` imports to `'@wromo/types'`
   Update Deno and Netlify integrations to handle vite.resolves.alias as an array
 
 ## 0.1.3
 
 ### Patch Changes
 
-- [#3483](https://github.com/withwromo/wromo/pull/3483) [`b795a085`](https://github.com/withwromo/wromo/commit/b795a085f0d20abe83c5ada1e7ba89ec4444c2d5) Thanks [@mvolfik](https://github.com/mvolfik)! - Deno integration now loads environment variables in server runtime
+- [#3483](https://github.com/Wromo/wromo/pull/3483) [`b795a085`](https://github.com/Wromo/wromo/commit/b795a085f0d20abe83c5ada1e7ba89ec4444c2d5) Thanks [@mvolfik](https://github.com/mvolfik)! - Deno integration now loads environment variables in server runtime
 
 ## 0.1.2
 
 ### Patch Changes
 
-- [#3160](https://github.com/withwromo/wromo/pull/3160) [`ae9ac5cb`](https://github.com/withwromo/wromo/commit/ae9ac5cbdceba0687d83d56d9d5f80479ab88710) Thanks [@matthewp](https://github.com/matthewp)! - Allows using React.lazy, Suspense in SSR and with hydration
+- [#3160](https://github.com/Wromo/wromo/pull/3160) [`ae9ac5cb`](https://github.com/Wromo/wromo/commit/ae9ac5cbdceba0687d83d56d9d5f80479ab88710) Thanks [@matthewp](https://github.com/matthewp)! - Allows using React.lazy, Suspense in SSR and with hydration
 
 ## 0.1.1
 
 ### Patch Changes
 
-- [#3121](https://github.com/withwromo/wromo/pull/3121) [`e5383cd3`](https://github.com/withwromo/wromo/commit/e5383cd3576f858bf65f6d460de397c4f2dae208) Thanks [@matthewp](https://github.com/matthewp)! - Handles file serving in the main export
+- [#3121](https://github.com/Wromo/wromo/pull/3121) [`e5383cd3`](https://github.com/Wromo/wromo/commit/e5383cd3576f858bf65f6d460de397c4f2dae208) Thanks [@matthewp](https://github.com/matthewp)! - Handles file serving in the main export
 
 ## 0.1.0
 
 ### Minor Changes
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/withwromo/rfcs/blob/main/proposals/0019-config-finalization.md)
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Update config options to resepect [RFC0019](https://github.com/Wromo/rfcs/blob/main/proposals/0019-config-finalization.md)
 
 ### Patch Changes
 
-- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add a Deno adapter for SSR
+- [`e425f896`](https://github.com/Wromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add a Deno adapter for SSR
 
 ## 0.0.2-next.0
 
 ### Patch Changes
 
-- [#2873](https://github.com/withwromo/wromo/pull/2873) [`e4025d1f`](https://github.com/withwromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering
+- [#2873](https://github.com/Wromo/wromo/pull/2873) [`e4025d1f`](https://github.com/Wromo/wromo/commit/e4025d1f530310d6ab951109f4f53878a307471a) Thanks [@matthewp](https://github.com/matthewp)! - Improves the build by building to a single file for rendering

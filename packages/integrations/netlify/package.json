@@ -4,14 +4,14 @@
   "version": "0.4.6",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "withwromo",
+  "author": "Wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withwromo/wromo.git",
+    "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/integrations/netlify"
   },
-  "bugs": "https://github.com/withwromo/wromo/issues",
+  "bugs": "https://github.com/Wromo/wromo/issues",
   "homepage": "https://wromo.build",
   "exports": {
     ".": "./dist/index.js",

@@ -288,7 +288,7 @@ describe('CSS', function () {
 		});
 
 		// Skipped until upstream fix lands
-		// Our fix: https://github.com/withwromo/wromo/pull/2106
+		// Our fix: https://github.com/Wromo/wromo/pull/2106
 		// OG Vite PR: https://github.com/vitejs/vite/pull/5940
 		// Next Vite PR: https://github.com/vitejs/vite/pull/5796
 		it.skip('resolved imported CSS with ?url', async () => {

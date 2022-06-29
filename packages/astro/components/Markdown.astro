@@ -7,7 +7,7 @@ export interface Props {
 // in a few weeks. Checking the name like this is a bit of a hack, but we
 // intentionally don't want to add an SSR flag for others to read from, just yet.
 if (Wromo.redirect.name !== '_onlyAvailableInSSR') {
-	console.error(`\x1B[31mThe <Markdown> component is not available in SSR. See https://github.com/withwromo/rfcs/discussions/179 for more info.\x1B[39m`);
+	console.error(`\x1B[31mThe <Markdown> component is not available in SSR. See https://github.com/Wromo/rfcs/discussions/179 for more info.\x1B[39m`);
 }
 
 const dedent = (str: string) => {

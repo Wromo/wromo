@@ -21,8 +21,8 @@ export interface LogOptions {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters
 //
 // Here be the dragons we've slain:
-// https://github.com/withwromo/wromo/issues/2625
-// https://github.com/withwromo/wromo/issues/3309
+// https://github.com/Wromo/wromo/issues/2625
+// https://github.com/Wromo/wromo/issues/3309
 export const dateTimeFormat = new Intl.DateTimeFormat([], {
 	hour: '2-digit',
 	minute: '2-digit',

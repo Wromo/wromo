@@ -240,7 +240,7 @@ jobs:
   # We download all `dist/` artifacts from GitHub to skip the build process.
   changelog:
     name: Changelog PR or Release
-    if: ${{ (github.ref_name == 'main' || github.head_ref == 'next') && github.repository_owner == 'withwromo' }}
+    if: ${{ (github.ref_name == 'main' || github.head_ref == 'next') && github.repository_owner == 'Wromo' }}
     needs: [build]
     runs-on: ubuntu-latest
     steps:

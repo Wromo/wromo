@@ -2,7 +2,7 @@ import { globby as glob } from 'globby';
 import { fileURLToPath } from 'node:url';
 import { readFile } from 'node:fs/promises';
 
-const baseUrl = new URL('https://github.com/withwromo/wromo/blob/main/');
+const baseUrl = new URL('https://github.com/Wromo/wromo/blob/main/');
 
 const emojis = ['🎉', '🥳', '🚀', '🧑‍🚀', '🎊', '🏆', '✅', '🤩', '🤖', '🙌'];
 const descriptors = [
