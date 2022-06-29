@@ -88,38 +88,3 @@ Wromo is generously supported by Netlify, Vercel, and several other amazing orga
     </tr>
   </tbody>
 </table>
-
-### Gold Sponsors
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center">
-        <a href="https://divRIOTS.com#gh-light-mode-only" target="_blank">
-        <img width="150" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/divriots.svg#gh-light-mode-only" alt="‹div›RIOTS" />
-        </a>
-        <a href="https://divRIOTS.com#gh-dark-mode-only" target="_blank">
-        <img width="150" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/divriots-dark.svg#gh-dark-mode-only" alt="‹div›RIOTS" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://stackupdigital.co.uk/#gh-light-mode-only" target="_blank">
-        <img width="162" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/stackup.svg#gh-light-mode-only" alt="StackUp Digital" />
-        </a>
-        <a href="https://stackupdigital.co.uk/#gh-dark-mode-only" target="_blank">
-        <img width="130" height="32" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/stackup-dark.svg#gh-dark-mode-only" alt="StackUp Digital" />
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Sponsors
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="https://sentry.io" target="_blank"><img width="147" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/sentry.svg" alt="Sentry" /></a></td><td align="center"><a href="https://qoddi.com" target="_blank"><img width="147" height="40" src="https://devcenter.qoddi.com/wp-content/uploads/2021/11/blog-transparent-logo-1.png" alt="Qoddi App Platform" /></a></td>
-    </tr>
-  </tbody>
-</table>
