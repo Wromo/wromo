@@ -76,15 +76,3 @@ Wromo is generously supported by Netlify, Vercel, and several other amazing orga
 
 [❤️ Sponsor Wromo! ❤️](FUNDING.md)
 
-### Platinum Sponsors
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="https://www.netlify.com/#gh-light-mode-only" target="_blank"><img width="147" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/netlify.svg#gh-light-mode-only" alt="Netlify" /></a><a href="https://www.netlify.com/#gh-dark-mode-only" target="_blank"><img width="147" height="40" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/netlify-dark.svg#gh-dark-mode-only" alt="Netlify" />
-      </a></td>
-      <td align="center"><a href="https://www.vercel.com/#gh-light-mode-only" target="_blank"><img width="150" height="34" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/vercel.svg#gh-light-mode-only" alt="Vercel" /></a><a href="https://www.vercel.com/#gh-dark-mode-only"><img width="150" height="34" src="https://raw.githubusercontent.com/Wromo/wromo/main/.github/assets/vercel-dark.svg#gh-dark-mode-only" alt="Vercel" />
-      </a></td>
-    </tr>
-  </tbody>
-</table>
