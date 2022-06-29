@@ -1,0 +1,47 @@
+{
+  "name": "@wromojs/solid-js",
+  "version": "0.2.0",
+  "description": "Use Solid components within Wromo",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "author": "withwromo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withwromo/wromo.git",
+    "directory": "packages/integrations/solid"
+  },
+  "keywords": [
+    "wromo-component",
+    "renderer",
+    "solid"
+  ],
+  "bugs": "https://github.com/withwromo/wromo/issues",
+  "homepage": "https://wromo.build",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./*",
+    "./client.js": "./client.js",
+    "./server.js": "./server.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "wromo-scripts build \"src/**/*.ts\" && tsc",
+    "build:ci": "wromo-scripts build \"src/**/*.ts\"",
+    "dev": "wromo-scripts dev \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "babel-preset-solid": "^1.4.2"
+  },
+  "devDependencies": {
+    "wromo": "workspace:*",
+    "wromo-scripts": "workspace:*",
+    "solid-js": "^1.4.3"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.3.6"
+  },
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0"
+  }
+}

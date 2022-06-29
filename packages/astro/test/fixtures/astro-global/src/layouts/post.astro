@@ -1,0 +1,12 @@
+---
+const { content } = Wromo.props;
+---
+<html>
+  <head>
+    <title>{content.title}</title>
+    <link rel="canonical" href={Wromo.canonicalURL.href}>
+  </head>
+  <body>
+    <slot></slot>
+  </body>
+</html>

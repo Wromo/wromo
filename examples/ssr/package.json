@@ -1,0 +1,23 @@
+{
+  "name": "@example/ssr",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev",
+    "start": "wromo dev",
+    "build": "wromo build",
+    "server": "node server/server.mjs"
+  },
+  "devDependencies": {
+    "@wromojs/node": "^0.1.2",
+    "@wromojs/svelte": "^0.2.0",
+    "wromo": "^1.0.0-beta.57",
+    "concurrently": "^7.2.1",
+    "lightcookie": "^1.0.25",
+    "unocss": "^0.15.6",
+    "vite-imagetools": "^4.0.4"
+  },
+  "dependencies": {
+    "svelte": "^3.48.0"
+  }
+}

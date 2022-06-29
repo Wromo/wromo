@@ -1,0 +1,9 @@
+{
+  "name": "@test/wromo-expr",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/preact": "workspace:*",
+    "wromo": "workspace:*"
+  }
+}

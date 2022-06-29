@@ -1,0 +1,12 @@
+{
+  "name": "@test/deno-wromo-basic",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "wromo": "workspace:*",
+    "@wromojs/deno": "workspace:*",
+    "@wromojs/react": "workspace:*",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}

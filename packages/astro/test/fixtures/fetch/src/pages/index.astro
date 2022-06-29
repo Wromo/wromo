@@ -1,0 +1,23 @@
+---
+import Test from '../components/WromoComponent.wromo';
+import AlreadyImported from '../components/AlreadyImported.wromo';
+import CustomDeclaration from '../components/CustomDeclaration.wromo';
+import JsxComponent from '../components/JsxComponent.jsx';
+import SvelteComponent from '../components/SvelteComponent.svelte';
+import VueComponent from '../components/VueComponent.vue';
+---
+
+<html lang="en">
+<head>
+  <title>Global fetch</title>
+</head>
+<body>
+  <span id="wromo-page">{typeof fetch}</span>
+  <Test />
+  <AlreadyImported />
+  <CustomDeclaration />
+  <JsxComponent />
+  <SvelteComponent />
+  <VueComponent />
+</body>
+</html>

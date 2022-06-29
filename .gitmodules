@@ -1,0 +1,8 @@
+[submodule "smoke/docs"]
+	path = smoke/docs
+	url = git@github.com:withwromo/docs.git
+  branch = main
+[submodule "smoke/wromo.build"]
+	path = smoke/wromo.build
+	url = git@github.com:withwromo/wromo.build.git
+	branch = main

@@ -1,0 +1,14 @@
+{
+  "name": "@test/component-library",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/preact": "workspace:*",
+    "@wromojs/react": "workspace:*",
+    "@wromojs/svelte": "workspace:*",
+    "@test/component-library-shared": "workspace:*",
+    "wromo": "workspace:*",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}

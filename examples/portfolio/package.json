@@ -1,0 +1,19 @@
+{
+  "name": "@example/portfolio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev",
+    "start": "wromo dev",
+    "build": "wromo build",
+    "preview": "wromo preview"
+  },
+  "devDependencies": {
+    "@wromojs/preact": "^0.2.0",
+    "wromo": "^1.0.0-beta.57",
+    "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "preact": "^10.7.3"
+  }
+}

@@ -1,0 +1,67 @@
+# @wromojs/react
+
+## 0.2.0
+
+### Minor Changes
+
+- [#3652](https://github.com/withwromo/wromo/pull/3652) [`7373d61c`](https://github.com/withwromo/wromo/commit/7373d61cdcaedd64bf5fd60521b157cfa4343558) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add support for passing named slots from `.wromo` => framework components.
+
+  Each `slot` is be passed as a top-level prop. For example:
+
+  ```jsx
+  // From .wromo
+  <Component>
+    <h2 slot="title">Hello world!</h2>
+    <h2 slot="slot-with-dash">Dash</h2>
+    <div>Default</div>
+  </Component>;
+
+  // For .jsx
+  export default function Component({ title, slotWithDash, children }) {
+    return (
+      <>
+        <div id="title">{title}</div>
+        <div id="slot-with-dash">{slotWithDash}</div>
+        <div id="main">{children}</div>
+      </>
+    );
+  }
+  ```
+
+## 0.1.3
+
+### Patch Changes
+
+- [#3455](https://github.com/withwromo/wromo/pull/3455) [`e9a77d86`](https://github.com/withwromo/wromo/commit/e9a77d861907adccfa75811f9aaa555f186d78f8) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Update client hydration to check for `ssr` attribute. Requires `wromo@^1.0.0-beta.36`.
+
+## 0.1.2
+
+### Patch Changes
+
+- [#3337](https://github.com/withwromo/wromo/pull/3337) [`678c2b75`](https://github.com/withwromo/wromo/commit/678c2b7523c7f10cfdf2eb5a73aa2bbb7e5cbc07) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Fix: remove hydration failures on React v18 by exposing the "client" directive from Wromo core.
+
+## 0.1.1
+
+### Patch Changes
+
+- [#3160](https://github.com/withwromo/wromo/pull/3160) [`ae9ac5cb`](https://github.com/withwromo/wromo/commit/ae9ac5cbdceba0687d83d56d9d5f80479ab88710) Thanks [@matthewp](https://github.com/matthewp)! - Allows using React.lazy, Suspense in SSR and with hydration
+
+## 0.1.0
+
+### Minor Changes
+
+- [`e425f896`](https://github.com/withwromo/wromo/commit/e425f896b668d98033ad3b998b50c1f28bc7f6ee) Thanks [@FredKSchott](https://github.com/FredKSchott)! - Add support for React v18
+
+## 0.0.2
+
+### Patch Changes
+
+- [#2885](https://github.com/withwromo/wromo/pull/2885) [`6b004363`](https://github.com/withwromo/wromo/commit/6b004363f99f27e581d1e2d53a2ebff39d7afb8a) Thanks [@bholmesdev](https://github.com/bholmesdev)! - Add README across Wromo built-in integrations
+
+* [#2847](https://github.com/withwromo/wromo/pull/2847) [`3b621f7a`](https://github.com/withwromo/wromo/commit/3b621f7a613b45983b090794fa7c015f23ed6140) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds keywords to the official integrations to support discoverability on Wromo's Integrations site
+
+## 0.0.2-next.0
+
+### Patch Changes
+
+- [#2847](https://github.com/withwromo/wromo/pull/2847) [`3b621f7a`](https://github.com/withwromo/wromo/commit/3b621f7a613b45983b090794fa7c015f23ed6140) Thanks [@tony-sull](https://github.com/tony-sull)! - Adds keywords to the official integrations to support discoverability on Wromo's Integrations site

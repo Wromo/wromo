@@ -1,0 +1,11 @@
+{
+  "name": "@test/streaming",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev"
+  },
+  "dependencies": {
+    "wromo": "workspace:*"
+  }
+}

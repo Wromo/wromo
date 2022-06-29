@@ -1,0 +1,11 @@
+{
+  "name": "@test/wromo-children",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/preact": "workspace:*",
+    "@wromojs/svelte": "workspace:*",
+    "@wromojs/vue": "workspace:*",
+    "wromo": "workspace:*"
+  }
+}

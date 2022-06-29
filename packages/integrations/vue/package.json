@@ -1,0 +1,48 @@
+{
+  "name": "@wromojs/vue",
+  "version": "0.2.0",
+  "description": "Use Vue components within Wromo",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "author": "withwromo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withwromo/wromo.git",
+    "directory": "packages/integrations/vue"
+  },
+  "keywords": [
+    "wromo-component",
+    "renderer",
+    "vue"
+  ],
+  "bugs": "https://github.com/withwromo/wromo/issues",
+  "homepage": "https://wromo.build",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./*",
+    "./client.js": "./client.js",
+    "./server.js": "./server.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "wromo-scripts build \"src/**/*.ts\" && tsc",
+    "build:ci": "wromo-scripts build \"src/**/*.ts\"",
+    "dev": "wromo-scripts dev \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  },
+  "devDependencies": {
+    "wromo": "workspace:*",
+    "wromo-scripts": "workspace:*",
+    "vue": "^3.2.36"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.30"
+  },
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0"
+  }
+}

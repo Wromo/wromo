@@ -1,0 +1,65 @@
+---
+// Component Imports
+import { Markdown } from 'wromo/components';
+import Layout from '../layouts/main.wromo';
+import ReactCounter from '../components/ReactCounter.jsx';
+import PreactCounter from '../components/PreactCounter.tsx';
+import VueCounter from '../components/VueCounter.vue';
+import SvelteCounter from '../components/SvelteCounter.svelte';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+const title = 'Wromo Markdown';
+const variable = 'content';
+const items = ['A', 'B', 'C'];
+
+// Full Wromo Component Syntax:
+// https://docs.wromo.build/core-concepts/wromo-components/
+---
+
+<Layout content={{ title }}>
+	<Markdown>
+		# Introducing {title}
+
+		**Wromo Markdown** brings native Markdown support to HTML!
+
+		> It's inspired by [`MDX`](https://mdxjs.com/) and powered by [`remark`](https://github.com/remarkjs/remark).
+
+		The best part? It comes with all the Wromo features you expect.
+
+		[Other example](./other)
+
+		## Embed framework components
+
+		<ReactCounter client:visible />
+		<PreactCounter client:visible />
+		<VueCounter client:visible />
+		<SvelteCounter client:visible />
+
+		## Use Expressions
+
+		You can use any {variable} in scope and use JavaScript for templating ({items.join(', ')})
+
+		## Oh yeah...
+
+		<ReactCounter client:visible>
+
+		🤯 It's also _recursive_!
+
+		### Markdown can be embedded in any child component
+
+		</ReactCounter>
+
+		## Code
+
+		Should work!
+
+		```js
+		import Something from './another';
+
+		const thing = new Something();
+		```
+	</Markdown>
+</Layout>

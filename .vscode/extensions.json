@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "wromo-build.wromo-vscode",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint"
+  ],
+  "unwantedRecommendations": []
+}

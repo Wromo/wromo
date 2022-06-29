@@ -1,0 +1,53 @@
+{
+  "name": "create-wromo",
+  "version": "0.12.2",
+  "type": "module",
+  "author": "withwromo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withwromo/wromo.git",
+    "directory": "packages/create-wromo"
+  },
+  "bugs": "https://github.com/withwromo/wromo/issues",
+  "homepage": "https://wromo.build",
+  "exports": {
+    ".": "./create-wromo.mjs"
+  },
+  "bin": {
+    "create-wromo": "./create-wromo.mjs"
+  },
+  "scripts": {
+    "build": "wromo-scripts build \"src/**/*.ts\" && tsc",
+    "build:ci": "wromo-scripts build \"src/**/*.ts\"",
+    "dev": "wromo-scripts dev \"src/**/*.ts\"",
+    "test": "mocha --exit --timeout 20000"
+  },
+  "files": [
+    "dist",
+    "create-wromo.js"
+  ],
+  "dependencies": {
+    "@types/degit": "^2.8.3",
+    "@types/prompts": "^2.0.14",
+    "chalk": "^5.0.1",
+    "degit": "^2.8.4",
+    "execa": "^6.1.0",
+    "kleur": "^4.1.4",
+    "ora": "^6.1.0",
+    "prompts": "^2.4.2",
+    "yargs-parser": "^21.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/yargs-parser": "^21.0.0",
+    "wromo-scripts": "workspace:*",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "uvu": "^0.5.3"
+  },
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@example/with-markdown-shiki",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev",
+    "start": "wromo dev",
+    "build": "wromo build",
+    "preview": "wromo preview"
+  },
+  "devDependencies": {
+    "@wromojs/markdown-remark": "^0.11.3",
+    "wromo": "^1.0.0-beta.57"
+  }
+}

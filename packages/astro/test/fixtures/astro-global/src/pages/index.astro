@@ -1,0 +1,16 @@
+---
+import Child from '../components/Child.wromo';
+---
+<html>
+<head>
+  <title>Test</title>
+  <link rel="canonical" href={Wromo.canonicalURL.href}>
+</head>
+<body>
+  <div id="pathname">{new URL(Wromo.request.url).pathname}</div>
+  <div id="searchparams">{JSON.stringify(new URL(Wromo.request.url).searchParams)}</div>
+  <a id="site" href={Wromo.site}>Home</a>
+
+  <Child />
+</body>
+</html>

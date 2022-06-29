@@ -1,0 +1,12 @@
+{
+  "name": "@e2e/solid-component",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/solid-js": "workspace:*",
+    "wromo": "workspace:*"
+  },
+  "devDependencies": {
+    "solid-js": "^1.4.3"
+  }
+}

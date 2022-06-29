@@ -1,0 +1,11 @@
+---
+import Hello from '../components/Hello.jsx';
+---
+<html lang="en">
+	<head>
+		<title>Wromo</title>
+	</head>
+	<body>
+		<Hello client:load />
+	</body>
+</html>

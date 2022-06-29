@@ -1,0 +1,34 @@
+{
+  "name": "@wromojs/deno",
+  "description": "Deploy your site to a Deno server",
+  "version": "0.1.6",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "author": "withwromo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withwromo/wromo.git",
+    "directory": "packages/integrations/deno"
+  },
+  "bugs": "https://github.com/withwromo/wromo/issues",
+  "homepage": "https://wromo.build",
+  "exports": {
+    ".": "./dist/index.js",
+    "./server.js": "./dist/server.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "wromo-scripts build \"src/**/*.ts\" && tsc",
+    "build:ci": "wromo-scripts build \"src/**/*.ts\"",
+    "dev": "wromo-scripts dev \"src/**/*.ts\"",
+    "test": "deno test --allow-run --allow-env --allow-read --allow-net ./test/"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.42"
+  },
+  "devDependencies": {
+    "wromo": "workspace:*",
+    "wromo-scripts": "workspace:*"
+  }
+}

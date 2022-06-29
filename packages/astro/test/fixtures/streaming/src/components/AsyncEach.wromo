@@ -1,0 +1,11 @@
+---
+const { iterable } = Wromo.props;
+---
+
+{(async function * () {
+	for await(const value of iterable) {
+		let html = await Wromo.slots.render('default', [value]);
+		yield <Fragment set:html={html} />;
+		yield '\n';
+	}
+})()}

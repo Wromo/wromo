@@ -1,0 +1,9 @@
+---
+import Layout from '../../layouts/content.wromo'
+
+const posts = await Wromo.glob('../../imported-md/*.md')
+---
+
+<Layout>
+	{posts.map(({ Content }) => <Content />)}
+</Layout>

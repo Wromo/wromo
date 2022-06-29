@@ -1,0 +1,42 @@
+{
+  "name": "@wromojs/sitemap",
+  "description": "Generate a sitemap for Wromo",
+  "version": "0.2.2",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "author": "withwromo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withwromo/wromo.git",
+    "directory": "packages/integrations/sitemap"
+  },
+  "keywords": [
+    "wromo-component",
+    "seo",
+    "sitemap"
+  ],
+  "bugs": "https://github.com/withwromo/wromo/issues",
+  "homepage": "https://wromo.build",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "wromo-scripts build \"src/**/*.ts\" && tsc",
+    "build:ci": "wromo-scripts build \"src/**/*.ts\"",
+    "dev": "wromo-scripts dev \"src/**/*.ts\"",
+    "test": "mocha --timeout 20000"
+  },
+  "dependencies": {
+    "sitemap": "^7.1.1",
+    "zod": "^3.17.3"
+  },
+  "devDependencies": {
+    "wromo": "workspace:*",
+    "wromo-scripts": "workspace:*"
+  }
+}

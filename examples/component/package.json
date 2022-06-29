@@ -1,0 +1,13 @@
+{
+  "name": "@example/component",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "wromo --root demo dev",
+    "build": "wromo --root demo build",
+    "serve": "wromo --root demo preview"
+  },
+  "devDependencies": {
+    "wromo": "^1.0.0-beta.57"
+  }
+}

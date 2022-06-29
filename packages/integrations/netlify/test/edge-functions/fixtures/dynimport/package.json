@@ -1,0 +1,9 @@
+{
+  "name": "@test/netlify-edge-wromo-dynimport",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "wromo": "workspace:*",
+    "@wromojs/netlify": "workspace:*"
+  }
+}

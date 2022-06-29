@@ -1,0 +1,7 @@
+---
+const content = await Wromo.glob('../content/*.md');
+---
+
+<div>
+	{content.map(({ Content }) => <Content />)}
+</div>

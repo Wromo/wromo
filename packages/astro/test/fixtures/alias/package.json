@@ -1,0 +1,9 @@
+{
+  "name": "@test/aliases",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/svelte": "workspace:*",
+    "wromo": "workspace:*"
+  }
+}

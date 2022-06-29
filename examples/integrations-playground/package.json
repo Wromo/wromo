@@ -1,0 +1,31 @@
+{
+  "name": "@example/integrations-playground",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev",
+    "start": "wromo dev",
+    "build": "wromo build",
+    "preview": "wromo preview"
+  },
+  "devDependencies": {
+    "@wromojs/lit": "^0.3.0",
+    "@wromojs/partytown": "^0.1.5",
+    "@wromojs/react": "^0.2.0",
+    "@wromojs/sitemap": "^0.2.2",
+    "@wromojs/solid-js": "0.2.0",
+    "@wromojs/tailwind": "^0.2.1",
+    "@wromojs/turbolinks": "^0.1.3",
+    "wromo": "^1.0.0-beta.57",
+    "solid-js": "^1.4.3"
+  },
+  "dependencies": {
+    "@webcomponents/template-shadowroot": "^0.1.0",
+    "lit": "^2.2.5",
+    "preact": "^10.7.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "svelte": "^3.48.0",
+    "vue": "^3.2.36"
+  }
+}

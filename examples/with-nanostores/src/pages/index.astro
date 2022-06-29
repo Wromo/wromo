@@ -1,0 +1,50 @@
+---
+// Style Imports
+import '../styles/global.css';
+import '../styles/home.css';
+
+// Component Imports
+import AdminsReact from '../components/AdminsReact.jsx';
+import AdminsSvelte from '../components/AdminsSvelte.svelte';
+import AdminsVue from '../components/AdminsVue.vue';
+import AdminsSolid from '../components/AdminsSolid.jsx';
+
+// Full Wromo Component Syntax:
+// https://docs.wromo.build/core-concepts/wromo-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Wromo</title>
+
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<style>
+			header {
+				display: flex;
+				flex-direction: column;
+				gap: 1em;
+				max-width: min(100%, 68ch);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div>
+					<img width="60" height="80" src="/assets/logo.svg" alt="Wromo logo" />
+					<h1>
+						Welcome to <a href="https://wromo.build/">Wromo</a> -
+						<a href="https://github.com/nanostores/nanostores">nanostores</a>
+					</h1>
+				</div>
+			</header>
+			<AdminsReact client:load />
+			<AdminsSvelte client:load />
+			<AdminsVue client:load />
+			<AdminsSolid client:load />
+		</main>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "@example/framework-vue",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wromo dev",
+    "start": "wromo dev",
+    "build": "wromo build",
+    "preview": "wromo preview"
+  },
+  "devDependencies": {
+    "@wromojs/vue": "^0.2.0",
+    "wromo": "^1.0.0-beta.57"
+  },
+  "dependencies": {
+    "vue": "^3.2.36"
+  }
+}

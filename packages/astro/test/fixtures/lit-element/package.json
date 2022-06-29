@@ -1,0 +1,9 @@
+{
+  "name": "@test/lit-element",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/lit": "workspace:*",
+    "wromo": "workspace:*"
+  }
+}

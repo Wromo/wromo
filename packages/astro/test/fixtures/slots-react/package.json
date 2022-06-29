@@ -1,0 +1,11 @@
+{
+  "name": "@test/slots-react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@wromojs/react": "workspace:*",
+    "wromo": "workspace:*",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
