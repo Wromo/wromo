@@ -72,7 +72,7 @@ Several official projects are maintained outside of this repo:
 
 ## Sponsors
 
-Wromo is generously supported by Netlify, Vercel, and several other amazing organizations.
+Wromo is generously supported by several other amazing organizations.
 
 [❤️ Sponsor Wromo! ❤️](FUNDING.md)
 
