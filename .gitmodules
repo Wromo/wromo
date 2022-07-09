@@ -4,5 +4,5 @@
   branch = main
 [submodule "smoke/wromo.build"]
 	path = smoke/wromo.build
-	url = git@github.com:Wromo/wromo.build.git
+	url = git@github.com:Wromo/wromo.git
 	branch = main
