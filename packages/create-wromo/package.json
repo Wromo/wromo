@@ -1,8 +1,8 @@
 {
-  "name": "create-wromo",
+  "name": "create-author": "wromo",
   "version": "0.12.2",
   "type": "module",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

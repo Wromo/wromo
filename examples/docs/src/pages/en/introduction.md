@@ -23,4 +23,4 @@ To get started with this theme, check out the `README.md` in your new project di
 
 Found a missing feature that you can't live without? Please suggest it on Discord [(#ideas-and-suggestions channel)](https://wromo.build/chat) and even consider adding it yourself on GitHub! Wromo is an open source project and contributions from developers like you are how we grow!
 
-Good luck out there, Wromonaut. 🧑‍🚀
+Good luck out there, Wromonaut. 

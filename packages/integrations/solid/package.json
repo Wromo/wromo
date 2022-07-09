@@ -1,10 +1,10 @@
 {
   "name": "@wromojs/solid-js",
   "version": "0.2.0",
-  "description": "Use Solid components within Wromo",
+  "description": "Use Solid components within author": "wromo",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

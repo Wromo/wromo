@@ -1,10 +1,10 @@
 {
   "name": "@wromojs/sitemap",
-  "description": "Generate a sitemap for Wromo",
+  "description": "Generate a sitemap for author": "wromo",
   "version": "0.2.2",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

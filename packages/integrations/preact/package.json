@@ -1,10 +1,10 @@
 {
   "name": "@wromojs/preact",
-  "description": "Use Preact components within Wromo",
+  "description": "Use Preact components within author": "wromo",
   "version": "0.2.0",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,10 +1,10 @@
 {
   "name": "@wromojs/svelte",
   "version": "0.2.0",
-  "description": "Use Svelte components within Wromo",
+  "description": "Use Svelte components within author": "wromo",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

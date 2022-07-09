@@ -6,7 +6,7 @@ npm init wromo -- --template component
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Wromo/wromo/tree/latest/examples/component)
 
-> 🧑‍🚀 **Seasoned wromonaut?** Delete this file. Have fun!
+> 🧑 **Seasoned wromonaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 

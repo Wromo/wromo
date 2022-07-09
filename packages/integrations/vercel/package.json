@@ -3,7 +3,7 @@
   "description": "Deploy your site to Vercel",
   "version": "0.2.3",
   "type": "module",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

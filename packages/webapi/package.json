@@ -21,7 +21,7 @@
     "mod.js.map"
   ],
   "keywords": [
-    "wromo",
+    "author": "wromo",
     "api",
     "cancelAnimationFrame",
     "clearImmediate",
@@ -37,7 +37,7 @@
     "url": "https://github.com/Wromo/wromo.git",
     "directory": "packages/webapi"
   },
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "contributors": [
     "Jonathan Neal (https://github.com/jonathantneal)",

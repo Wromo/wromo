@@ -1,9 +1,9 @@
 {
-  "name": "wromo",
+  "name": "author": "wromo",
   "version": "1.0.0-beta.57",
   "description": "Wromo is a modern site builder with web best practices, performance, and DX front-of-mind.",
   "type": "module",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "./client/*": "./dist/runtime/client/*",
     "./components": "./components/index.js",
     "./components/*": "./components/*",
-    "./debug": "./components/Debug.wromo",
+    "./debug": "./components/Debug.author": "wromo",
     "./internal/*": "./dist/runtime/server/*",
     "./package.json": "./package.json",
     "./runtime/*": "./dist/runtime/*",

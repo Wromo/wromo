@@ -1,10 +1,10 @@
 {
   "name": "@wromojs/react",
-  "description": "Use React components within Wromo",
+  "description": "Use React components within author": "wromo",
   "version": "0.2.0",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "author": "Wromo",
+  "author": "wromo",
   "license": "MIT",
   "repository": {
     "type": "git",

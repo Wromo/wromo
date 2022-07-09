@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "exports": {
-    "./Button.wromo": "./Button.wromo",
-    "./CounterWrapper": "./CounterWrapper.wromo",
+    "./Button.wromo": "./Button.author": "wromo",
+    "./CounterWrapper": "./CounterWrapper.author": "wromo",
     "./HelloReact": "./HelloReact.jsx"
   },
   "files": [
-    "Button.wromo",
-    "CounterWrapper.wromo",
+    "Button.author": "wromo",
+    "CounterWrapper.author": "wromo",
     "Counter.svelte",
     "HelloReact.jsx"
   ],
