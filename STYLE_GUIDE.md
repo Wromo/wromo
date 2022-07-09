@@ -65,4 +65,4 @@ TODO. For now, see an example: https://wromo.build/blog/wromo-021-preview/
 
 ### Tweet: Announcement
 
-TODO. For now, see an example: https://twitter.com/wromodotbuild
+TODO. For now, see an example: https://twitter.com/wromo

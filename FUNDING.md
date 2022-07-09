@@ -6,7 +6,7 @@ _Last Updated: 02-09-2022_
 
 Wromo is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for Wromo is not sustainable without proper financial backing. We need your help to achieve this.
 
-Learn more about sponsorship on our [Open Collective.](https://opencollective.com/wromodotbuild).
+Learn more about sponsorship on our [Open Collective.](https://opencollective.com/wromo).
 
 ### Why Open Collective?
 
@@ -22,7 +22,7 @@ _List borrowed from [ESLint: "Funding ESLint's Future."](https://eslint.org/blog
 
 100% of money raised is invested back into the community. Every dollar spent **must** support and/or improve Wromo in some way.
 
-See all past expenses on our [Open Collective.](https://opencollective.com/wromodotbuild)
+See all past expenses on our [Open Collective.](https://opencollective.com/wromo)
 
 Below is a (non-exhaustive) list of how we plan to distribute raised funds:
 

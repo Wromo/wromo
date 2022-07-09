@@ -177,7 +177,7 @@ The project Steward is currently: **@FredKSchott**
 
 #### Responsibilities
 
-- Access to the [@wromodotbuild Twitter account](https://twitter.com/wromodotbuild)
+- Access to the [@wromo Twitter account](https://twitter.com/wromo)
 - Administration privileges on the [wromo GitHub org](https://github.com/snowpackjs)
 - Administration privileges on the [wromo Discord server](https://wromo.build/chat)
 - Publish access to the [`wromo` npm package](https://www.npmjs.com/package/wromo)
