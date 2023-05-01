@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wromo/wromo.git"
+    "url": "git+https://github.com/Wromo/wromo.git"
   },
   "scripts": {
     "postinstall": "patch-package",
@@ -79,5 +79,16 @@
     "tiny-glob": "^0.2.9",
     "turbo": "1.2.5",
     "typescript": "~4.7.2"
-  }
+  },
+  "description": "<p align=\"center\">\r   <img src=\"assets/social/banner-minimal.png\" alt=\"Wromo logo\">\r   <br/><br/>\r   <a href=\"https://wromo.build\">Wromo</a> is a website build tool for the modern web &mdash;\r   <br/>\r   powerful developer experience meets lightweight output.\r   <br/><br/>\r </p>",
+  "bugs": {
+    "url": "https://github.com/Wromo/wromo/issues"
+  },
+  "homepage": "https://github.com/Wromo/wromo#readme",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "author": "",
+  "license": "MIT"
 }
