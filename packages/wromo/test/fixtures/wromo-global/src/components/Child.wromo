@@ -1,5 +1,0 @@
----
-import NestedChild from './NestedChild.wromo';
----
-<div id="child-pathname">{new URL(Wromo.request.url).pathname}</div>
-<NestedChild />

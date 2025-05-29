@@ -1,9 +1,0 @@
-{
-  "name": "@test/wromo-envs",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "@wromojs/vue": "workspace:*",
-    "wromo": "workspace:*"
-  }
-}

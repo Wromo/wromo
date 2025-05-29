@@ -1,8 +1,0 @@
-{
-  "name": "@test/wromo-css-bundling",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "wromo": "workspace:*"
-  }
-}

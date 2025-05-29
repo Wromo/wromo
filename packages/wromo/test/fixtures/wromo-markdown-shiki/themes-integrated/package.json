@@ -1,8 +1,0 @@
-{
-  "name": "@test/wromo-markdown-skiki-themes-integrated",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "wromo": "workspace:*"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "name": "@test/reexport-wromo-containing-client-component",
-  "dependencies": {
-    "wromo": "workspace:",
-    "@wromojs/preact": "workspace:"
-  }
-}

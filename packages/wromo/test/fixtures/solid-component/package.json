@@ -1,9 +1,0 @@
-{
-  "name": "@test/solid-component",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "@wromojs/solid-js": "workspace:*",
-    "wromo": "workspace:*"
-  }
-}

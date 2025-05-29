@@ -1,9 +1,0 @@
-{
-  "name": "@test/static-build",
-  "version": "0.0.0",
-  "dependencies": {
-    "@wromojs/node": "workspace:*",
-    "@test/static-build-pkg": "workspace:*",
-    "wromo": "workspace:*"
-  }
-}

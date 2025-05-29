@@ -1,9 +1,0 @@
-{
-  "name": "@test/ssr-scripts",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "@wromojs/preact": "workspace:",
-    "wromo": "workspace:*"
-  }
-}

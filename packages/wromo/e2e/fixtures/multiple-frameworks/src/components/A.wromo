@@ -1,7 +1,0 @@
----
-const { id } = Wromo.props
----
-
-<div id={id} class="children">
-	<h1>Hello Wromo (A)</h1>
-</div>

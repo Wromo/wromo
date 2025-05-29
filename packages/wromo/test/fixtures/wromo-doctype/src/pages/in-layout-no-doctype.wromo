@@ -1,4 +1,0 @@
----
-import WithoutDoctype from '../layouts/WithoutDoctype.wromo';
----
-<WithoutDoctype />

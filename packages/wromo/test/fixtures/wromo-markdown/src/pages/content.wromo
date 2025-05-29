@@ -1,6 +1,0 @@
----
-import { Markdown } from 'wromo/components';
-const content = '# Foo';
----
-
-<Markdown content={content} />

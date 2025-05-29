@@ -1,6 +1,0 @@
----
-const { id, text } = Wromo.props;
-const content = await Wromo.slots.render('default', [text]);
----
-
-<div id={id} set:html={content} />
